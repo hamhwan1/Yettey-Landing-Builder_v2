@@ -1,0 +1,191 @@
+You are a senior SaaS content designer and conversion-focused UX writer.
+
+Your task is NOT to rewrite the entire article.
+
+Your task is to UPGRADE the existing blog content to a **high-converting SaaS article (100/100 level)** by improving:
+
+* Readability (scan-based UX)
+* Emotional engagement (pain → realization → action)
+* Conversion (user → action → signup)
+
+IMPORTANT RULES:
+
+* DO NOT change the overall structure
+* DO NOT remove existing sections
+* ONLY enhance, insert, and restructure content blocks
+* Maintain modern SaaS tone (clean, confident, minimal)
+
+---
+
+# 1. ADD “PATTERN BREAK” TEXT BLOCKS (CRITICAL)
+
+Insert short, powerful, standalone text blocks between sections.
+
+RULE:
+
+* 1~2 lines only
+* emotionally strong
+* visually separated
+
+ADD THESE EXACT BLOCKS:
+
+After intro:
+"You are not failing because of content.
+You are failing because of system."
+
+After "Why Most Short-Form Videos Fail":
+"You don’t have a content problem.
+You have a system problem."
+
+Before CTA section:
+"Stop guessing what works.
+Start building a system that works."
+
+---
+
+# 2. IMPROVE READABILITY (VERY IMPORTANT)
+
+Transform long paragraphs into:
+
+* short sentences
+* max 2 lines per block
+* clear spacing
+
+CONVERT:
+❌ dense explanation
+→ ✅ scannable structure
+
+USE:
+
+* bullet points
+* spacing between sections
+* bold key phrases
+
+---
+
+# 3. ADD “PAIN → RELATABLE MOMENT”
+
+In the early section, ADD:
+
+"You spend hours editing videos.
+
+And still nothing grows.
+
+That’s not normal."
+
+---
+
+# 4. ADD BEFORE vs AFTER COMPARISON SECTION
+
+Insert a visual comparison block AFTER failure explanation.
+
+STRUCTURE:
+
+Title: "The Difference Between Random Content and System Content"
+
+Left (Bad):
+
+* Random uploads
+* No structure
+* No consistency
+* No growth
+
+Right (Good):
+
+* Structured system
+* Repeatable workflow
+* Consistent output
+* Predictable growth
+
+Make it visually side-by-side cards.
+
+---
+
+# 5. ADD RESULT-BASED PROOF BLOCK
+
+Insert BEFORE "Where Yettey Fits"
+
+Content:
+
+"Creators using structured systems:
+
+* Produce 3x more content
+* Save up to 70% of time
+* Grow consistently instead of randomly"
+
+---
+
+# 6. ADD VISUAL COMPONENTS (VERY IMPORTANT)
+
+For each of the following sections, ADD a visual placeholder:
+
+1. Hook → Body → CTA
+   → Add diagram-style card
+
+2. Workflow section
+   → Add flow diagram (Record → Extract → Edit → Publish)
+
+3. Before vs After
+   → Add comparison cards UI
+
+4. Yettey section
+   → Add dashboard-style UI mock
+
+Use modern SaaS UI style (dark theme, soft gradients, minimal icons)
+
+---
+
+# 7. UPGRADE CTA (CRITICAL)
+
+Replace CTA text with:
+
+"Stop wasting time on random content.
+
+Build a system that actually works."
+
+Button:
+"Build your system →"
+
+Add subtext:
+"If you don’t fix your system,
+you will keep repeating the same results."
+
+---
+
+# 8. ADD SEO OPTIMIZATION
+
+Naturally include keywords in headings and body:
+
+* short form video strategy
+* viral video framework
+* content creation system
+* how to make viral short videos
+
+DO NOT keyword stuff.
+Keep it natural.
+
+---
+
+# 9. TONE GUIDELINES
+
+* No fluff
+* No corporate tone
+* Slightly provocative
+* Clear and confident
+* Speak like a startup founder, not a blogger
+
+---
+
+# FINAL GOAL
+
+The article should:
+
+✔ feel easy to scan
+✔ emotionally hit the reader
+✔ create a “this is my problem” moment
+✔ naturally lead to product (Yettey)
+✔ push user to take action
+
+This is NOT a blog post.
+
+This is a conversion asset.

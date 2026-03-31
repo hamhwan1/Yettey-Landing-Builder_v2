@@ -15,7 +15,10 @@ import {
   LayoutGrid,
   FolderOpen,
   Search,
-  CheckCircle2,
+  TrendingUp,
+  Timer,
+  BarChart3,
+  Scissors,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -26,6 +29,21 @@ const fade = {
   hidden: { opacity: 0, y: 20 },
   show: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.07 } }),
 };
+
+function PatternBreak({ line1, line2 }: { line1: string; line2: string }) {
+  return (
+    <section className="max-w-3xl mx-auto px-4 mb-16">
+      <motion.div
+        variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
+        className="rounded-2xl p-8 sm:p-10 text-center"
+        style={{ background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}04)`, border: `1px solid ${ACCENT}18` }}
+      >
+        <p className="font-display font-bold text-xl sm:text-2xl text-foreground leading-snug mb-2">{line1}</p>
+        <p className="font-display font-bold text-xl sm:text-2xl" style={{ color: ACCENT }}>{line2}</p>
+      </motion.div>
+    </section>
+  );
+}
 
 export default function ShortFormVideoFramework() {
   return (
@@ -64,22 +82,28 @@ export default function ShortFormVideoFramework() {
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={3}
-            className="text-xl font-medium mb-6" style={{ color: ACCENT }}
+            className="text-xl font-medium mb-8" style={{ color: ACCENT }}
           >
             The Framework That Actually Works in 2026
           </motion.p>
 
           <motion.div
             variants={fade} initial="hidden" animate="show" custom={4}
-            className="text-lg text-muted-foreground leading-relaxed mb-4 space-y-3"
+            className="text-lg text-muted-foreground leading-relaxed space-y-4 mb-4"
           >
             <p>Most short-form videos fail.</p>
             <p>Not because of content — <strong className="text-foreground">but because there's no system.</strong></p>
-            <p className="text-base italic text-foreground/60">This is the short form video strategy used by top creators.</p>
           </motion.div>
 
-          <motion.div
+          <motion.p
             variants={fade} initial="hidden" animate="show" custom={5}
+            className="text-base italic text-foreground/50 mb-6"
+          >
+            This is the short form video strategy used by top creators.
+          </motion.p>
+
+          <motion.div
+            variants={fade} initial="hidden" animate="show" custom={6}
             className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground pt-6 pb-10 border-b border-border"
           >
             <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4" /> March 10, 2026</span>
@@ -102,21 +126,24 @@ export default function ShortFormVideoFramework() {
               <div className="w-3 h-3 rounded-full bg-red-500/70" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
               <div className="w-3 h-3 rounded-full bg-green-500/70" />
-              <span className="text-xs text-muted-foreground ml-2 font-medium">Short-Form Content Framework</span>
+              <span className="text-xs text-muted-foreground ml-2 font-medium">Viral Video Framework</span>
             </div>
             <div className="bg-card/40 p-8 sm:p-12">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
                 {[
-                  { name: "Hook", time: "0–2s", icon: Zap },
-                  { name: "Body", time: "2–8s", icon: Play },
-                  { name: "CTA", time: "End", icon: MessageSquare },
+                  { name: "Hook", time: "0–2s", icon: Zap, active: true },
+                  { name: "Body", time: "2–8s", icon: Play, active: false },
+                  { name: "CTA", time: "End", icon: MessageSquare, active: false },
                 ].map((step, i) => {
                   const Icon = step.icon;
                   return (
                     <div key={step.name} className="flex items-center gap-4 sm:gap-6">
                       <div
                         className="w-28 h-28 rounded-2xl flex flex-col items-center justify-center gap-1.5"
-                        style={{ backgroundColor: `${ACCENT}${i === 0 ? "20" : "10"}`, border: i === 0 ? `2px solid ${ACCENT}60` : `1px solid ${ACCENT}20` }}
+                        style={{
+                          backgroundColor: `${ACCENT}${step.active ? "20" : "10"}`,
+                          border: step.active ? `2px solid ${ACCENT}60` : `1px solid ${ACCENT}20`,
+                        }}
                       >
                         <Icon className="w-5 h-5" style={{ color: ACCENT }} />
                         <span className="font-bold text-lg text-foreground">{step.name}</span>
@@ -127,7 +154,7 @@ export default function ShortFormVideoFramework() {
                   );
                 })}
               </div>
-              <p className="text-center text-sm text-muted-foreground mt-6">The viral short-form video framework</p>
+              <p className="text-center text-sm text-muted-foreground mt-6">The viral short-form video framework — how to make viral short videos, consistently</p>
             </div>
           </div>
         </motion.div>
@@ -158,6 +185,23 @@ export default function ShortFormVideoFramework() {
           </div>
         </motion.div>
       </section>
+
+      {/* ── PAIN MOMENT ────────────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-16">
+        <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <div className="space-y-4">
+            <p className="text-lg text-foreground/70 leading-relaxed">You spend hours editing videos.</p>
+            <p className="text-lg text-foreground/70 leading-relaxed">And still nothing grows.</p>
+            <p className="text-lg font-semibold text-foreground">That's not normal.</p>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* ── PATTERN BREAK 1 ────────────────────────────────────── */}
+      <PatternBreak
+        line1="You are not failing because of content."
+        line2="You are failing because of system."
+      />
 
       {/* ── 3. PROBLEM ─────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-16">
@@ -199,29 +243,51 @@ export default function ShortFormVideoFramework() {
         </motion.div>
       </section>
 
-      {/* ── PROBLEM VISUAL ─────────────────────────────────────── */}
+      {/* ── PATTERN BREAK 2 ────────────────────────────────────── */}
+      <PatternBreak
+        line1="You don't have a content problem."
+        line2="You have a system problem."
+      />
+
+      {/* ── BEFORE vs AFTER COMPARISON ─────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 mb-16">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 max-w-3xl mx-auto">
+            The Difference Between Random Content and System Content
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl mx-auto">
+            One approach hopes for results. The other engineers them.
+          </p>
           <div className="rounded-2xl border border-border overflow-hidden shadow-xl shadow-black/50">
             <div className="bg-card/40 p-8 sm:p-10">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="rounded-xl border border-red-500/20 bg-red-500/5 p-6">
-                  <p className="text-sm font-bold text-red-400 mb-4">What most creators do</p>
-                  <div className="flex flex-col gap-2">
-                    {["Long intro", "Explains context", "Gets to point at 15s", "Viewer already scrolled"].map((s) => (
-                      <div key={s} className="flex items-center gap-2">
-                        <X className="w-3.5 h-3.5 text-red-400/60" />
+                  <p className="text-sm font-bold text-red-400 mb-5">Random content</p>
+                  <div className="flex flex-col gap-3">
+                    {[
+                      "Random uploads",
+                      "No structure",
+                      "No consistency",
+                      "No growth",
+                    ].map((s) => (
+                      <div key={s} className="flex items-center gap-2.5">
+                        <X className="w-3.5 h-3.5 text-red-400/60 shrink-0" />
                         <span className="text-sm text-foreground/50">{s}</span>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="rounded-xl border bg-card p-6" style={{ borderColor: `${ACCENT}30` }}>
-                  <p className="text-sm font-bold mb-4" style={{ color: ACCENT }}>What top creators do</p>
-                  <div className="flex flex-col gap-2">
-                    {["Hook in first 1s", "Specific claim", "Visual proof", "CTA at the end"].map((s) => (
-                      <div key={s} className="flex items-center gap-2">
-                        <Check className="w-3.5 h-3.5" style={{ color: ACCENT }} />
+                  <p className="text-sm font-bold mb-5" style={{ color: ACCENT }}>System content</p>
+                  <div className="flex flex-col gap-3">
+                    {[
+                      "Structured system",
+                      "Repeatable workflow",
+                      "Consistent output",
+                      "Predictable growth",
+                    ].map((s) => (
+                      <div key={s} className="flex items-center gap-2.5">
+                        <Check className="w-3.5 h-3.5 shrink-0" style={{ color: ACCENT }} />
                         <span className="text-sm text-foreground/70">{s}</span>
                       </div>
                     ))}
@@ -230,7 +296,6 @@ export default function ShortFormVideoFramework() {
               </div>
             </div>
           </div>
-          <p className="text-center text-sm text-muted-foreground mt-4">The difference is in the first 2 seconds</p>
         </motion.div>
       </section>
 
@@ -258,16 +323,13 @@ export default function ShortFormVideoFramework() {
                   <Zap className="w-6 h-6" style={{ color: ACCENT }} />
                 </div>
               </div>
-              <div>
-                <p className="font-semibold text-foreground text-lg">
-                  Hook <span className="text-muted-foreground font-normal text-base">(0–2s)</span>
-                </p>
-              </div>
+              <p className="font-semibold text-foreground text-lg">
+                Hook <span className="text-muted-foreground font-normal text-base">(0–2s)</span>
+              </p>
             </div>
             <div className="px-6 pb-6 pl-[88px]">
-              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">
-                If the hook fails, nothing else matters. Your only job: <strong className="text-foreground">stop the scroll.</strong>
-              </p>
+              <p className="text-[14px] text-foreground/70 leading-relaxed mb-1">If the hook fails, nothing else matters.</p>
+              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">Your only job: <strong className="text-foreground">stop the scroll.</strong></p>
               <div className="rounded-lg bg-background/50 border border-border p-4 mb-4">
                 <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Examples that work</p>
                 <div className="flex flex-col gap-2">
@@ -299,16 +361,12 @@ export default function ShortFormVideoFramework() {
                   <Play className="w-6 h-6" style={{ color: ACCENT }} />
                 </div>
               </div>
-              <div>
-                <p className="font-semibold text-foreground text-lg">
-                  Body <span className="text-muted-foreground font-normal text-base">(2–8s)</span>
-                </p>
-              </div>
+              <p className="font-semibold text-foreground text-lg">
+                Body <span className="text-muted-foreground font-normal text-base">(2–8s)</span>
+              </p>
             </div>
             <div className="px-6 pb-6 pl-[88px]">
-              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">
-                Deliver fast. No fluff.
-              </p>
+              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">Deliver fast. No fluff.</p>
               <div className="rounded-lg bg-background/50 border border-border p-4 mb-4">
                 <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Rules</p>
                 <div className="flex flex-col gap-2">
@@ -345,14 +403,10 @@ export default function ShortFormVideoFramework() {
                   <MessageSquare className="w-6 h-6" style={{ color: ACCENT }} />
                 </div>
               </div>
-              <div>
-                <p className="font-semibold text-foreground text-lg">CTA</p>
-              </div>
+              <p className="font-semibold text-foreground text-lg">CTA</p>
             </div>
             <div className="px-6 pb-6 pl-[88px]">
-              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">
-                Every video needs a next step.
-              </p>
+              <p className="text-[14px] text-foreground/70 leading-relaxed mb-4">Every video needs a next step.</p>
               <div className="rounded-lg bg-background/50 border border-border p-4 mb-4">
                 <p className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">Examples</p>
                 <div className="flex flex-col gap-2">
@@ -370,8 +424,8 @@ export default function ShortFormVideoFramework() {
         </div>
       </section>
 
-      {/* ── 5. CREATOR WORKFLOW ─────────────────────────────────── */}
-      <section className="max-w-3xl mx-auto px-4 mb-16">
+      {/* ── 5. CREATOR WORKFLOW + FLOW DIAGRAM ─────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-8">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
             Content Creation Workflow for Creators
@@ -382,6 +436,29 @@ export default function ShortFormVideoFramework() {
           <p className="text-sm italic text-foreground/50 mb-8">
             A structured content creation workflow helps creators scale faster.
           </p>
+        </motion.div>
+
+        {/* Flow diagram */}
+        <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} className="mb-8">
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {[
+              { label: "Record", icon: Play },
+              { label: "Extract", icon: Scissors },
+              { label: "Edit", icon: Repeat },
+              { label: "Publish", icon: ArrowRight },
+            ].map((s, i) => {
+              const Icon = s.icon;
+              return (
+                <div key={s.label} className="flex items-center gap-3">
+                  <div className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border bg-card">
+                    <Icon className="w-4 h-4" style={{ color: ACCENT }} />
+                    <span className="text-sm font-semibold text-foreground">{s.label}</span>
+                  </div>
+                  {i < 3 && <ArrowRight className="w-4 h-4 text-muted-foreground" />}
+                </div>
+              );
+            })}
+          </div>
         </motion.div>
 
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
@@ -416,7 +493,6 @@ export default function ShortFormVideoFramework() {
               </div>
             </div>
           </div>
-          <p className="text-center text-sm text-muted-foreground">Systematic workflow used by top creators</p>
         </motion.div>
       </section>
 
@@ -427,13 +503,12 @@ export default function ShortFormVideoFramework() {
             Where Most Creators Break
           </h2>
           <div className="rounded-2xl border border-border bg-card p-8">
-            <div className="space-y-4 mb-6">
-              <p className="text-foreground/80 leading-relaxed">Not at creation. <strong className="text-foreground">After creation.</strong></p>
-              <div className="flex flex-col gap-2 pl-4 border-l-2" style={{ borderColor: `${ACCENT}30` }}>
-                <p className="text-foreground/60 text-sm">Files get messy.</p>
-                <p className="text-foreground/60 text-sm">Clips get lost.</p>
-                <p className="text-foreground/60 text-sm">Ideas disappear.</p>
-              </div>
+            <p className="text-foreground/80 leading-relaxed mb-4">Not at creation.</p>
+            <p className="text-foreground font-semibold mb-6">After creation.</p>
+            <div className="flex flex-col gap-2 pl-4 border-l-2 mb-6" style={{ borderColor: `${ACCENT}30` }}>
+              <p className="text-foreground/60 text-sm">Files get messy.</p>
+              <p className="text-foreground/60 text-sm">Clips get lost.</p>
+              <p className="text-foreground/60 text-sm">Ideas disappear.</p>
             </div>
             <p className="font-semibold text-foreground">Nothing is reusable.</p>
           </div>
@@ -474,6 +549,36 @@ export default function ShortFormVideoFramework() {
         </motion.div>
       </section>
 
+      {/* ── RESULT PROOF BLOCK ─────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-16">
+        <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <div
+            className="rounded-2xl border p-8 sm:p-10"
+            style={{ borderColor: `${ACCENT}25`, backgroundColor: `${ACCENT}06` }}
+          >
+            <p className="font-display font-bold text-lg text-foreground mb-6">
+              Creators using structured systems:
+            </p>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {[
+                { icon: TrendingUp, stat: "3x", label: "more content produced" },
+                { icon: Timer, stat: "70%", label: "time saved" },
+                { icon: BarChart3, stat: "Consistent", label: "growth, not random" },
+              ].map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div key={item.label} className="text-center p-4 rounded-xl border border-border bg-card/60">
+                    <Icon className="w-5 h-5 mx-auto mb-2" style={{ color: ACCENT }} />
+                    <p className="font-bold text-2xl text-foreground mb-1">{item.stat}</p>
+                    <p className="text-xs text-muted-foreground">{item.label}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* ── 7. WHERE YETTEY FITS ───────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-16">
         <motion.div
@@ -485,13 +590,13 @@ export default function ShortFormVideoFramework() {
             Where Yettey Fits In This System
           </h2>
 
-          <div className="space-y-4 mb-8">
+          <div className="space-y-3 mb-8">
             <p className="text-foreground/70 leading-relaxed">Most AI tools help you <strong className="text-foreground">create</strong> content.</p>
             <p className="text-foreground/70 leading-relaxed">But very few help you <strong className="text-foreground">manage</strong> it.</p>
-            <p className="text-foreground/80 leading-relaxed font-medium">That's where Yettey comes in.</p>
+            <p className="text-foreground/80 leading-relaxed font-medium mt-4">That's where Yettey comes in.</p>
           </div>
 
-          <div className="space-y-3 mb-8">
+          <div className="space-y-2 mb-8">
             <p className="text-sm text-foreground/50">It doesn't replace recording tools.</p>
             <p className="text-sm text-foreground/50">It doesn't try to automate everything.</p>
           </div>
@@ -502,7 +607,7 @@ export default function ShortFormVideoFramework() {
             {[
               { icon: FolderOpen, text: "Organize all your assets" },
               { icon: Search, text: "Find anything instantly" },
-              { icon: Repeat, text: "Build a repeatable content system" },
+              { icon: Repeat, text: "Build a repeatable content creation system" },
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -540,7 +645,7 @@ export default function ShortFormVideoFramework() {
         </motion.div>
       </section>
 
-      {/* ── YETTEY VISUAL ──────────────────────────────────────── */}
+      {/* ── YETTEY DASHBOARD VISUAL ────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 mb-16">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <div className="rounded-2xl border border-border overflow-hidden shadow-xl shadow-black/50">
@@ -552,10 +657,14 @@ export default function ShortFormVideoFramework() {
             </div>
             <div className="bg-card/40 p-6 sm:p-8">
               <div className="grid grid-cols-3 gap-3 mb-4">
-                {["Videos", "Thumbnails", "Scripts"].map((cat) => (
-                  <div key={cat} className="rounded-lg border border-border bg-background/50 p-4 text-center">
-                    <p className="text-xs text-muted-foreground mb-1">{cat}</p>
-                    <p className="text-lg font-bold" style={{ color: ACCENT }}>{cat === "Videos" ? "24" : cat === "Thumbnails" ? "48" : "12"}</p>
+                {[
+                  { label: "Videos", count: "24" },
+                  { label: "Thumbnails", count: "48" },
+                  { label: "Scripts", count: "12" },
+                ].map((cat) => (
+                  <div key={cat.label} className="rounded-lg border border-border bg-background/50 p-4 text-center">
+                    <p className="text-xs text-muted-foreground mb-1">{cat.label}</p>
+                    <p className="text-lg font-bold" style={{ color: ACCENT }}>{cat.count}</p>
                   </div>
                 ))}
               </div>
@@ -569,7 +678,7 @@ export default function ShortFormVideoFramework() {
               </div>
             </div>
           </div>
-          <p className="text-center text-sm text-muted-foreground mt-4">All your content assets, organized in one system</p>
+          <p className="text-center text-sm text-muted-foreground mt-4">All your content assets — organized, searchable, reusable</p>
         </motion.div>
       </section>
 
@@ -599,6 +708,12 @@ export default function ShortFormVideoFramework() {
         </motion.div>
       </section>
 
+      {/* ── PATTERN BREAK 3 (PRE-CTA) ─────────────────────────── */}
+      <PatternBreak
+        line1="Stop guessing what works."
+        line2="Start building a system that works."
+      />
+
       {/* ── 9. CTA ─────────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
@@ -611,20 +726,24 @@ export default function ShortFormVideoFramework() {
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-4">
-              Start creating viral content with Yettey
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
+              Stop wasting time on random content.
             </h2>
-            <p className="text-muted-foreground mb-2">Stop guessing.</p>
-            <p className="text-muted-foreground mb-8">Start building a system.</p>
+            <p className="font-display font-bold text-xl mb-8" style={{ color: ACCENT }}>
+              Build a system that actually works.
+            </p>
             <Link href="/pricing">
               <button
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-base text-white hover:-translate-y-1 transition-all duration-200 shadow-xl"
                 style={{ backgroundColor: ACCENT, boxShadow: `0 8px 24px ${ACCENT}40` }}
               >
-                Start for free
+                Build your system
                 <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
+            <p className="text-sm text-foreground/40 mt-6 max-w-sm mx-auto leading-relaxed">
+              If you don't fix your system, you will keep repeating the same results.
+            </p>
           </div>
         </motion.div>
       </section>
