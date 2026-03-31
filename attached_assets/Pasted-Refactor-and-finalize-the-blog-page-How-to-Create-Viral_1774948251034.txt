@@ -1,0 +1,303 @@
+Refactor and finalize the blog page:
+
+"How to Create Viral Short-Form Videos (The Framework)"
+
+IMPORTANT:
+
+* Do NOT redesign layout
+* Keep current dark SaaS UI
+* Replace content completely
+* Add SEO + visuals + strong conversion copy
+* This must feel like a high-conversion SaaS content page
+
+---
+
+# 1. HERO SECTION (CRITICAL - REPLACE)
+
+Title:
+How to Create Viral Short-Form Videos
+
+Subtitle:
+The Framework That Actually Works in 2026
+
+Description:
+
+Most short-form videos fail.
+
+Not because of content —
+but because there’s no system.
+
+Add:
+
+This is the short form video strategy used by top creators.
+
+---
+
+# 2. TL;DR SECTION
+
+Title:
+TL;DR — Viral Short-Form Formula
+
+Content:
+
+✔ Hook → Body → CTA
+✔ You have 2 seconds to stop the scroll
+✔ Specific beats generic
+✔ Consistency beats perfection
+
+---
+
+# 3. PROBLEM SECTION
+
+Title:
+Why Most Short-Form Videos Fail
+
+Content:
+
+Most creators treat short-form like long-form.
+
+They:
+❌ Take too long to get to the point
+❌ Start with weak intros
+❌ Try to explain instead of hook
+
+Add:
+
+You don’t have 30 seconds.
+You have 2.
+
+---
+
+# 4. MAIN FRAMEWORK
+
+Title:
+Short Form Video Framework (Hook → Body → CTA)
+
+Add:
+
+This short form video framework is used by top creators.
+
+---
+
+## 01 Hook (0–2s)
+
+If the hook fails, nothing else matters.
+Your only job: stop the scroll.
+
+Examples:
+
+✔ “Most people don’t know this…”
+✔ “I went from 0 to 50K followers in 30 days”
+✔ “You're doing this wrong”
+
+Add:
+
+Don’t explain. Create curiosity.
+
+---
+
+## 02 Body (2–8s)
+
+Deliver fast. No fluff.
+
+Rules:
+
+✔ Be specific
+✔ Use numbers
+✔ Cut everything unnecessary
+
+Example:
+
+❌ “Content is important”
+✔ “3 content mistakes killing your growth”
+
+---
+
+## 03 CTA
+
+Every video needs a next step.
+
+Examples:
+
+✔ Follow for more
+✔ Save this
+✔ Comment your problem
+
+Add:
+
+Engagement = distribution
+
+---
+
+# 5. CREATOR WORKFLOW
+
+Title:
+Content Creation Workflow for Creators
+
+Content:
+
+Top creators don’t create randomly.
+They build systems.
+
+Workflow:
+
+* Monday → brainstorm hooks
+* Tuesday → record
+* Wednesday → edit
+* Thursday–Sunday → post & analyze
+
+Add:
+
+A structured content creation workflow helps creators scale faster.
+
+---
+
+# 6. BREAK POINT SECTION
+
+Title:
+Where Most Creators Break
+
+Content:
+
+Not at creation.
+After creation.
+
+Files get messy.
+Clips get lost.
+Ideas disappear.
+
+Nothing is reusable.
+
+---
+
+# 7. YETTEY POSITIONING (VERY IMPORTANT)
+
+Title:
+Where Yettey Fits In This System
+
+Content:
+
+Most AI tools help you create content.
+
+But very few help you manage it.
+
+That’s where Yettey comes in.
+
+It doesn’t replace recording tools.
+It doesn’t try to automate everything.
+
+Instead, it solves the real problem:
+
+✔ Organize all your assets
+✔ Find anything instantly
+✔ Build a repeatable content system
+
+Add:
+
+Without a system, more content = more chaos.
+
+If you're managing a lot of content,
+you’ll need a system → see how Yettey works
+
+(Link to Product / Asset Management page)
+
+Add:
+
+Without this step, scaling content is almost impossible.
+
+---
+
+# 8. HIGHLIGHT SECTION
+
+Text:
+
+The best creators don’t use more tools.
+They use better systems.
+
+Add:
+
+If you can’t manage your content,
+you can’t scale it.
+
+(Make this the most visually dominant section)
+
+---
+
+# 9. CTA SECTION
+
+Title:
+Start creating viral content with Yettey
+
+Subtext:
+
+Stop guessing.
+Start building a system.
+
+Button:
+Start for free
+
+---
+
+# 10. ADD IMAGES (MANDATORY)
+
+Add visuals to:
+
+* Hero → short-form editing / creator workflow
+* Problem → messy workflow / chaos
+* Hook → scroll stopping moment
+* Body → editing timeline
+* CTA → engagement UI
+* Workflow → system diagram
+* Yettey → asset dashboard
+
+Rules:
+
+* Dark UI friendly
+* Modern SaaS style
+* Clean, minimal
+
+---
+
+# 11. SEO OPTIMIZATION (MANDATORY)
+
+Include keywords naturally:
+
+* short form video strategy
+* how to create viral short form videos
+* content creation workflow
+* ai tools for content creators
+
+Update H2 with keywords:
+
+* Short Form Video Framework
+* How to Create Viral Short Form Videos
+* Content Creation Workflow for Creators
+
+Add sentences:
+
+"This short form video framework is used by top creators."
+"A structured workflow helps creators scale faster."
+
+---
+
+# 12. FINAL GOAL
+
+This page must feel like:
+
+* A SaaS landing-style article
+* Highly scannable
+* SEO optimized
+* Conversion focused
+* Strongly positions Yettey
+
+---
+
+# 13. STRICT RULE
+
+If:
+
+* visuals are missing
+* SEO keywords are missing
+* Yettey positioning is weak
+
+Then the task is NOT complete.
