@@ -395,6 +395,37 @@ export default function AiToolsContentCreators() {
             );
           })}
         </div>
+
+        <motion.div
+          variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
+          className="rounded-2xl border border-border bg-card p-9 md:p-10 mt-8"
+        >
+          <h3 className="font-display font-bold text-lg text-foreground mb-5">
+            Reality check: what actually happens
+          </h3>
+          <p className="text-[15px] text-foreground/70 leading-relaxed mb-6">
+            Most creators assume this workflow is fully automated. But in reality:
+          </p>
+          <div className="flex flex-col gap-4 mb-6">
+            {[
+              "Recording still depends on external tools (Zoom, Camera)",
+              "AI video generation is still limited and often needs manual editing",
+              "Writing still requires human input and refinement",
+              "Distribution depends on external platforms and scheduling tools",
+            ].map((point) => (
+              <div key={point} className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0 bg-muted-foreground/50" />
+                <p className="text-[14px] text-foreground/70 leading-relaxed">{point}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-[15px] text-foreground/80 leading-relaxed">
+            That's why the biggest bottleneck isn't <strong className="text-foreground">creating</strong> content.
+          </p>
+          <p className="text-[15px] font-medium mt-2" style={{ color: ACCENT }}>
+            It's managing everything after creation.
+          </p>
+        </motion.div>
       </section>
 
       {/* ── 6. WHERE YETTEY FITS ───────────────────────────── */}
@@ -423,19 +454,30 @@ export default function AiToolsContentCreators() {
               But very few help you <strong className="text-foreground">manage</strong> it.
             </p>
             <p className="text-foreground/80 text-[15px] leading-relaxed">
-              That's where Yettey comes in. It doesn't replace your recording tools.
-              It doesn't try to automate everything.
+              That's where Yettey comes in.
             </p>
+          </div>
+
+          <div className="flex flex-col gap-3 mb-8">
+            {[
+              "It doesn't replace recording tools",
+              "It doesn't try to automate everything",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <span className="w-1.5 h-1.5 rounded-full mt-2 shrink-0 bg-muted-foreground/50" />
+                <p className="text-[14px] text-foreground/70 leading-relaxed">{item}</p>
+              </div>
+            ))}
           </div>
 
           <div className="space-y-4 mb-8">
             <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: ACCENT }}>
-              Instead, it helps you
+              Instead, it focuses on what actually slows creators down
             </p>
             {[
-              "Organize all your assets in one place",
-              "Find anything instantly with smart search",
-              "Build a system around your content",
+              "Organizing all your assets",
+              "Finding anything instantly",
+              "Building a system around your content",
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: ACCENT }} />
@@ -446,6 +488,10 @@ export default function AiToolsContentCreators() {
 
           <p className="text-base font-display font-bold mb-6" style={{ color: ACCENT }}>
             This is where everything connects.
+          </p>
+
+          <p className="text-[14px] text-foreground/70 leading-relaxed mb-2">
+            If you're managing a lot of content, you'll need a system.
           </p>
 
           <Link href="/product/asset-management">

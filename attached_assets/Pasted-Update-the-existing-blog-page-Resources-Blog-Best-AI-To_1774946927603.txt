@@ -1,0 +1,128 @@
+Update the existing blog page
+(Resources > Blog > Best AI Tools for Content Creators in 2026)
+
+IMPORTANT:
+This is NOT a redesign.
+This is a REQUIRED content + UX correction.
+
+You MUST apply ALL changes below.
+Do NOT skip any section.
+
+---
+
+# 1. DO NOT CHANGE
+
+* Keep current layout
+* Keep current design system
+* Keep existing sections
+
+---
+
+# 2. FIX THE "RECOMMENDED STACK" SECTION (CRITICAL)
+
+Current problem:
+The stack implies full capability (Record → Generate → Write → Store → Distribute),
+but this is misleading.
+
+DO NOT remove the stack.
+DO NOT add "supported / not supported" labels.
+
+---
+
+## REQUIRED CHANGE:
+
+ADD a new explanation block DIRECTLY BELOW the stack.
+
+---
+
+## INSERT THIS EXACT CONTENT:
+
+Title:
+"Reality check: what actually happens"
+
+Content:
+
+Most creators assume this workflow is fully automated.
+
+But in reality:
+
+* Recording still depends on external tools (Zoom, Camera)
+* AI video generation is still limited and often needs manual editing
+* Writing still requires human input and refinement
+* Distribution depends on external platforms and scheduling tools
+
+That’s why the biggest bottleneck isn’t creating content.
+
+It’s managing everything after creation.
+
+---
+
+# 3. FIX "WHERE YETTEY FITS" SECTION
+
+Current problem:
+Too soft, missing connection to above reality
+
+---
+
+## REQUIRED CHANGE:
+
+UPDATE the section content to this:
+
+Title:
+"Where Yettey fits in this stack"
+
+Content:
+
+Most AI tools help you create content.
+
+But very few help you manage it.
+
+That’s where Yettey comes in.
+
+* It doesn’t replace recording tools
+* It doesn’t try to automate everything
+
+Instead, it focuses on what actually slows creators down:
+
+✔ Organizing all your assets
+✔ Finding anything instantly
+✔ Building a system around your content
+
+Add closing line:
+
+"This is where everything connects."
+
+---
+
+# 4. ADD INTERNAL LINK (MANDATORY)
+
+Inside the Yettey section, ADD:
+
+"If you're managing a lot of content,
+you’ll need a system → see how Yettey works"
+
+Link this to:
+Product / Asset Management page
+
+---
+
+# 5. DO NOT DO THIS
+
+* Do NOT add "Supported / Not Supported"
+* Do NOT add technical documentation style explanations
+* Do NOT break visual design
+
+---
+
+# 6. FINAL GOAL
+
+After this update, the page must:
+
+* Show the gap between expectation vs reality
+* Clearly position Yettey as the solution
+* Maintain SaaS-style storytelling
+* Improve trust and clarity
+
+---
+
+If any part above is missing, the task is NOT complete.
