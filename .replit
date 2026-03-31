@@ -53,3 +53,11 @@ externalPort = 8080
 [[ports]]
 localPort = 25866
 externalPort = 3000
+
+
+
+  [deployment]
+  deploymentTarget = "static"
+  build = ["sh", "-c", "pnpm --filter @workspace/yettey-landing run build"]
+  publicDir = "artifacts/yettey-landing/dist/public"
+  
