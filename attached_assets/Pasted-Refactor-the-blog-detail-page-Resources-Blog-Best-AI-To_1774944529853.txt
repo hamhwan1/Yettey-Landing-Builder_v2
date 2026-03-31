@@ -1,0 +1,207 @@
+Refactor the blog detail page
+(Resources > Blog > Best AI Tools for Content Creators in 2026)
+into a clean, modern SaaS-style content layout.
+
+Goal:
+
+* Improve readability (scan-friendly, not long text blocks)
+* Create strong visual hierarchy
+* Make content easy to understand at a glance
+* Increase conversion (CTA clarity)
+
+Do NOT change the overall dark theme.
+Focus on layout, spacing, and structure.
+
+---
+
+1. HERO SECTION (Keep but improve)
+
+* Keep title, category tag, meta info (date, read time, tags)
+* Improve spacing and typography
+* Add optional visual element (image or subtle background effect)
+* Ensure strong first impression
+
+---
+
+2. TL;DR SECTION (Convert into card UI)
+
+Convert current TL;DR into a highlighted card:
+
+Structure:
+
+* Title: "TL;DR — Key Takeaways"
+* Bullet points with icons (✔)
+
+UI:
+
+* Card background (slightly lighter than page)
+* Rounded corners
+* Proper padding
+* Increased line spacing
+
+---
+
+3. ADD NEW SECTION (IMPORTANT)
+
+Add a new section right after TL;DR:
+
+Title:
+"Why Most Creators Struggle with AI Tools"
+
+Content:
+
+* Too many tools
+* No workflow
+* No system
+* Time wasted switching tools
+
+Add a strong highlighted sentence:
+"You don’t need more tools. You need a system."
+
+This should be visually emphasized (highlight box or larger text)
+
+---
+
+4. MAIN CONTENT REFACTOR (VERY IMPORTANT)
+
+Current problem:
+
+* Long paragraphs
+* Hard to read
+* No structure
+
+Solution:
+Break content into CATEGORY SECTIONS
+
+Each category must follow this structure:
+
+[Category Title]
+
+Short description (1 line)
+
+✔ What it does
+
+* short bullet explanation
+
+✔ What actually works
+
+* practical insights
+
+✔ What to watch out for
+
+* limitations / warnings
+
+---
+
+Apply this structure to all categories:
+
+* Video Clip Generation
+* AI Writing & Caption Tools
+* Image & Thumbnail Generation
+* Asset Management
+
+---
+
+UI requirements:
+
+* Each category should be visually separated
+* Use card or section blocks
+* Add spacing between sections
+* Avoid long paragraphs (max 2 lines per block)
+
+---
+
+5. ADD "RECOMMENDED STACK" SECTION
+
+Create a new section:
+
+Title:
+"Recommended Stack for 2026"
+
+Structure (step-based):
+
+1. Record → Zoom / Camera
+2. Generate → AI clip tools
+3. Write → AI captions
+4. Store → Asset management (Yettey)
+5. Distribute → Scheduling tools
+
+UI:
+
+* Step-based layout (numbered)
+* Horizontal or vertical flow
+* Visually clean and structured
+
+---
+
+6. ADD HIGHLIGHT SECTION
+
+Add a strong emphasis section:
+
+Text:
+"The best creators don’t use more tools.
+They use better systems."
+
+UI:
+
+* Large typography
+* Center aligned
+* Highlight box or gradient background
+
+---
+
+7. CTA SECTION (Improve)
+
+Current CTA is too weak.
+
+Update to:
+
+Title:
+"Start creating content with Yettey"
+
+Subtext:
+"Stop switching between tools. Build your content system."
+
+Button:
+"Start for free"
+
+Make CTA more visually prominent:
+
+* Bigger spacing
+* Clear hierarchy
+* Strong contrast
+
+---
+
+8. RELATED ARTICLES
+
+* Keep existing structure
+* Improve card UI
+* Add hover effect
+* Optional: add thumbnail image
+
+---
+
+9. TYPOGRAPHY & SPACING (GLOBAL)
+
+* Reduce long text blocks
+* Increase line-height
+* Add section spacing (consistent vertical rhythm)
+* Use clear hierarchy:
+  H1 / H2 / H3 / body / bullet
+
+---
+
+Final Result:
+
+The page should feel like:
+
+* Not a traditional blog
+* But a modern SaaS content page
+
+It should be:
+
+* Easy to scan
+* Visually structured
+* Conversion-focused
+* Clean and professional
