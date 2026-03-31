@@ -1,28 +1,74 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { AnimatePresence, motion } from "framer-motion";
+import Home from "@/pages/Home";
+import Pricing from "@/pages/Pricing";
+import AssetManagement from "@/pages/product/AssetManagement";
+import AiCreation from "@/pages/product/AiCreation";
+import VideoAutomation from "@/pages/product/VideoAutomation";
+import TeamCollaboration from "@/pages/product/TeamCollaboration";
+import ForCreators from "@/pages/use-cases/ForCreators";
+import ForMarketers from "@/pages/use-cases/ForMarketers";
+import ForTeams from "@/pages/use-cases/ForTeams";
+import Blog from "@/pages/resources/Blog";
+import Guides from "@/pages/resources/Guides";
+import HelpCenter from "@/pages/resources/HelpCenter";
 import NotFound from "@/pages/not-found";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
+import { ScrollToTop } from "@/components/ScrollToTop";
+import ViralShortsWithoutEditing from "@/pages/blog/ViralShortsWithoutEditing";
+import AiToolsContentCreators from "@/pages/blog/AiToolsContentCreators";
+import ShortFormVideoFramework from "@/pages/blog/ShortFormVideoFramework";
+import ContentMarketingAi from "@/pages/blog/ContentMarketingAi";
+import VideoEditingAutomation from "@/pages/blog/VideoEditingAutomation";
 
-const queryClient = new QueryClient();
-
-function Home() {
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <div className="text-center">
-        <h1 className="text-2xl font-bold text-gray-900">Replit Agent is building...</h1>
-        <p className="mt-2 text-sm text-gray-600">Your app will appear here once it's ready.</p>
-      </div>
-    </div>
-  );
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+});
 
 function Router() {
+  const [location] = useLocation();
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.18, ease: "easeInOut" }}
+      >
+        <Switch>
+          <Route path="/" component={Home} />
+          <Route path="/pricing" component={Pricing} />
+          <Route path="/product/asset-management" component={AssetManagement} />
+          <Route path="/product/ai-creation" component={AiCreation} />
+          <Route path="/product/video-automation" component={VideoAutomation} />
+          <Route path="/product/team-collaboration" component={TeamCollaboration} />
+          <Route path="/use-cases/creators" component={ForCreators} />
+          <Route path="/use-cases/marketers" component={ForMarketers} />
+          <Route path="/use-cases/teams" component={ForTeams} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/blog/viral-shorts-without-editing" component={ViralShortsWithoutEditing} />
+          <Route path="/blog/ai-tools-content-creators" component={AiToolsContentCreators} />
+          <Route path="/blog/short-form-video-framework" component={ShortFormVideoFramework} />
+          <Route path="/blog/content-marketing-ai" component={ContentMarketingAi} />
+          <Route path="/blog/video-editing-automation" component={VideoEditingAutomation} />
+          <Route path="/guides" component={Guides} />
+          <Route path="/help" component={HelpCenter} />
+          <Route path="/privacy" component={PrivacyPolicy} />
+          <Route path="/terms" component={TermsOfService} />
+          <Route component={NotFound} />
+        </Switch>
+      </motion.div>
+    </AnimatePresence>
   );
 }
 
@@ -31,6 +77,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+          <ScrollToTop />
           <Router />
         </WouterRouter>
         <Toaster />
