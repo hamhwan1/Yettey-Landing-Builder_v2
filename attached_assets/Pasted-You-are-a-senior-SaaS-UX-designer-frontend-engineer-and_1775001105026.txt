@@ -1,0 +1,226 @@
+You are a senior SaaS UX designer, frontend engineer, and conversion-focused content strategist.
+
+Your task is to upgrade the existing blog page into a **high-converting SaaS content page (100/100 level)**.
+
+This is NOT a blog post.
+This is a **conversion asset**.
+
+---
+
+# 🎯 GOALS
+
+* Improve readability (scan-based UX)
+* Add visual hierarchy
+* Increase emotional engagement
+* Drive conversion (signup)
+* Make it feel like a landing page
+
+---
+
+# 1. ADD VISUAL SECTIONS (CRITICAL)
+
+For each section, ADD visual UI components.
+
+---
+
+## 1.1 Hook → Body → CTA Diagram
+
+Add a horizontal diagram card:
+
+* Hook → Body → CTA
+* Use minimal icons
+* Soft gradient background
+* Rounded card UI
+
+---
+
+## 1.2 Workflow Diagram
+
+Create flow UI:
+
+Record → Generate → Edit → Repurpose → Publish
+
+Style:
+
+* Horizontal flow
+* Arrow connectors
+* Subtle glow effect
+* Dark SaaS style
+
+---
+
+## 1.3 Before vs After Comparison (Cards)
+
+Two cards side-by-side:
+
+LEFT (red tone):
+
+* Random content
+* No system
+* No growth
+
+RIGHT (green tone):
+
+* Structured system
+* Repeatable workflow
+* Predictable growth
+
+---
+
+## 1.4 Yettey Dashboard Mock UI
+
+Create a fake dashboard UI block:
+
+Include:
+
+* Asset count (videos, clips, drafts)
+* Timeline view
+* Organized folders
+* Clean SaaS interface
+
+Style:
+
+* Glassmorphism or soft dark card
+* Clean typography
+* Minimal icons
+
+---
+
+# 2. ADD STICKY CTA (VERY IMPORTANT)
+
+Create a floating sticky CTA button:
+
+Position:
+
+* Bottom right (desktop)
+* Bottom center (mobile)
+
+Style:
+
+* Rounded pill button
+* Glow effect
+* Primary color (indigo/purple)
+
+Text:
+"Build your system →"
+
+Behavior:
+
+* Always visible on scroll
+* Slight hover animation
+
+---
+
+# 3. ADD INLINE CTA BREAKS
+
+Insert CTA blocks mid-content (NOT only bottom)
+
+After key sections add:
+
+"Start building your content system now →"
+
+Make it subtle but clickable
+
+---
+
+# 4. SEO OPTIMIZATION (IMPORTANT)
+
+Update content structure:
+
+---
+
+## Title (H1)
+
+"Content Marketing with AI: What Actually Works in 2026"
+
+---
+
+## Add H2 Sections:
+
+* "Why Most AI Content Fails"
+* "What High-Performing Teams Do Differently"
+* "The Best AI Content Workflow"
+* "How to Build a Content System with AI"
+
+---
+
+## Include Keywords Naturally:
+
+* short form video strategy
+* AI content workflow
+* viral video framework
+* content creation system
+* AI content marketing strategy
+
+DO NOT keyword stuff.
+
+---
+
+# 5. IMPROVE READABILITY
+
+Apply:
+
+* Max 2 lines per paragraph
+* Strong spacing between sections
+* Bullet points instead of long text
+* Bold key sentences
+
+---
+
+# 6. ADD EMOTIONAL BLOCKS
+
+Insert these EXACT lines:
+
+"You are not failing because of AI.
+You are failing because of your system."
+
+"AI doesn’t fail.
+Your workflow does."
+
+"Stop producing more content.
+Start building a system."
+
+---
+
+# 7. CTA FINAL SECTION (UPGRADE)
+
+Replace existing CTA with:
+
+Headline:
+"Stop producing more content.
+Start building a system."
+
+Subtext:
+"If your workflow doesn’t change,
+your results won’t either."
+
+Button:
+"Build your system →"
+
+---
+
+# 8. DESIGN STYLE
+
+* Dark SaaS UI
+* Soft gradients
+* Rounded cards (2xl)
+* Subtle shadows
+* Minimal icons
+* Clean typography
+
+---
+
+# FINAL RESULT MUST:
+
+✔ feel like a product landing page
+✔ be easy to scan
+✔ visually structured
+✔ emotionally persuasive
+✔ naturally lead to Yettey
+✔ increase conversion
+
+---
+
+This is not content.
+
+This is product growth.
