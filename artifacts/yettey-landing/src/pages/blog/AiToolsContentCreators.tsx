@@ -17,6 +17,7 @@ import {
   FileText,
   HardDrive,
   Send,
+  Layers,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -35,7 +36,7 @@ const fadeUp = {
 const categories = [
   {
     icon: Video,
-    title: "Video Clip Generation",
+    title: "Best AI Tools for Video Creation",
     description: "Long-form video → viral short clips, automatically.",
     doesWhat: [
       "Auto-splits long videos into short clips",
@@ -43,7 +44,7 @@ const categories = [
     ],
     works: [
       "Transcript + visual scoring = best clips",
-      "Always test captions on your own content",
+      "Always test captions on your content",
     ],
     watchOut: [
       "Many cap exports at 1080p",
@@ -52,24 +53,24 @@ const categories = [
   },
   {
     icon: PenTool,
-    title: "AI Writing & Caption Tools",
+    title: "Best AI Writing Tools for Content Creators",
     description: "Generate hooks, captions, and scripts from your content.",
     doesWhat: [
       "Creates hook and CTA variations",
       "Adapts content across platforms",
     ],
     works: [
-      "Give it your message → get 10 hooks to test",
+      "Your message → 10 hooks to test",
       "Multiply ideas, don't write from scratch",
     ],
     watchOut: [
       "Outputs sound generic without editing",
-      "Heavy editing needed to sound like you",
+      "Heavy editing needed to match your voice",
     ],
   },
   {
     icon: Image,
-    title: "Image & Thumbnail Generation",
+    title: "Best AI Image Generation Tools",
     description: "Custom images and thumbnails from text prompts.",
     doesWhat: [
       "Generates thumbnails and social graphics",
@@ -86,7 +87,7 @@ const categories = [
   },
   {
     icon: Database,
-    title: "Asset Management",
+    title: "Best Asset Management Tools for Creators",
     description: "The layer most creators ignore — costing hours every week.",
     doesWhat: [
       "Centralizes all content assets",
@@ -139,7 +140,7 @@ export default function AiToolsContentCreators() {
               className="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold mb-7"
               style={{ backgroundColor: `${ACCENT}25`, color: ACCENT }}
             >
-              AI Content
+              AI Content Tools
             </span>
           </motion.div>
 
@@ -155,7 +156,7 @@ export default function AiToolsContentCreators() {
             className="text-lg sm:text-xl text-muted-foreground mb-10 leading-relaxed"
           >
             We tested 20+ AI tools so you don't have to. Here's what actually
-            works for creators who want to produce more without burning out.
+            works for creators who want to build a real content creation workflow.
           </motion.p>
 
           <motion.div
@@ -170,7 +171,7 @@ export default function AiToolsContentCreators() {
             </span>
             <div className="flex items-center gap-2 flex-wrap">
               <Tag className="w-4 h-4" />
-              {["AI Content Tools", "Content Marketing AI", "Short-form Video"].map((tag) => (
+              {["AI Content Tools", "Content Creation Workflow", "Best AI Tools for Creators"].map((tag) => (
                 <span key={tag} className="px-2.5 py-1 rounded-md text-xs font-medium bg-card border border-border">
                   {tag}
                 </span>
@@ -186,22 +187,22 @@ export default function AiToolsContentCreators() {
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
           className="rounded-2xl p-10 relative overflow-hidden"
           style={{
-            background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}06)`,
-            border: `1px solid ${ACCENT}30`,
+            background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}08)`,
+            border: `1px solid ${ACCENT}35`,
           }}
         >
           <div
-            className="absolute -top-10 -right-10 w-[300px] h-[200px] rounded-full blur-[100px] opacity-15 pointer-events-none"
+            className="absolute -top-10 -right-10 w-[350px] h-[250px] rounded-full blur-[100px] opacity-20 pointer-events-none"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
             <p className="font-display font-bold text-base mb-6" style={{ color: ACCENT }}>
               TL;DR — Key Takeaways
             </p>
-            <ul className="flex flex-col gap-4">
+            <ul className="flex flex-col gap-5">
               {[
-                "Most AI tools are hype — only a handful actually save meaningful time.",
-                "The best tools focus on one job and do it extremely well.",
+                "Most AI tools for content creators are hype — only a handful save real time.",
+                "The best AI tools focus on one job and do it extremely well.",
                 "Asset management is the critical layer most creators overlook.",
                 "The right stack depends on your content type, not your follower count.",
               ].map((point) => (
@@ -233,20 +234,20 @@ export default function AiToolsContentCreators() {
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={1}
           className="rounded-2xl border-2 p-10 md:p-12 mb-10"
-          style={{ borderColor: "#ef444435", backgroundColor: "#ef444412" }}
+          style={{ borderColor: "#ef444440", backgroundColor: "#ef444415" }}
         >
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-7">
             {[
-              "Too many tools — new ones launch every week with the same promises",
-              "No workflow — individual tools don't connect into a system",
-              "No clear process — jumping between apps without a plan",
-              "Time wasted switching tools instead of creating content",
+              "Too many tools — new ones every week, same promises",
+              "No workflow — nothing connects into a system",
+              "No process — jumping between apps without a plan",
+              "Time wasted switching tools instead of creating",
             ].map((point) => (
               <div key={point} className="flex items-start gap-4">
-                <div className="w-7 h-7 rounded-full bg-red-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                <div className="w-7 h-7 rounded-full bg-red-500/25 flex items-center justify-center shrink-0 mt-0.5">
                   <X className="w-4 h-4 text-red-400" />
                 </div>
-                <p className="text-foreground/80 text-[15px] leading-relaxed font-medium">
+                <p className="text-foreground/85 text-[15px] leading-relaxed font-medium">
                   {point}
                 </p>
               </div>
@@ -273,10 +274,10 @@ export default function AiToolsContentCreators() {
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
-            What We Actually Found
+            AI Tools for Content Creators: What We Found
           </h2>
           <p className="text-muted-foreground text-base mb-12">
-            Four categories. 20+ tools tested. Here's what matters.
+            Four categories. 20+ tools tested. Here's what matters for your content creation workflow.
           </p>
         </motion.div>
 
@@ -297,9 +298,9 @@ export default function AiToolsContentCreators() {
                     >
                       <Icon className="w-5 h-5" style={{ color: ACCENT }} />
                     </div>
-                    <h3 className="font-display font-bold text-xl text-foreground">
+                    <h2 className="font-display font-bold text-xl text-foreground">
                       {cat.title}
-                    </h3>
+                    </h2>
                   </div>
                   <p className="text-sm text-muted-foreground mb-8 ml-[52px]">
                     {cat.description}
@@ -310,7 +311,7 @@ export default function AiToolsContentCreators() {
                       <p className="text-[11px] font-bold uppercase tracking-widest mb-4" style={{ color: ACCENT }}>
                         What it does
                       </p>
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-3.5">
                         {cat.doesWhat.map((item) => (
                           <div key={item} className="flex items-start gap-2.5">
                             <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: ACCENT }} />
@@ -323,7 +324,7 @@ export default function AiToolsContentCreators() {
                       <p className="text-[11px] font-bold uppercase tracking-widest mb-4 text-blue-400">
                         What actually works
                       </p>
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-3.5">
                         {cat.works.map((item) => (
                           <div key={item} className="flex items-start gap-2.5">
                             <Check className="w-4 h-4 mt-0.5 shrink-0 text-blue-400" />
@@ -336,7 +337,7 @@ export default function AiToolsContentCreators() {
                       <p className="text-[11px] font-bold uppercase tracking-widest mb-4 text-amber-400">
                         Watch out for
                       </p>
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-3.5">
                         {cat.watchOut.map((item) => (
                           <div key={item} className="flex items-start gap-2.5">
                             <span className="w-4 h-4 mt-0.5 shrink-0 flex items-center justify-center text-amber-400 text-[13px] font-bold">!</span>
@@ -357,10 +358,10 @@ export default function AiToolsContentCreators() {
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
-            Recommended Stack for 2026
+            Recommended Content Creation Workflow for 2026
           </h2>
           <p className="text-muted-foreground text-base mb-12">
-            Not specific tools — the architecture that works.
+            Not specific tools — the architecture that works for every creator.
           </p>
         </motion.div>
 
@@ -396,39 +397,113 @@ export default function AiToolsContentCreators() {
         </div>
       </section>
 
-      {/* ── 6. HIGHLIGHT QUOTE ─────────────────────────────── */}
+      {/* ── 6. WHERE YETTEY FITS ───────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
-          className="rounded-3xl py-16 px-10 md:py-20 md:px-16 text-center relative overflow-hidden"
+          className="rounded-2xl border border-border bg-card p-10 md:p-12"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <div
+              className="w-10 h-10 rounded-xl flex items-center justify-center"
+              style={{ backgroundColor: `${ACCENT}18` }}
+            >
+              <Layers className="w-5 h-5" style={{ color: ACCENT }} />
+            </div>
+            <h2 className="font-display font-bold text-xl sm:text-2xl text-foreground">
+              Where Yettey Fits in This Stack
+            </h2>
+          </div>
+
+          <div className="space-y-5 mb-8">
+            <p className="text-foreground/80 text-[15px] leading-relaxed">
+              Most AI tools help you <strong className="text-foreground">create</strong> content.
+            </p>
+            <p className="text-foreground/80 text-[15px] leading-relaxed">
+              But very few help you <strong className="text-foreground">manage</strong> it.
+            </p>
+            <p className="text-foreground/80 text-[15px] leading-relaxed">
+              That's where Yettey comes in. It doesn't replace your recording tools.
+              It doesn't try to automate everything.
+            </p>
+          </div>
+
+          <div className="space-y-4 mb-8">
+            <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: ACCENT }}>
+              Instead, it helps you
+            </p>
+            {[
+              "Organize all your assets in one place",
+              "Find anything instantly with smart search",
+              "Build a system around your content",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <Check className="w-4 h-4 mt-0.5 shrink-0" style={{ color: ACCENT }} />
+                <p className="text-[14px] text-foreground/80 leading-relaxed">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-base font-display font-bold mb-6" style={{ color: ACCENT }}>
+            This is where everything connects.
+          </p>
+
+          <Link href="/product/asset-management">
+            <span className="inline-flex items-center gap-2 text-sm font-medium hover:underline transition-colors" style={{ color: ACCENT }}>
+              See how Yettey works for asset management
+              <ArrowRight className="w-4 h-4" />
+            </span>
+          </Link>
+        </motion.div>
+      </section>
+
+      {/* ── 7. HIGHLIGHT QUOTE ─────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-20">
+        <motion.div
+          variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
+          className="rounded-3xl py-20 px-10 md:py-24 md:px-16 text-center relative overflow-hidden"
           style={{
-            background: `linear-gradient(145deg, ${ACCENT}18, ${ACCENT}08, ${ACCENT}12)`,
-            border: `1px solid ${ACCENT}30`,
+            background: `linear-gradient(145deg, ${ACCENT}18, ${ACCENT}08, ${ACCENT}14)`,
+            border: `1px solid ${ACCENT}35`,
           }}
         >
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full blur-[140px] opacity-25 pointer-events-none"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full blur-[150px] opacity-30 pointer-events-none"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
-            <p className="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-foreground leading-[1.2] mb-6">
+            <p className="font-display font-bold text-3xl sm:text-[2.75rem] md:text-[3.25rem] text-foreground leading-[1.15] mb-6">
               The best creators don't
               <br />
               use more tools.
             </p>
-            <p className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-[1.2]" style={{ color: ACCENT }}>
+            <p className="font-display font-bold text-3xl sm:text-[2.75rem] md:text-[3.25rem] leading-[1.15]" style={{ color: ACCENT }}>
               They use better systems.
             </p>
-            <p className="text-muted-foreground text-base mt-8 max-w-md mx-auto leading-relaxed">
-              In 2026, the creators who win aren't the most talented.
+            <p className="text-muted-foreground text-base mt-10 max-w-md mx-auto leading-relaxed">
+              In 2026, the best AI tools for creators aren't the flashiest.
               <br className="hidden sm:block" />
-              They're the most systematized.
+              They're the ones that connect into a workflow.
             </p>
           </div>
         </motion.div>
       </section>
 
-      {/* ── 7. CTA ─────────────────────────────────────────── */}
+      {/* ── 8. PRE-CTA HOOK ────────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-10">
+        <motion.div
+          variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
+          className="text-center"
+        >
+          <p className="text-xl sm:text-2xl font-display font-bold text-foreground/70 leading-relaxed">
+            Creators who grow don't work harder.
+            <br />
+            <span className="text-foreground">They build systems.</span>
+          </p>
+        </motion.div>
+      </section>
+
+      {/* ── 9. CTA ─────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
@@ -444,7 +519,7 @@ export default function AiToolsContentCreators() {
           />
           <div className="relative">
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-5">
-              Start creating content with Yettey
+              Start Creating Content with Yettey
             </h2>
             <p className="text-foreground/70 text-lg max-w-lg mx-auto leading-relaxed mb-4">
               Stop switching between tools.
@@ -468,7 +543,7 @@ export default function AiToolsContentCreators() {
         </motion.div>
       </section>
 
-      {/* ── 8. RELATED ARTICLES ────────────────────────────── */}
+      {/* ── 10. RELATED ARTICLES ───────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 pb-24">
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-xl text-foreground mb-8">

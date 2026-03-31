@@ -1,0 +1,132 @@
+Update the "Recommended Stack for 2026" section to accurately reflect Yettey’s actual capabilities.
+
+The current version implies that Yettey supports the entire content workflow, which is misleading.
+
+We need to:
+
+* Clarify what Yettey does vs does NOT do
+* Maintain a clean SaaS-style structure
+* Avoid breaking the visual design
+
+---
+
+### 1. KEEP THE STACK STRUCTURE (DO NOT REMOVE)
+
+Keep this flow:
+
+Record → Generate → Write → Store → Distribute
+
+BUT:
+
+* Clearly indicate which parts Yettey supports
+
+---
+
+### 2. ADD SUPPORT STATUS INDICATORS
+
+For each step, add a clear label:
+
+✔ Supported
+△ Partially supported
+✖ Not supported
+
+---
+
+### 3. UPDATE EACH STEP CONTENT
+
+---
+
+#### 1. Record
+
+Label: ✖ Not supported
+
+Text:
+Recording (Zoom / Camera)
+
+Description:
+Yettey does not support recording.
+Users need to create content using external tools.
+
+---
+
+#### 2. Generate
+
+Label: △ Partially supported
+
+Text:
+AI Generation (Images & Basic Video Processing)
+
+Description:
+
+* Strong image generation capabilities
+* Can extract thumbnails and frames from videos
+* Does NOT support automatic short-form video creation
+
+---
+
+#### 3. Write
+
+Label: △ Partially supported
+
+Text:
+AI Metadata & Content Analysis
+
+Description:
+
+* Can analyze images and generate metadata
+* Helps organize and describe content
+* Does NOT provide full marketing copy or caption generation
+
+---
+
+#### 4. Store (CORE FEATURE)
+
+Label: ✔ Core functionality
+
+Text:
+Asset Management (Yettey)
+
+Description:
+
+* Centralized storage for images and videos
+* Folder / project-based organization
+* Team collaboration and sharing
+* This is Yettey’s main strength
+
+Make this step visually highlighted compared to others.
+
+---
+
+#### 5. Distribute
+
+Label: ✖ Not supported
+
+Text:
+Distribution & Scheduling
+
+Description:
+
+* Export is supported
+* No built-in scheduling or social media publishing
+
+---
+
+### 4. VISUAL IMPROVEMENTS
+
+* Add status icons (✔ △ ✖)
+* Highlight "Store" step as the core capability
+* Slightly dim unsupported steps (Record, Distribute)
+* Keep UI consistent with existing design
+
+---
+
+### 5. FINAL GOAL
+
+The section should:
+
+* Be honest and accurate
+* Clearly position Yettey as:
+  → The system for managing and organizing content
+* Not mislead users about unsupported features
+
+This improves trust and product clarity.

@@ -1,0 +1,246 @@
+Refine and finalize the blog page
+(Resources > Blog > Best AI Tools for Content Creators in 2026)
+
+IMPORTANT:
+
+* Do NOT rebuild the page
+* Keep current layout and components
+* Improve visual hierarchy, conversion, SEO, and product positioning
+* This should become a conversion-focused SaaS content page
+
+---
+
+# 1. TL;DR SECTION (Make it visually dominant)
+
+* Increase contrast (brighter card background)
+* Add soft gradient or glow border
+* Increase padding (p-8)
+* Improve line spacing
+* Make it clearly the first important block
+
+---
+
+# 2. PROBLEM SECTION (Stronger emotional impact)
+
+Update bullet style:
+
+❌ Too many tools
+❌ No workflow
+❌ No system
+❌ Time wasted switching tools
+
+* Use stronger red/danger tone background
+* Increase spacing between items
+
+Goal:
+Create emotional tension before solution
+
+---
+
+# 3. CATEGORY SECTIONS (SEO + Scanability)
+
+IMPORTANT: Update all section titles to SEO-friendly H2
+
+Change titles to:
+
+* Best AI Tools for Video Creation
+* Best AI Writing Tools for Content Creators
+* Best AI Image Generation Tools
+* Best Asset Management Tools for Creators
+
+---
+
+Improve content inside each card:
+
+* Convert sentences into short bullet points
+* Each bullet = 1 short line
+* Add ✔ icons
+* Increase spacing between items
+
+Example:
+
+✔ Auto-generate clips
+✔ Works with transcripts
+✔ Needs manual polish
+
+Goal:
+Users should understand each category instantly
+
+---
+
+# 4. RECOMMENDED STACK (Keep simple)
+
+Keep structure:
+
+Record → Generate → Write → Store → Distribute
+
+DO NOT:
+
+* Add technical explanations
+* Add support / not-supported labels
+
+Keep it clean and conceptual
+
+---
+
+# 5. ADD NEW POSITIONING SECTION (CRITICAL)
+
+Add AFTER "Recommended Stack"
+
+Title:
+"Where Yettey fits in this stack"
+
+Content:
+
+Most AI tools help you create content.
+
+But very few help you manage it.
+
+That’s where Yettey comes in.
+
+* It doesn’t replace recording tools
+* It doesn’t try to automate everything
+
+Instead, it helps you:
+
+✔ Organize all your assets
+✔ Find anything instantly
+✔ Build a system around your content
+
+Add final line:
+
+"This is where everything connects."
+
+---
+
+# 6. ADD INTERNAL LINK (IMPORTANT)
+
+Inside the positioning section, add 1 internal link:
+
+Example:
+
+"If you're managing a lot of content,
+you’ll need a system → see how Yettey works"
+
+Link to:
+Product / Asset Management page
+
+---
+
+# 7. ADD PRE-CTA HOOK (Conversion boost)
+
+Add BEFORE CTA section:
+
+Text:
+
+"Creators who grow don’t work harder.
+They build systems."
+
+OR
+
+"No system → chaos
+System → scalable content"
+
+---
+
+# 8. HIGHLIGHT SECTION (Make it strongest visual)
+
+Text:
+
+"The best creators don’t use more tools.
+They use better systems."
+
+Improve:
+
+* Increase font size (1.3~1.5x)
+* Center align
+* Add gradient background
+* Increase spacing
+
+This must be the most visually dominant section
+
+---
+
+# 9. CTA SECTION (Upgrade conversion)
+
+Update structure:
+
+Title:
+"Start creating content with Yettey"
+
+Subtext:
+
+"Stop switching between tools.
+Start building your content system."
+
+* Increase spacing
+* Make button more prominent
+* Add hover effect
+
+---
+
+# 10. GLOBAL TYPOGRAPHY & SPACING
+
+Apply globally:
+
+* Reduce long sentences
+* Increase line-height (leading-relaxed)
+* Add section spacing (mb-16 or more)
+
+Hierarchy:
+
+H1 → large bold
+H2 → SEO + clear sections
+Body → lighter color, readable
+
+---
+
+# 11. SEO IMPROVEMENTS (CRITICAL)
+
+* Ensure all H2 include keyword:
+  "AI tools for content creators"
+
+* Add keyword naturally in text:
+
+  * AI tools for content creators
+  * best AI tools for creators
+  * content creation workflow
+
+* Avoid keyword stuffing
+
+* Keep natural tone
+
+---
+
+# 12. FINAL GOAL
+
+This page should feel like:
+
+NOT:
+
+* A traditional blog post
+
+BUT:
+
+* A modern SaaS landing-style article
+* Highly scannable
+* SEO optimized
+* Conversion focused
+* Clearly positions Yettey
+
+---
+
+# 13. STRICT RULES
+
+DO NOT:
+
+* Add "Supported / Not Supported"
+* Turn this into documentation
+* Break existing design system
+
+FOCUS ON:
+
+* clarity
+* hierarchy
+* positioning
+* conversion
