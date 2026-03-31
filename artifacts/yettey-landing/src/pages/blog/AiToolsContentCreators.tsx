@@ -18,6 +18,7 @@ import {
   HardDrive,
   Send,
   Layers,
+  CheckCircle2,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -104,12 +105,58 @@ const categories = [
   },
 ];
 
-const stackSteps = [
-  { step: "01", label: "Record", tool: "External tools (Zoom, Camera)", icon: Camera, desc: "Content is still created using external tools.", highlight: false },
-  { step: "02", label: "Generate", tool: "AI-assisted (not fully automated)", icon: Scissors, desc: "AI helps, but manual editing is still needed.", highlight: false },
-  { step: "03", label: "Write", tool: "AI + human input", icon: FileText, desc: "AI assists, but human creativity is essential.", highlight: false },
-  { step: "04", label: "Store", tool: "Asset management system (Yettey)", icon: HardDrive, desc: "All assets are organized and managed in one system.", highlight: true },
-  { step: "05", label: "Distribute", tool: "External platforms & tools", icon: Send, desc: "Publishing depends on external platforms.", highlight: false },
+const stackSteps: {
+  step: string; label: string; tool: string; icon: typeof Camera; highlight: boolean;
+  lines: string[]; bullets?: string[];
+}[] = [
+  {
+    step: "01", label: "Record", tool: "External tools (Zoom, Camera)", icon: Camera, highlight: false,
+    lines: [
+      "Content creation still starts outside the system.",
+      "Most creators already use multiple tools for recording.",
+    ],
+  },
+  {
+    step: "02", label: "Generate", tool: "AI-assisted (not fully automated)", icon: Scissors, highlight: false,
+    lines: [
+      "AI helps generate content,",
+      "but results still require manual editing and refinement.",
+    ],
+  },
+  {
+    step: "03", label: "Write", tool: "AI + human input", icon: FileText, highlight: false,
+    lines: [
+      "Captions and scripts are rarely perfect.",
+      "Creators still adjust tone, structure, and messaging.",
+    ],
+  },
+  {
+    step: "04", label: "Store", tool: "Asset management system (Yettey)", icon: HardDrive, highlight: true,
+    lines: [
+      "This is where most creators lose control.",
+      "",
+      "After creation, content doesn't stay organized. It spreads everywhere: folders, drives, downloads, edits, duplicates.",
+      "",
+      "Things get lost. Time gets wasted. Teams get confused.",
+      "",
+      "And the more content you create, the worse this problem becomes.",
+      "",
+      "Yettey turns that chaos into a system.",
+    ],
+    bullets: [
+      "Everything in one place",
+      "Instant access to any asset",
+      "A structured workflow your team can follow",
+    ],
+  },
+  {
+    step: "05", label: "Distribute", tool: "External platforms & tools", icon: Send, highlight: false,
+    lines: [
+      "Publishing still depends on external tools.",
+      "",
+      "But without a system before this step, distribution becomes inconsistent, slow, and impossible to scale.",
+    ],
+  },
 ];
 
 export default function AiToolsContentCreators() {
@@ -365,39 +412,77 @@ export default function AiToolsContentCreators() {
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           {stackSteps.map((item, i) => {
             const Icon = item.icon;
             return (
               <motion.div
                 key={item.step}
                 variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={i}
-                className={`flex items-center gap-5 p-5 rounded-xl border bg-card group transition-colors duration-200 ${
+                className={`rounded-xl border transition-colors duration-200 ${
                   item.highlight
-                    ? "border-violet-500/40 shadow-lg shadow-violet-500/5"
+                    ? "border-violet-500/40 shadow-lg shadow-violet-500/10"
                     : "border-border hover:border-violet-500/20"
                 }`}
                 style={item.highlight ? { background: `linear-gradient(135deg, ${ACCENT}10, ${ACCENT}05)` } : undefined}
               >
-                <div className="flex flex-col items-center gap-1 shrink-0">
-                  <span className="text-[11px] font-mono font-bold" style={{ color: `${ACCENT}90` }}>
-                    {item.step}
-                  </span>
-                  <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center"
-                    style={{ backgroundColor: item.highlight ? `${ACCENT}25` : `${ACCENT}15` }}
-                  >
-                    <Icon className="w-5 h-5" style={{ color: ACCENT }} />
+                <div className={`flex items-center gap-5 ${item.highlight ? "p-6 pb-4" : "p-5 pb-3"}`}>
+                  <div className="flex flex-col items-center gap-1 shrink-0">
+                    <span className="text-[11px] font-mono font-bold" style={{ color: `${ACCENT}90` }}>
+                      {item.step}
+                    </span>
+                    <div
+                      className={`${item.highlight ? "w-12 h-12" : "w-11 h-11"} rounded-xl flex items-center justify-center`}
+                      style={{ backgroundColor: item.highlight ? `${ACCENT}25` : `${ACCENT}15` }}
+                    >
+                      <Icon className={`${item.highlight ? "w-6 h-6" : "w-5 h-5"}`} style={{ color: ACCENT }} />
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <p className="font-semibold text-foreground text-base">
+                  <p className={`font-semibold text-foreground ${item.highlight ? "text-lg" : "text-base"}`}>
                     {item.label}{" "}
                     <span className={`font-normal ${item.highlight ? "text-foreground/80" : "text-muted-foreground"}`}>→ {item.tool}</span>
                   </p>
-                  <p className={`text-[13px] leading-relaxed mt-1 ${item.highlight ? "text-foreground/60" : "text-muted-foreground/70"}`}>
-                    {item.desc}
-                  </p>
+                </div>
+
+                <div className={`${item.highlight ? "px-6 pb-6" : "px-5 pb-5"} ${item.highlight ? "pl-[88px]" : "pl-[76px]"}`}>
+                  <div className="flex flex-col gap-0">
+                    {item.lines.map((line, li) =>
+                      line === "" ? (
+                        <div key={li} className="h-3" />
+                      ) : (
+                        <p
+                          key={li}
+                          className={`text-[14px] leading-relaxed ${
+                            item.highlight
+                              ? line.startsWith("Yettey")
+                                ? "font-semibold mt-1"
+                                : "text-foreground/70"
+                              : "text-muted-foreground/80"
+                          }`}
+                          style={line.startsWith("Yettey") ? { color: ACCENT } : undefined}
+                        >
+                          {line}
+                        </p>
+                      )
+                    )}
+                  </div>
+
+                  {item.bullets && (
+                    <div className="flex flex-col gap-2 mt-4">
+                      {item.bullets.map((b) => (
+                        <div key={b} className="flex items-center gap-2.5">
+                          <CheckCircle2 className="w-4 h-4 shrink-0" style={{ color: ACCENT }} />
+                          <span className="text-[14px] text-foreground/80">{b}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {item.highlight && (
+                    <p className="text-[13px] text-foreground/50 mt-5 italic">
+                      Without this step, scaling content is almost impossible.
+                    </p>
+                  )}
                 </div>
               </motion.div>
             );
