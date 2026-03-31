@@ -105,11 +105,11 @@ const categories = [
 ];
 
 const stackSteps = [
-  { step: "01", label: "Record", tool: "Zoom / Camera", icon: Camera },
-  { step: "02", label: "Generate", tool: "AI clip tools", icon: Scissors },
-  { step: "03", label: "Write", tool: "AI captions", icon: FileText },
-  { step: "04", label: "Store", tool: "Asset management (Yettey)", icon: HardDrive },
-  { step: "05", label: "Distribute", tool: "Scheduling tools", icon: Send },
+  { step: "01", label: "Record", tool: "External tools (Zoom, Camera)", icon: Camera, desc: "Content is still created using external tools.", highlight: false },
+  { step: "02", label: "Generate", tool: "AI-assisted (not fully automated)", icon: Scissors, desc: "AI helps, but manual editing is still needed.", highlight: false },
+  { step: "03", label: "Write", tool: "AI + human input", icon: FileText, desc: "AI assists, but human creativity is essential.", highlight: false },
+  { step: "04", label: "Store", tool: "Asset management system (Yettey)", icon: HardDrive, desc: "All assets are organized and managed in one system.", highlight: true },
+  { step: "05", label: "Distribute", tool: "External platforms & tools", icon: Send, desc: "Publishing depends on external platforms.", highlight: false },
 ];
 
 export default function AiToolsContentCreators() {
@@ -358,10 +358,10 @@ export default function AiToolsContentCreators() {
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
-            Recommended Content Creation Workflow for 2026
+            How Content Creation Actually Works in 2026
           </h2>
           <p className="text-muted-foreground text-base mb-12">
-            Not specific tools — the architecture that works for every creator.
+            Not everything is automated — here's what creators actually do.
           </p>
         </motion.div>
 
@@ -372,7 +372,12 @@ export default function AiToolsContentCreators() {
               <motion.div
                 key={item.step}
                 variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} custom={i}
-                className="flex items-center gap-5 p-5 rounded-xl border border-border bg-card group hover:border-violet-500/30 transition-colors duration-200"
+                className={`flex items-center gap-5 p-5 rounded-xl border bg-card group transition-colors duration-200 ${
+                  item.highlight
+                    ? "border-violet-500/40 shadow-lg shadow-violet-500/5"
+                    : "border-border hover:border-violet-500/20"
+                }`}
+                style={item.highlight ? { background: `linear-gradient(135deg, ${ACCENT}10, ${ACCENT}05)` } : undefined}
               >
                 <div className="flex flex-col items-center gap-1 shrink-0">
                   <span className="text-[11px] font-mono font-bold" style={{ color: `${ACCENT}90` }}>
@@ -380,7 +385,7 @@ export default function AiToolsContentCreators() {
                   </span>
                   <div
                     className="w-11 h-11 rounded-xl flex items-center justify-center"
-                    style={{ backgroundColor: `${ACCENT}15` }}
+                    style={{ backgroundColor: item.highlight ? `${ACCENT}25` : `${ACCENT}15` }}
                   >
                     <Icon className="w-5 h-5" style={{ color: ACCENT }} />
                   </div>
@@ -388,7 +393,10 @@ export default function AiToolsContentCreators() {
                 <div>
                   <p className="font-semibold text-foreground text-base">
                     {item.label}{" "}
-                    <span className="text-muted-foreground font-normal">→ {item.tool}</span>
+                    <span className={`font-normal ${item.highlight ? "text-foreground/80" : "text-muted-foreground"}`}>→ {item.tool}</span>
+                  </p>
+                  <p className={`text-[13px] leading-relaxed mt-1 ${item.highlight ? "text-foreground/60" : "text-muted-foreground/70"}`}>
+                    {item.desc}
                   </p>
                 </div>
               </motion.div>
