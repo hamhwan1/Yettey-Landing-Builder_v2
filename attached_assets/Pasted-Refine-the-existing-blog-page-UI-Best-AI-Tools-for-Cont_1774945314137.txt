@@ -1,0 +1,170 @@
+Refine the existing blog page UI (Best AI Tools for Content Creators in 2026) to improve visual hierarchy, readability, and conversion.
+
+The structure is already good.
+Do NOT rebuild the page.
+Only improve visual impact, hierarchy, and clarity.
+
+---
+
+### 1. TL;DR SECTION (Make it stand out more)
+
+Problem:
+
+* Too subtle, not visually dominant
+
+Improve:
+
+* Increase background contrast (slightly brighter than current)
+* Add soft gradient or glow border
+* Increase padding (p-8)
+* Increase line spacing
+* Make it clearly the first “important block”
+
+Goal:
+Make TL;DR feel like a key summary users can instantly scan.
+
+---
+
+### 2. PROBLEM SECTION (Make it more aggressive)
+
+Problem:
+
+* Feels too soft and neutral
+
+Improve:
+
+* Add stronger visual contrast (slightly red/danger tone background)
+* Replace bullets with clear “problem indicators”
+
+Example:
+❌ Too many tools
+❌ No workflow
+❌ No system
+❌ Time wasted switching tools
+
+* Increase spacing between items
+* Make this section emotionally stronger
+
+Goal:
+Clearly communicate pain and frustration.
+
+---
+
+### 3. HIGHLIGHT STATEMENT (Very Important)
+
+Problem:
+
+* Not visually dominant enough
+
+Text:
+"The best creators don’t use more tools.
+They use better systems."
+
+Improve:
+
+* Increase font size significantly (1.3~1.5x)
+* Add more vertical spacing
+* Center align
+* Add subtle gradient background or glow
+* Make this the strongest visual section on the page
+
+Goal:
+This should feel like the core message of the entire page.
+
+---
+
+### 4. CATEGORY CARDS (Improve scanability)
+
+Problem:
+
+* Still slightly text-heavy
+* Feels like reading instead of scanning
+
+Improve:
+
+For each block:
+
+* Shorten text into bullet points
+* Each line max 1 short sentence
+* Increase spacing between bullet items
+* Add small icons or checkmarks
+
+Example:
+
+✔ Auto-generate clips
+✔ Works with transcripts
+✔ Needs manual polish
+
+* Increase gap between columns
+* Make each column clearly separated
+
+Goal:
+Users should understand each category in 3 seconds.
+
+---
+
+### 5. CTA SECTION (Increase conversion power)
+
+Problem:
+
+* Visually nice but not persuasive enough
+
+Improve:
+
+Change structure:
+
+Title:
+"Start creating content with Yettey"
+
+Add strong subtext ABOVE button:
+
+"Stop switching between tools.
+Start building your content system."
+
+* Increase spacing between text and button
+* Make button more visually dominant
+* Add subtle hover effect
+
+Goal:
+Make users feel a clear reason to click.
+
+---
+
+### 6. GLOBAL TYPOGRAPHY & SPACING
+
+Apply across the entire page:
+
+* Reduce long sentences into shorter lines
+* Increase line-height (leading-relaxed or higher)
+* Add consistent section spacing (mb-16 or more)
+* Improve hierarchy:
+
+H1 → very large
+H2 → clear section titles
+Body → lighter color, easier to read
+
+---
+
+### 7. FINAL GOAL
+
+The page should feel like:
+
+NOT:
+
+* A traditional blog article
+
+BUT:
+
+* A modern SaaS content page
+* Highly scannable
+* Visually structured
+* Conversion-focused
+
+Focus on:
+
+* hierarchy
+* spacing
+* clarity
+* emphasis
+
+Do not change content meaning. Only improve presentation and impact.
