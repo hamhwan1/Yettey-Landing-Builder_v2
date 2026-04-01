@@ -1,0 +1,213 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT documentation.
+This is NOT a feature explanation.
+
+This page must:
+👉 make users feel their problem instantly
+👉 show how Yettey solves it clearly
+👉 drive them to take action
+
+---
+
+# 1. CONTEXT
+
+Guide Topic:
+"Find / Still digging through folders?"
+
+Core Problem:
+Users cannot find files quickly and rely on folder navigation or file names.
+
+---
+
+# 2. HERO (VERY IMPORTANT)
+
+Structure:
+
+Headline:
+"Stop digging through folders."
+
+Subheadline:
+"Find any file instantly — across all your content in seconds."
+
+SEO line (MANDATORY):
+"AI-powered file search and digital asset management system for fast content discovery"
+
+CTA:
+"Find any file now"
+
+Optional trust line:
+"Used by teams managing thousands of assets daily"
+
+---
+
+# 3. PROBLEM (BEFORE)
+
+Title:
+"File search is broken in traditional tools"
+
+Content:
+
+❌ Browsing through endless folders to find one file
+❌ Remembering file names instead of searching by content
+❌ Asking teammates where files are stored
+❌ Recreating content because it’s faster than finding it
+
+---
+
+# 4. POSITIONING (IMPORTANT)
+
+Add strong contrast:
+
+"Traditional tools help you store files.
+
+Yettey helps you find them instantly."
+
+OR
+
+"Folders require navigation.
+
+Yettey gives you search."
+
+---
+
+# 5. SOLUTION (YETTEY)
+
+Explain clearly:
+
+"Yettey gives you Google-like search for your content"
+
+---
+
+# 6. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite into strong flow:
+
+1. Upload your entire content library
+2. Yettey automatically indexes everything (images, videos, files)
+3. Search by anything — keyword, object, tag, or visual content
+4. Get results instantly — no folders, no guessing
+
+---
+
+# 7. VISUAL SECTION (BASED ON UI)
+
+Describe what user sees:
+
+* Search bar with instant suggestions
+* Results with preview thumbnails
+* Filters (type, tag, date, team member)
+
+⚠️ Focus on experience, not UI complexity
+
+---
+
+# 8. FEATURES → EXPERIENCE
+
+Title:
+"What you’ll experience"
+
+Rewrite as outcomes:
+
+* Instant search results — no waiting
+* Find files by content, not just names
+* Visual search across images and videos
+* Everything searchable automatically
+
+---
+
+# 9. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Browsing folders for minutes
+* Asking team “where is that file?”
+* Recreating lost content
+* No way to search inside files
+
+After:
+
+* Find files in under 3 seconds
+* Search by content, not file name
+* Never lose a file again
+* AI-powered visual search
+
+---
+
+# 10. VALUE (WHY IT MATTERS)
+
+* Find any asset in under 3 seconds
+* Eliminate “where is that file?” questions
+* Reduce wasted time searching
+* Improve team efficiency instantly
+
+---
+
+# 11. SEO BLOCK (MANDATORY)
+
+Include natural paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system designed to help teams search and manage content efficiently.
+
+Unlike traditional file storage tools, Yettey allows you to find images, videos, and files instantly using AI-powered search across your entire content library."
+
+---
+
+# 12. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"Stop searching. Start finding."
+
+Subtext:
+"Find any file instantly — no more folders."
+
+CTA:
+"Find any file now"
+
+Optional:
+"No credit card required"
+
+---
+
+# 13. SEO REQUIREMENTS
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* AI file search
+* content search system
+* media asset management
+
+⚠️ Do NOT keyword stuff
+⚠️ Keep natural
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Direct and clear
+* Problem → solution → result
+* No technical jargon
+* Outcome-focused
+
+---
+
+# 15. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users feel “this is my problem”
+2. Show clear difference vs folders / Drive
+3. Be understandable in 5 seconds
+4. Drive CTA clicks
+5. Rank on search engines
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.
