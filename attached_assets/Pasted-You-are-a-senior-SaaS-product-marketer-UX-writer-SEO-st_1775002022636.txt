@@ -1,0 +1,277 @@
+You are a senior SaaS product marketer, UX writer, SEO strategist, and frontend designer.
+
+Your task is to upgrade an existing blog page into a **100/100 high-converting + SEO-optimized SaaS content page**.
+
+This is NOT a blog post.
+
+This is:
+
+* a landing page
+* a conversion funnel
+* an SEO traffic asset
+
+---
+
+# 🎯 GOALS
+
+✔ Rank on Google (SEO optimized)
+✔ Be easy to scan (UX optimized)
+✔ Emotionally engage the reader
+✔ Clearly define problem → solution
+✔ Naturally introduce Yettey
+✔ Drive immediate action (conversion)
+
+---
+
+# 1. HERO OPTIMIZATION
+
+Rewrite headline to include keyword + hook:
+
+"How to Automate Video Editing in 2026 (Save 80% Editing Time)"
+
+Subtext:
+"Video editing is already automated.
+The question is: are you?"
+
+---
+
+# 2. TLDR 유지 + 아래 PATTERN BREAK 추가
+
+Add:
+
+"Editing is no longer the bottleneck.
+Your workflow is."
+
+---
+
+# 3. PAIN SECTION (ADD)
+
+Insert early:
+
+"You spend hours editing videos.
+
+Cutting silence.
+Adding captions.
+Reframing clips.
+
+And then you repeat it again.
+
+That’s the problem."
+
+---
+
+# 4. CORE MESSAGE (MOVE UP)
+
+"Automation is not optional anymore.
+It’s the baseline."
+
+---
+
+# 5. BEFORE vs AFTER SECTION (ADD)
+
+Create comparison cards:
+
+Before:
+
+* Manual editing
+* 6–8 hours per video
+* Low output
+
+After:
+
+* Automated workflow
+* 1 hour or less
+* Scalable content
+
+---
+
+# 6. CONVERT LONG TEXT INTO UI CARDS
+
+Split into cards:
+
+* Silence removal
+* Auto captions
+* Reframing
+* Highlight detection
+
+---
+
+# 7. AHA MOMENT
+
+Insert:
+
+"Automation doesn’t replace creativity.
+It replaces wasted time."
+
+---
+
+# 8. REAL PROBLEM EMPHASIS
+
+"The real bottleneck is not editing.
+
+It’s workflow."
+
+---
+
+# 9. SYSTEM STRUCTURE SECTION
+
+Add structured workflow:
+
+1. Strategy (human)
+2. Ideation (AI)
+3. Editing (AI-assisted)
+4. Repurposing
+5. Distribution
+6. Organization
+
+---
+
+# 10. PRODUCT POSITIONING (IMPORTANT)
+
+Add:
+
+"Most tools automate editing.
+
+Yettey connects your entire workflow."
+
+---
+
+# 11. VISUAL COMPONENTS (REQUIRED)
+
+Add UI blocks:
+
+* Hook → Body → CTA diagram
+* Workflow flow diagram
+* Before vs After cards
+* Yettey dashboard mock UI
+
+Style:
+
+* dark SaaS UI
+* rounded cards
+* soft gradients
+
+---
+
+# 12. STICKY CTA (REQUIRED)
+
+Floating button:
+
+Text:
+"Build your system →"
+
+Position:
+
+* bottom right (desktop)
+* bottom center (mobile)
+
+---
+
+# 13. INLINE CTA
+
+Insert mid-content:
+
+"Start building your system now →"
+
+---
+
+# 14. FINAL CTA (REPLACE)
+
+Headline:
+
+"You don’t need more content.
+You need a system."
+
+Subtext:
+
+"If nothing changes,
+your results won’t either."
+
+Button:
+
+"Automate your workflow →"
+
+---
+
+# 15. SEO STRUCTURE (CRITICAL)
+
+Add H2 sections:
+
+* What Is Video Editing Automation
+* Why Video Editing Automation Matters
+* Best AI Tools for Video Editing Automation
+* How to Automate Video Editing Step by Step
+* Video Editing Automation Workflow
+* Is Video Editing Automation Worth It
+
+---
+
+# 16. KEYWORD INTEGRATION
+
+Naturally include:
+
+* video editing automation
+* automate video editing
+* AI video editing tools
+* video editing workflow
+* automatic video editing software
+
+DO NOT keyword stuff.
+
+---
+
+# 17. FAQ SECTION (ADD)
+
+Add at bottom:
+
+Q: What is video editing automation?
+Q: Can AI edit videos automatically?
+Q: What is the best AI video editing tool?
+Q: How much time does automation save?
+
+---
+
+# 18. INTERNAL LINKING
+
+Add links to:
+
+* AI content article
+* short-form video article
+* content system article
+
+---
+
+# 19. READABILITY RULES
+
+* max 2 lines per paragraph
+* use bullet points
+* bold key sentences
+* clear spacing
+* scannable layout
+
+---
+
+# 20. DESIGN STYLE
+
+* dark theme SaaS UI
+* minimal icons
+* soft shadows
+* modern typography
+* card-based layout
+
+---
+
+# FINAL RESULT MUST:
+
+✔ rank on search
+✔ feel like a product page
+✔ be easy to scan
+✔ emotionally hit the reader
+✔ clearly show problem → system → solution
+✔ convert users
+
+---
+
+This is not content.
+
+This is growth infrastructure.
