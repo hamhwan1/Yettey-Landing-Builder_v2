@@ -347,20 +347,20 @@ const row2 = testimonials.slice(12, 24);
 
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
-    <div className="flex-shrink-0 w-[280px] md:w-[310px] p-4 rounded-xl bg-card border border-white/[0.05] opacity-75 hover:opacity-100 transition-opacity duration-300">
-      <p className="text-[13px] text-foreground/80 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
+    <div className="flex-shrink-0 w-[280px] md:w-[310px] p-4 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:border-white/[0.14] transition-colors duration-300">
+      <p className="text-[13px] text-foreground/90 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
-          <div className="w-6 h-6 rounded-full bg-primary/12 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/15">
+          <div className="w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/20">
             {t.name.charAt(0)}
           </div>
           <div className="min-w-0">
-            <p className="text-[12px] font-medium text-foreground/70 truncate">{t.name}</p>
-            <p className="text-[10px] text-muted-foreground/60 truncate">{t.role}</p>
+            <p className="text-[12px] font-medium text-foreground/85 truncate">{t.name}</p>
+            <p className="text-[10px] text-muted-foreground truncate">{t.role}</p>
           </div>
         </div>
         {t.tag && (
-          <span className="text-[9px] font-medium text-muted-foreground/50 bg-white/[0.03] border border-white/[0.05] px-1.5 py-0.5 rounded-full shrink-0">
+          <span className="text-[9px] font-medium text-muted-foreground/70 bg-white/[0.04] border border-white/[0.07] px-1.5 py-0.5 rounded-full shrink-0">
             {t.tag}
           </span>
         )}
