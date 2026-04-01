@@ -1,0 +1,306 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX designer.
+
+Your task is to design a high-converting, SEO-optimized “Guides Landing Page” for Yettey.
+
+⚠️ CRITICAL:
+This is NOT a blog list.
+This is NOT documentation.
+
+This page must:
+👉 Rank on search (SEO)
+👉 Convert visitors into users (Conversion)
+👉 Guide users into actionable workflows (UX)
+
+---
+
+# 1. CORE STRATEGY
+
+The page must combine:
+
+* Problem-driven messaging (emotional hook)
+* Keyword-driven structure (SEO)
+* Action-driven UX (conversion)
+
+Every section must answer:
+👉 “Is this my problem?”
+👉 “Can Yettey solve it?”
+👉 “What should I click next?”
+
+---
+
+# 2. HERO SECTION (SEO + CONVERSION)
+
+Structure MUST include both:
+
+Headline (problem-driven):
+"Stop wasting time managing content."
+
+Subheadline (SEO-driven):
+"AI digital asset management guides for teams, marketers, and creators."
+
+Supporting line:
+"Organize, search, and reuse your content faster with Yettey."
+
+CTA:
+Primary → "Start organizing your content"
+Secondary → "See how it works"
+
+---
+
+# 3. PROBLEM SECTION (MANDATORY)
+
+Title:
+"Still using Drive or Dropbox for content management?"
+
+Content:
+
+❌ Files are uploaded — but hard to find
+❌ Links are shared — but hard to control
+❌ Teams collaborate — but everything is fragmented
+❌ Content exists — but rarely reused
+
+Then transition:
+
+"Yettey is not just storage.
+It’s an AI-powered digital asset management system built for content teams."
+
+---
+
+# 4. GUIDE STRUCTURE (CORE UX)
+
+⚠️ Guides MUST be organized by problems, NOT features
+
+Each guide card must include:
+
+* Problem-based headline (emotional)
+* SEO keyword support line
+* Short benefit description
+* Category tag
+* CTA button
+
+---
+
+# 5. GUIDE CARDS (SEO + PROBLEM COMBINED)
+
+---
+
+## 1. ORGANIZE
+
+Title:
+"Can’t find your files?"
+
+SEO line:
+"AI digital asset management system for file organization"
+
+Description:
+"Upload once. Everything organizes itself automatically."
+
+Tag: Organize
+
+CTA:
+"View guide"
+
+---
+
+## 2. FIND
+
+Title:
+"Still digging through folders?"
+
+SEO line:
+"Search files instantly with AI asset search"
+
+Description:
+"Find images, videos, and content in seconds."
+
+Tag: Find
+
+CTA:
+"Search your content"
+
+---
+
+## 3. SHARE
+
+Title:
+"Sharing links everywhere?"
+
+SEO line:
+"Secure file sharing and content distribution system"
+
+Description:
+"Control how your content is shared — not just where."
+
+Tag: Share
+
+CTA:
+"Share content better"
+
+---
+
+## 4. COLLABORATE
+
+Title:
+"Feedback scattered across tools?"
+
+SEO line:
+"Collaborative digital asset management for teams"
+
+Description:
+"Comment and collaborate directly on your assets."
+
+Tag: Collaboration
+
+CTA:
+"Work with your team"
+
+---
+
+## 5. ACTIVATE
+
+Title:
+"Content exists, but never reused?"
+
+SEO line:
+"Content reuse and asset activation platform"
+
+Description:
+"Turn your content into reusable assets instantly."
+
+Tag: Activate
+
+CTA:
+"Reuse your content"
+
+---
+
+## 6. AI EDITING
+
+Title:
+"Need design skills to edit content?"
+
+SEO line:
+"AI image editing and automation tools"
+
+Description:
+"Edit like a pro — with one click."
+
+Tag: AI
+
+CTA:
+"Edit content instantly"
+
+---
+
+## 7. SPEED / CDN
+
+Title:
+"Is your website slow because of media?"
+
+SEO line:
+"Media CDN and image optimization platform"
+
+Description:
+"Deliver assets instantly with built-in CDN."
+
+Tag: Speed
+
+CTA:
+"Improve loading speed"
+
+---
+
+# 6. QUICK START SECTION
+
+Title:
+"Get started in 5 minutes"
+
+Steps:
+
+1. Create your workspace
+2. Upload files
+3. Organize with folders or collections
+4. Invite your team
+5. Share your first asset
+
+CTA:
+"Start your workspace"
+
+---
+
+# 7. CORE VALUE SECTION
+
+Only show 3 values:
+
+* Organize → Find everything instantly
+* Share → Control and distribute content
+* Activate → Reuse content faster
+
+---
+
+# 8. SEO KEYWORDS (MANDATORY IN CONTENT)
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* AI asset management
+* media asset management
+* file organization tools
+* AI video search
+* image management software
+
+⚠️ Do NOT keyword stuff
+
+---
+
+# 9. FINAL CTA
+
+Title:
+"You don’t need more tools."
+
+Subtext:
+"You need a system."
+
+CTA:
+"Start using Yettey"
+
+---
+
+# 10. UX RULES
+
+* Must be scannable within 3 seconds
+* Use cards instead of long text
+* Each card = one problem
+* Avoid technical explanations
+* Focus on outcomes, not features
+
+---
+
+# 11. OUTPUT REQUIREMENTS
+
+Provide:
+
+1. Full page structure
+2. Section layout
+3. Guide card content
+4. SEO-enhanced copy
+5. CTA structure
+6. Suggested UI layout
+
+---
+
+# SUCCESS CRITERIA
+
+The page must:
+
+1. Rank for relevant DAM and content keywords
+2. Make users recognize their problem instantly
+3. Position Yettey as the solution
+4. Drive clicks into guides
+5. Feel like a product experience (not documentation)
+
+---
+
+Do NOT summarize.
+Design the full page with SEO + conversion focus.
