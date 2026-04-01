@@ -316,30 +316,30 @@ function Workflow() {
 }
 
 const testimonials = [
-  { quote: "Didn't expect this to be this useful. We use it every day now.", name: "Minsoo Choi", role: "Growth PM, N사", tag: "YouTube" },
-  { quote: "Search alone saves us hours every week.", name: "J. Kim", role: "Marketer, D2C brand", tag: "Ecommerce" },
-  { quote: "We replaced 2 tools after switching to Yettey.", name: "David", role: "Founder, SaaS startup" },
-  { quote: "Honestly way faster than our old workflow. Not even close.", name: "Yuna Park", role: "Content Lead, 글로벌 커머스", tag: "TikTok" },
-  { quote: "The AI tagging is scary accurate.", name: "S. Lee", role: "Creative Director, 에이전시" },
-  { quote: "Went from 3 hours of editing to 20 minutes.", name: "Alex Turner", role: "Video Editor, 미디어 스타트업", tag: "YouTube" },
-  { quote: "Our team actually uses this without complaining. That's rare.", name: "Jiwon Han", role: "PM, B2B SaaS", tag: "Ads" },
-  { quote: "Uploading, searching, clipping — all in one place. Finally.", name: "Rachel M.", role: "Marketing Manager, 패션 브랜드", tag: "Ecommerce" },
-  { quote: "Best DAM I've used, and I've tried a lot.", name: "Hyunwoo Kang", role: "CTO, 콘텐츠 플랫폼" },
-  { quote: "The short-form generator paid for itself in week one.", name: "Chris O.", role: "Growth, D2C brand", tag: "TikTok" },
-  { quote: "I can find any asset in under 5 seconds now.", name: "Soojin Yoo", role: "Designer, 광고 에이전시" },
-  { quote: "We produce 4x more content with the same team size.", name: "Mike Chen", role: "Head of Content, 미디어사", tag: "Ads" },
-  { quote: "Onboarding took 10 minutes. Everyone just got it.", name: "Eunji Lim", role: "Ops Manager, 이커머스" },
-  { quote: "Replaced our entire post-production pipeline.", name: "T. Nakamura", role: "Producer, 영상 프로덕션", tag: "YouTube" },
-  { quote: "Auto-subtitles are genuinely good. Like, actually usable.", name: "Haeun Cho", role: "Content Creator", tag: "TikTok" },
-  { quote: "The collaboration features are underrated. Sharing is seamless.", name: "Jordan B.", role: "Creative Lead, 스타트업" },
-  { quote: "We cut our content turnaround from 5 days to 1.", name: "Sunghoon Kim", role: "VP Marketing, 테크 기업", tag: "Ads" },
-  { quote: "Clean UI. No bloat. Does exactly what it says.", name: "Emma L.", role: "Freelance Editor" },
-  { quote: "Even our non-technical team members use it daily.", name: "Dongwook Seo", role: "CEO, 크리에이터 스튜디오" },
-  { quote: "Honestly the search is the killer feature.", name: "Sarah K.", role: "Marketer, 뷰티 브랜드", tag: "Ecommerce" },
-  { quote: "We tried 4 tools before this. Yettey stuck.", name: "Jihyuk Baek", role: "PM, 플랫폼 스타트업" },
-  { quote: "AI clipping saves our editors so much time.", name: "Nina R.", role: "Video Lead, 에이전시", tag: "YouTube" },
-  { quote: "Storage + editing + distribution. All handled.", name: "Taewon Jung", role: "Founder, 콘텐츠 커머스" },
-  { quote: "Switched from Dropbox + Premiere. No regrets.", name: "Amy W.", role: "Content Strategist, D2C brand", tag: "TikTok" },
+  { quote: "Didn't expect this to be this useful honestly.", name: "Minsoo Choi", role: "Growth PM, N사", tag: "YouTube" },
+  { quote: "The search probably saves us a few hours a week.", name: "J. Kim", role: "Marketer, D2C brand", tag: "Ecommerce" },
+  { quote: "We dropped two other tools after trying this.", name: "David", role: "Founder, SaaS startup" },
+  { quote: "Noticeably faster than what we had before.", name: "Yuna Park", role: "Content Lead, 글로벌 커머스", tag: "TikTok" },
+  { quote: "The auto-tagging is surprisingly good so far.", name: "S. Lee", role: "Creative Director, 에이전시" },
+  { quote: "Editing that used to take hours now takes maybe 20 min.", name: "Alex Turner", role: "Video Editor, 미디어 스타트업", tag: "YouTube" },
+  { quote: "The team actually adopted it. That never happens.", name: "Jiwon Han", role: "PM, B2B SaaS", tag: "Ads" },
+  { quote: "Upload, search, clip — all one place. Appreciated.", name: "Rachel M.", role: "Marketing Manager, 패션 브랜드", tag: "Ecommerce" },
+  { quote: "Probably the most practical DAM I've tried.", name: "Hyunwoo Kang", role: "CTO, 콘텐츠 플랫폼" },
+  { quote: "Short-form gen is the reason we kept paying.", name: "Chris O.", role: "Growth, D2C brand", tag: "TikTok" },
+  { quote: "Finding assets is way less painful now.", name: "Soojin Yoo", role: "Designer, 광고 에이전시" },
+  { quote: "Output went up without adding headcount.", name: "Mike Chen", role: "Head of Content, 미디어사", tag: "Ads" },
+  { quote: "Onboarding was quick. Nobody needed a tutorial.", name: "Eunji Lim", role: "Ops Manager, 이커머스" },
+  { quote: "Basically replaced our post-production pipeline.", name: "T. Nakamura", role: "Producer, 영상 프로덕션", tag: "YouTube" },
+  { quote: "Auto-subs are actually usable. Pleasantly surprised.", name: "Haeun Cho", role: "Content Creator", tag: "TikTok" },
+  { quote: "Sharing with clients got a lot simpler.", name: "Jordan B.", role: "Creative Lead, 스타트업" },
+  { quote: "Turnaround went from about a week to a day.", name: "Sunghoon Kim", role: "VP Marketing, 테크 기업", tag: "Ads" },
+  { quote: "Clean interface, not bloated. That's all I wanted.", name: "Emma L.", role: "Freelance Editor" },
+  { quote: "Even non-technical folks on the team use it daily.", name: "Dongwook Seo", role: "CEO, 크리에이터 스튜디오" },
+  { quote: "Honestly the search alone is worth it.", name: "Sarah K.", role: "Marketer, 뷰티 브랜드", tag: "Ecommerce" },
+  { quote: "Tried a bunch of tools. This one stuck.", name: "Jihyuk Baek", role: "PM, 플랫폼 스타트업" },
+  { quote: "Clipping feature is a nice time-saver.", name: "Nina R.", role: "Video Lead, 에이전시", tag: "YouTube" },
+  { quote: "Storage, editing, distribution — one less thing to manage.", name: "Taewon Jung", role: "Founder, 콘텐츠 커머스" },
+  { quote: "Moved off Dropbox + Premiere. So far so good.", name: "Amy W.", role: "Content Strategist, D2C brand", tag: "TikTok" },
 ];
 
 const row1 = testimonials.slice(0, 12);
@@ -347,20 +347,20 @@ const row2 = testimonials.slice(12, 24);
 
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
-    <div className="flex-shrink-0 w-[300px] md:w-[340px] p-5 rounded-xl bg-card border border-border/60 shadow-sm hover:border-white/[0.12] transition-colors">
-      <p className="text-[14px] text-foreground/90 leading-[1.65] mb-4">"{t.quote}"</p>
-      <div className="flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2.5 min-w-0">
-          <div className="w-7 h-7 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[11px] font-bold shrink-0 border border-primary/20">
+    <div className="flex-shrink-0 w-[280px] md:w-[310px] p-4 rounded-xl bg-card border border-white/[0.05] opacity-75 hover:opacity-100 transition-opacity duration-300">
+      <p className="text-[13px] text-foreground/80 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
+      <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2 min-w-0">
+          <div className="w-6 h-6 rounded-full bg-primary/12 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/15">
             {t.name.charAt(0)}
           </div>
           <div className="min-w-0">
-            <p className="text-[13px] font-semibold text-foreground truncate">{t.name}</p>
-            <p className="text-[11px] text-muted-foreground truncate">{t.role}</p>
+            <p className="text-[12px] font-medium text-foreground/70 truncate">{t.name}</p>
+            <p className="text-[10px] text-muted-foreground/60 truncate">{t.role}</p>
           </div>
         </div>
         {t.tag && (
-          <span className="text-[10px] font-medium text-muted-foreground/70 bg-white/[0.04] border border-white/[0.06] px-2 py-0.5 rounded-full shrink-0">
+          <span className="text-[9px] font-medium text-muted-foreground/50 bg-white/[0.03] border border-white/[0.05] px-1.5 py-0.5 rounded-full shrink-0">
             {t.tag}
           </span>
         )}
@@ -371,21 +371,21 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
 
 function Testimonials() {
   return (
-    <section className="py-24 bg-background overflow-hidden">
-      <FadeIn className="text-center mb-14 px-4">
-        <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
+    <section className="py-12 bg-background overflow-hidden">
+      <FadeIn className="text-center mb-8 px-4">
+        <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground/70 mb-2">
           Loved by modern content teams
         </h2>
-        <p className="text-muted-foreground text-lg">Creators, marketers, and teams trust Yettey every day.</p>
+        <p className="text-muted-foreground/50 text-sm">Creators, marketers, and teams trust Yettey every day.</p>
       </FadeIn>
 
       <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2.5">
           <div className="group">
-            <div className="flex gap-4 animate-scroll-left group-hover:[animation-play-state:paused]">
+            <div className="flex gap-2.5 animate-scroll-left group-hover:[animation-play-state:paused]">
               {[...row1, ...row1].map((t, i) => (
                 <TestimonialCard key={`r1-${i}`} t={t} />
               ))}
@@ -393,7 +393,7 @@ function Testimonials() {
           </div>
 
           <div className="group">
-            <div className="flex gap-4 animate-scroll-right group-hover:[animation-play-state:paused]">
+            <div className="flex gap-2.5 animate-scroll-right group-hover:[animation-play-state:paused]">
               {[...row2, ...row2].map((t, i) => (
                 <TestimonialCard key={`r2-${i}`} t={t} />
               ))}
