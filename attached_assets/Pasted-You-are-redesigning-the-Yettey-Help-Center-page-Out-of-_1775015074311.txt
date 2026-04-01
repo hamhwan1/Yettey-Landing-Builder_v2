@@ -1,0 +1,186 @@
+You are redesigning the Yettey Help Center page: "Out of credits".
+
+This page must guide users to take the next step:
+→ buy credits, upgrade plan, or wait.
+
+---
+
+[GOAL]
+
+- Clearly explain what happens when credits run out
+- Reduce confusion (features paused vs data safe)
+- Drive conversion (purchase or upgrade)
+- Provide alternative options
+- Optimize for SEO
+
+---
+
+[STEP 1: PAGE TYPE]
+
+This is NOT a troubleshooting page.
+
+This is a "decision + conversion" page.
+
+User intent:
+→ "Why can't I use features?"
+→ "What should I do now?"
+
+---
+
+[STEP 2: PAGE STRUCTURE]
+
+---
+
+## H1 Title
+
+Out of credits? Here's what to do next
+
+---
+
+## Quick Answer (CRITICAL) 🔥
+
+When your credits run out:
+
+- Content generation stops (AI, video, etc.)
+- Your existing files are still محفوظ and accessible
+- You can resume instantly by adding credits
+
+👉 Get more credits →
+
+---
+
+## What you can do (CORE SECTION)
+
+---
+
+### Option 1: Buy more credits (FASTEST)
+
+Continue immediately
+
+→ Buy credits →
+
+---
+
+### Option 2: Upgrade your plan
+
+Get more monthly credits
+
+→ View plans →
+
+---
+
+### Option 3: Wait for reset
+
+Credits renew automatically
+
+→ Check billing →
+
+---
+
+## If you're unsure
+
+- Check your current usage
+- Review what consumes credits
+- Decide the best option for your workflow
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+- Credits are available again
+- You can generate content
+- Features are no longer paused
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥
+
+- Billing issue?
+- Upload not working?
+- Video processing stuck?
+- Credits not updating?
+
+---
+
+## CTA (IMPORTANT)
+
+Need help choosing?
+
+Talk to our team — we’ll guide you.
+
+[Contact Support]
+
+---
+
+[STEP 3: ACTION BUTTON LOGIC]
+
+All buttons must lead to real product actions:
+
+---
+
+IF logged in:
+- Buy credits → Billing page
+- View plans → Pricing page
+- Check billing → Billing dashboard
+
+---
+
+IF not logged in:
+→ Redirect to login with intent
+
+Example:
+→ /login?redirect=/billing
+
+---
+
+[STEP 4: REMOVE STATIC DATA]
+
+DO NOT include:
+- Credit numbers
+- Plan pricing
+- Exact limits
+
+Keep it dynamic
+
+---
+
+[STEP 5: UX RULES]
+
+- This page must feel simple
+- Reduce decision fatigue
+- Focus on 3 clear options
+
+---
+
+[STEP 6: SEO]
+
+Primary keywords:
+- out of credits
+- no credits left
+- credits not working
+
+Include in:
+- title
+- first paragraph
+- subheading
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+Credits control:
+→ AI generation
+→ video creation
+→ content output
+
+User frustration:
+→ "Why is everything blocked?"
+
+Tone:
+→ clear, helpful, solution-oriented
+
+---
+
+[FINAL GOAL]
+
+User lands → understands → chooses → continues using Yettey
