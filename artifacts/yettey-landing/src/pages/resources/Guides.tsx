@@ -33,10 +33,11 @@ const guides = [
     icon: FolderOpen,
     accent: "#8B5CF6",
     tag: "Organize",
-    title: "Can't find your files?",
+    title: "Can’t find your files?",
     seo: "AI digital asset management system for file organization",
-    desc: "Upload once. Everything organizes itself automatically.",
-    cta: "Fix file organization",
+    desc: "Upload once. Everything organizes itself — no folders needed.",
+    sub: "No more messy folders. Everything is structured automatically.",
+    cta: "Organize your files now",
   },
   {
     icon: Search,
@@ -44,8 +45,9 @@ const guides = [
     tag: "Find",
     title: "Still digging through folders?",
     seo: "Search files instantly with AI asset search",
-    desc: "Find images, videos, and content in seconds.",
-    cta: "Find files instantly",
+    desc: "Search across images, videos, and files instantly — like Google for your content.",
+    sub: "Find anything in seconds, no matter where it lives.",
+    cta: "Find any file now",
   },
   {
     icon: Share2,
@@ -53,8 +55,9 @@ const guides = [
     tag: "Share",
     title: "Sharing links everywhere?",
     seo: "Secure file sharing and content distribution system",
-    desc: "Control how your content is shared — not just where.",
-    cta: "Share content better",
+    desc: "Share content with control — not just links.",
+    sub: "Manage access, permissions, and visibility in one place.",
+    cta: "Share with control",
   },
   {
     icon: Users,
@@ -62,8 +65,9 @@ const guides = [
     tag: "Collaboration",
     title: "Feedback scattered across tools?",
     seo: "Collaborative digital asset management for teams",
-    desc: "Comment and collaborate directly on your assets.",
-    cta: "Start collaborating",
+    desc: "Stop switching tools. Collaborate directly on your content.",
+    sub: "Comment, review, and align — all on the asset itself.",
+    cta: "Collaborate on assets now",
   },
   {
     icon: RefreshCw,
@@ -71,8 +75,9 @@ const guides = [
     tag: "Activate",
     title: "Content exists, but never reused?",
     seo: "Content reuse and asset activation platform",
-    desc: "Turn your content into reusable assets instantly.",
-    cta: "Reuse your content",
+    desc: "Turn unused content into reusable assets — instantly.",
+    sub: "Reuse what you already have instead of creating from scratch.",
+    cta: "Reuse content instantly",
   },
   {
     icon: Sparkles,
@@ -80,7 +85,8 @@ const guides = [
     tag: "AI",
     title: "Need design skills to edit content?",
     seo: "AI image editing and automation tools",
-    desc: "Edit like a pro — with one click.",
+    desc: "Edit like a pro — without design skills.",
+    sub: "Remove backgrounds, enhance quality, and fix images in one click.",
     cta: "Edit content instantly",
   },
   {
@@ -89,8 +95,9 @@ const guides = [
     tag: "Speed",
     title: "Is your website slow because of media?",
     seo: "Media CDN and image optimization platform",
-    desc: "Deliver assets instantly with built-in CDN.",
-    cta: "Improve loading speed",
+    desc: "Make your content load instantly — no more slow pages.",
+    sub: "Built-in CDN ensures fast delivery everywhere.",
+    cta: "Speed up your content now",
   },
   {
     icon: Shield,
@@ -98,8 +105,9 @@ const guides = [
     tag: "Control",
     title: "Losing control over your content?",
     seo: "Content permissions and access control system",
-    desc: "Set who can view, edit, and share your assets.",
-    cta: "Control your content",
+    desc: "Decide exactly who can access your content.",
+    sub: "Set permissions for viewing, editing, and sharing.",
+    cta: "Control your content now",
   },
   {
     icon: GitBranch,
@@ -107,8 +115,9 @@ const guides = [
     tag: "Versions",
     title: "Not sure which file is the latest version?",
     seo: "Version control and asset tracking system",
-    desc: "Track changes and always access the latest version.",
-    cta: "Track your assets",
+    desc: "Always know which version is the right one.",
+    sub: "Track changes and avoid file confusion.",
+    cta: "Track versions now",
   },
 ];
 
@@ -136,27 +145,34 @@ export default function Guides() {
 
           <motion.h1
             variants={fade} initial="hidden" animate="show" custom={1}
-            className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 leading-tight"
+            className="text-4xl md:text-5xl font-display font-bold text-foreground mb-3 leading-tight"
           >
-            Find any file instantly — even across thousands of assets.
+            Stop losing your content.
           </motion.h1>
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={2}
-            className="text-lg text-muted-foreground mb-3 max-w-xl mx-auto"
+            className="text-xl text-foreground/70 mb-3 max-w-xl mx-auto font-medium"
+          >
+            Find any file instantly — even across thousands of assets.
+          </motion.p>
+
+          <motion.p
+            variants={fade} initial="hidden" animate="show" custom={3}
+            className="text-base text-muted-foreground mb-2 max-w-xl mx-auto"
           >
             AI-powered digital asset management for teams, marketers, and creators.
           </motion.p>
 
           <motion.p
-            variants={fade} initial="hidden" animate="show" custom={3}
-            className="text-base text-foreground/60 mb-8 max-w-lg mx-auto"
+            variants={fade} initial="hidden" animate="show" custom={4}
+            className="text-sm text-foreground/50 mb-8 max-w-lg mx-auto"
           >
-            Organize, search, share, and reuse your content faster with Yettey.
+            Organize, search, share, and reuse content faster with Yettey.
           </motion.p>
 
           <motion.div
-            variants={fade} initial="hidden" animate="show" custom={4}
+            variants={fade} initial="hidden" animate="show" custom={5}
             className="flex flex-wrap justify-center gap-3"
           >
             <Link href="/pricing">
@@ -164,7 +180,7 @@ export default function Guides() {
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl font-semibold text-base text-white hover:-translate-y-1 transition-all duration-200 shadow-xl"
                 style={{ backgroundColor: ACCENT, boxShadow: `0 8px 24px ${ACCENT}40` }}
               >
-                Start organizing your content
+                Start organizing your content now
                 <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
@@ -207,11 +223,15 @@ export default function Guides() {
             className="rounded-2xl p-6 sm:p-8 text-center"
             style={{ background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}04)`, border: `1px solid ${ACCENT}18` }}
           >
-            <p className="font-display font-bold text-lg text-foreground mb-1">Yettey replaces Drive, Dropbox, and scattered tools</p>
+            <p className="font-display font-bold text-lg text-foreground mb-1">Drive stores files.</p>
             <p className="font-display font-bold text-lg" style={{ color: ACCENT }}>
-              with one system built for content teams.
+              Yettey makes them usable.
             </p>
           </div>
+
+          <p className="text-center text-sm text-muted-foreground mt-6">
+            Built for teams that outgrow Drive and Dropbox
+          </p>
         </motion.div>
       </section>
 
@@ -223,8 +243,11 @@ export default function Guides() {
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
             Find the guide for your problem
           </h2>
-          <p className="text-muted-foreground text-center mb-10 max-w-lg mx-auto">
+          <p className="text-muted-foreground text-center mb-3 max-w-lg mx-auto">
             Each guide solves a specific content management challenge — pick yours.
+          </p>
+          <p className="text-center text-sm font-medium mb-10" style={{ color: ACCENT }}>
+            Choose your biggest challenge — and fix it in minutes
           </p>
         </motion.div>
 
@@ -281,20 +304,20 @@ export default function Guides() {
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
-            Get started in 5 minutes
+            From messy files → structured system in 5 minutes
           </h2>
           <p className="text-muted-foreground text-center mb-10">
-            From zero to organized — faster than you think.
+            No setup required. Just start.
           </p>
         </motion.div>
 
         <div className="flex flex-col gap-3">
           {[
             { step: "01", icon: Zap, title: "Create your workspace", desc: "Set up your Yettey workspace in seconds." },
-            { step: "02", icon: Upload, title: "Upload files", desc: "Drag and drop any media — Yettey handles the rest." },
-            { step: "03", icon: FolderOpen, title: "Organize with folders or collections", desc: "AI auto-tags and categorizes your content." },
+            { step: "02", icon: Upload, title: "Upload your files", desc: "Drag and drop any media — Yettey handles the rest." },
+            { step: "03", icon: FolderOpen, title: "Everything organizes automatically", desc: "AI auto-tags, categorizes, and structures your content." },
             { step: "04", icon: UserPlus, title: "Invite your team", desc: "Add team members and assign permissions." },
-            { step: "05", icon: Link2, title: "Share your first asset", desc: "Send a secure, branded link to anyone." },
+            { step: "05", icon: Link2, title: "Share instantly", desc: "Send a secure, branded link to anyone." },
           ].map((item, i) => {
             const Icon = item.icon;
             return (
@@ -400,7 +423,7 @@ export default function Guides() {
               You don't need more tools.
             </h2>
             <p className="font-display font-bold text-xl mb-8" style={{ color: ACCENT }}>
-              You need a system.
+              You need one system that actually works.
             </p>
             <Link href="/pricing">
               <button

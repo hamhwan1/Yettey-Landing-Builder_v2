@@ -1,0 +1,217 @@
+You are a senior SaaS product strategist, UX designer, and conversion-focused copywriter.
+
+Your task is to refine and upgrade the Yettey Guides Landing Page into a high-converting, SEO-optimized, product-driven experience.
+
+⚠️ IMPORTANT:
+The guide cards are already implemented.
+DO NOT change the card structure.
+
+Your job is to improve the overall page:
+
+* Hero
+* Problem section
+* Positioning
+* Trust elements
+* CTA system
+* UX flow
+
+---
+
+# 1. GOAL OF THIS PAGE
+
+This page must:
+
+1. Make users instantly recognize their problem
+2. Clearly position Yettey as the solution
+3. Encourage users to click into guide cards
+4. Push users toward product usage
+
+---
+
+# 2. HERO SECTION IMPROVEMENT (VERY IMPORTANT)
+
+Current issue:
+
+* Too generic
+* Not emotionally strong enough
+
+---
+
+Rewrite Hero as:
+
+Headline:
+"Stop losing your content."
+
+Subheadline:
+"Find any file instantly — even across thousands of assets."
+
+SEO line:
+"AI-powered digital asset management for teams, marketers, and creators"
+
+Supporting line:
+"Organize, search, share, and reuse content faster with Yettey"
+
+CTA:
+Primary → "Start organizing your content now"
+Secondary → "See how it works"
+
+---
+
+# 3. PROBLEM SECTION (STRENGTHEN)
+
+Keep existing structure but improve clarity and impact:
+
+Title:
+"Still using Drive or Dropbox for content management?"
+
+Bullet points:
+
+❌ Files are uploaded — but hard to find
+❌ Links are shared — but hard to control
+❌ Teams collaborate — but everything is fragmented
+❌ Content exists — but rarely reused
+
+---
+
+Add strong positioning statement:
+
+"Drive stores files.
+Yettey makes them usable."
+
+OR
+
+"Yettey replaces Drive, Dropbox, and scattered tools
+with one system built for content teams."
+
+---
+
+# 4. TRUST / POSITIONING LINE (ADD THIS)
+
+Right below problem section, add ONE strong trust line:
+
+Examples:
+
+"Built for teams that outgrow Drive and Dropbox"
+
+OR
+
+"Used by teams managing thousands of assets daily"
+
+---
+
+# 5. GUIDE GRID (DO NOT CHANGE STRUCTURE)
+
+⚠️ Keep all guide cards as they are
+
+BUT:
+
+* Ensure spacing is clean
+* Cards are visually scannable
+* Hover states feel interactive
+* Entire card is clickable
+
+---
+
+# 6. CLICK BOOSTER (IMPORTANT ADD)
+
+Add a subtle line above or below grid:
+
+"Choose your biggest challenge — and fix it in minutes"
+
+---
+
+# 7. QUICK START SECTION (UPGRADE)
+
+Current issue:
+
+* Too instructional
+
+---
+
+Rewrite to be outcome-driven:
+
+Title:
+"From messy files → structured system in 5 minutes"
+
+Steps:
+
+1. Create your workspace
+2. Upload your files
+3. Everything organizes automatically
+4. Invite your team
+5. Share instantly
+
+CTA:
+"Start your workspace"
+
+---
+
+# 8. CORE VALUE SECTION (KEEP SIMPLE)
+
+Show only 3 values:
+
+* Organize → Find everything instantly
+* Share → Control your content
+* Activate → Reuse content faster
+
+⚠️ Do NOT add more values
+
+---
+
+# 9. FINAL CTA (STRONG PUSH)
+
+Rewrite as:
+
+Headline:
+"You don’t need more tools."
+
+Subtext:
+"You need one system that actually works."
+
+CTA:
+"Start using Yettey"
+
+Optional:
+"No credit card required"
+
+---
+
+# 10. UX RULES
+
+* Must be scannable within 3 seconds
+* No long paragraphs
+* Clear section spacing
+* Strong hierarchy (headline → problem → solution → action)
+* Focus on outcomes, not features
+
+---
+
+# 11. SEO IMPROVEMENT
+
+Naturally include keywords in the page:
+
+* digital asset management
+* DAM system
+* AI asset management
+* media asset management
+* file organization tools
+
+⚠️ Keep it natural
+⚠️ Do NOT keyword stuff
+
+---
+
+# 12. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users say “this is my problem”
+2. Clearly show Yettey as the solution
+3. Drive clicks into guide cards
+4. Increase intent to try the product
+5. Feel like a product experience (not documentation)
+
+---
+
+Do NOT summarize.
+Refine the page with strong conversion and UX focus.
