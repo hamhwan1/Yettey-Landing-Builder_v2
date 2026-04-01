@@ -1,0 +1,172 @@
+We are refining the Yettey Help Center to achieve a SaaS-grade support UX.
+
+IMPORTANT:
+- DO NOT redesign the visual UI (keep dark theme, cards, spacing, typography)
+- This task is purely about STRUCTURE, UX FLOW, and CONTENT ORGANIZATION
+
+--------------------------------------------------
+🎯 GOAL
+--------------------------------------------------
+
+Create a fast, intuitive Help Center where users can:
+- Find answers within 3 seconds
+- Never feel lost
+- Never rely on browser back button
+- Always see next possible actions
+
+--------------------------------------------------
+🧠 CORE UX PRINCIPLES
+--------------------------------------------------
+
+1. Search-first experience (search must always be visible)
+2. Shallow navigation (NO deep folder structure)
+3. Categories are for exploration, not hierarchy
+4. Every page must provide navigation options
+5. Every page must suggest next actions
+
+--------------------------------------------------
+🏠 HOME PAGE (KEEP, BUT ADJUST)
+--------------------------------------------------
+
+Keep existing structure:
+
+- Search bar (top priority)
+- Suggested tags (Upload failed, Video stuck, etc.)
+- Quick fixes
+- Browse by category
+- FAQ
+- Issues section
+- Contact support CTA
+
+Adjustments:
+
+1. Suggested tags:
+   - Limit to 3–4 items
+   - Clicking a tag opens a LIST VIEW (NOT a single article)
+
+2. Quick fixes:
+   - Can open either:
+     a) direct solution page
+     b) grouped troubleshooting page
+
+--------------------------------------------------
+📂 CATEGORY PAGE (MAJOR IMPROVEMENT)
+--------------------------------------------------
+
+When a user clicks a category (e.g. "Getting Started"):
+
+DO NOT create deep navigation or a “folder drilling” experience.
+
+Instead, create an EXPANDED CATEGORY VIEW.
+
+--------------------------------------------------
+CATEGORY PAGE STRUCTURE
+--------------------------------------------------
+
+1. HEADER (SIMPLIFIED)
+
+Replace current breadcrumb + back button with a SINGLE combined element:
+
+   ← Help Center / Getting Started
+
+Remove:
+- Separate “Back to all topics” button
+
+2. TITLE SECTION
+
+   Getting Started
+   Short description
+
+3. SEARCH (ALWAYS VISIBLE)
+
+   Keep search bar directly under title
+
+4. SUGGESTED TAGS
+
+   - Show 3–4 only
+   - Keep simple and scannable
+
+5. CATEGORY SWITCHING (VERY IMPORTANT)
+
+   Add horizontal category tabs BELOW search:
+
+   [Getting Started] [Pricing & Billing] [Credits] [Video] [AI] [Team]
+
+   Purpose:
+   - Allow switching categories without going back
+   - Remove dependency on back navigation
+
+6. POPULAR SECTION
+
+   Title: “Popular in {Category}”
+
+   Show 3–5 most viewed articles
+
+7. ALL ARTICLES (CRITICAL)
+
+   Add a full article list section:
+
+   Title: “All articles”
+
+   - Card-based layout
+   - Title + short description
+   - Must support scaling (10+ articles)
+
+8. RELATED TOPICS (OPTIONAL)
+
+   Suggest adjacent categories:
+   - AI Features
+   - Credits
+
+--------------------------------------------------
+📄 ARTICLE PAGE (REQUIRED IMPROVEMENTS)
+--------------------------------------------------
+
+Each article page MUST include:
+
+1. HEADER
+
+   ← Help Center / Category
+
+2. MAIN CONTENT
+
+3. RELATED ARTICLES (REQUIRED)
+
+   Show 3–5 similar/helpful articles
+
+4. NEXT STEP ACTION (REQUIRED)
+
+   Examples:
+   - Try uploading again
+   - Check supported formats
+   - Contact support
+
+--------------------------------------------------
+🚫 WHAT TO AVOID
+--------------------------------------------------
+
+- No multi-level nested navigation
+- No “click → deeper → deeper” UX
+- No isolated pages with no exit
+- No reliance on browser back button
+- No duplicated navigation elements (breadcrumb + back button separately)
+
+--------------------------------------------------
+⚡ UX SUCCESS CRITERIA
+--------------------------------------------------
+
+- User can solve issue within 3 seconds
+- User never feels stuck or lost
+- Navigation feels flat and fast
+- Every page provides at least 2 next actions
+
+--------------------------------------------------
+🎯 FINAL RESULT
+--------------------------------------------------
+
+The Help Center should feel like:
+
+- Intercom / Notion-style support UX
+- Fast, searchable, and intuitive
+- Minimal depth, maximum clarity
+- Designed for SaaS users, not documentation readers

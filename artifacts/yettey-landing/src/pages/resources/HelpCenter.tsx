@@ -52,10 +52,8 @@ const popularSlugs = ["upload-failed", "video-processing-stuck", "cant-find-file
 const searchTags = [
   { label: "Upload failed", filter: "upload" },
   { label: "Video stuck", filter: "video" },
-  { label: "Can't find file", filter: "find" },
-  { label: "Credits", filter: "credits" },
   { label: "Billing", filter: "billing" },
-  { label: "Team", filter: "team" },
+  { label: "Credits", filter: "credits" },
 ];
 
 const quickActions = [
@@ -182,10 +180,18 @@ export default function HelpCenter() {
     );
   }, [query]);
 
-  const categoryArticles = useMemo(() => {
+  const categoryPopularArticles = useMemo(() => {
     if (!activeCategory) return [];
     const slugs = categoryArticleMap[activeCategory] || [];
     return allArticles.filter((a) => slugs.includes(a.slug));
+  }, [activeCategory]);
+
+  const categoryAllArticles = useMemo(() => {
+    if (!activeCategory) return [];
+    const slugs = categoryArticleMap[activeCategory] || [];
+    const popular = allArticles.filter((a) => slugs.includes(a.slug));
+    const rest = allArticles.filter((a) => !slugs.includes(a.slug));
+    return [...popular, ...rest];
   }, [activeCategory]);
 
   const activeCategoryData = helpCategories.find((c) => c.filter === activeCategory);
@@ -227,15 +233,13 @@ export default function HelpCenter() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           {isBrowsingCategory ? (
-            <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0} className="flex flex-col items-center gap-3 mb-6">
-              <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm">
-                <button onClick={handleClearAll} className="text-white/40 hover:text-white/70 transition-colors">Help Center</button>
-                <span className="text-white/20">/</span>
-                <span className="text-white/70 font-medium">{activeCategoryData?.label}</span>
+            <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0} className="mb-6">
+              <nav aria-label="Breadcrumb">
+                <button onClick={handleClearAll} className="inline-flex items-center gap-2 text-sm text-white/40 hover:text-white/70 transition-colors">
+                  <ArrowLeft className="w-3.5 h-3.5" />
+                  Help Center <span className="text-white/20">/</span> <span className="text-white/70 font-medium">{activeCategoryData?.label}</span>
+                </button>
               </nav>
-              <button onClick={handleClearAll} className="inline-flex items-center gap-2 text-xs text-white/30 hover:text-white/60 transition-colors">
-                <ArrowLeft className="w-3 h-3" /> Back to all topics
-              </button>
             </motion.div>
           ) : (
             <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
@@ -387,7 +391,7 @@ export default function HelpCenter() {
               ))}
             </div>
 
-            {categoryArticles.length > 0 && (
+            {categoryPopularArticles.length > 0 && (
               <>
                 <div className="flex items-center gap-2.5 mb-2">
                   <TrendingUp className="w-4 h-4" style={{ color: activeCategoryData?.color || ACCENT }} />
@@ -397,15 +401,47 @@ export default function HelpCenter() {
                 </div>
                 <p className="text-sm text-white/35 mb-7">Most viewed articles in this category</p>
                 <div className="flex flex-col gap-3">
-                  {categoryArticles.map((article, i) => (
+                  {categoryPopularArticles.map((article, i) => (
                     <ArticleCard key={article.slug} article={article} index={i} />
                   ))}
                 </div>
               </>
             )}
 
+            <div className="mt-14">
+              <div className="flex items-center gap-2.5 mb-2">
+                <FolderOpen className="w-4 h-4" style={{ color: activeCategoryData?.color || ACCENT }} />
+                <h2 className="font-display font-bold text-[22px] text-white tracking-tight">All articles</h2>
+              </div>
+              <p className="text-sm text-white/35 mb-7">Browse everything in this topic and beyond</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {categoryAllArticles.map((article, i) => {
+                  const Icon = article.icon;
+                  return (
+                    <Link
+                      key={article.slug}
+                      href={`/help/${article.slug}`}
+                      className="flex items-center gap-3.5 p-4 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-primary/30 hover:bg-white/[0.04] hover:-translate-y-0.5 transition-all duration-200 text-left group block"
+                    >
+                      <div
+                        className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                        style={{ background: `${article.color}12` }}
+                      >
+                        <Icon className="w-4 h-4" style={{ color: article.color }} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-[14px] font-semibold text-white/80 group-hover:text-white transition-colors truncate">{article.title}</p>
+                        <p className="text-[12px] text-white/30 mt-0.5 truncate">{article.desc}</p>
+                      </div>
+                      <ArrowRight className="w-3.5 h-3.5 text-white/10 group-hover:text-white/40 transition-colors shrink-0" />
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+
             <div className="mt-10 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 text-center">
-              <p className="text-sm text-white/40 mb-3">Looking for something else?</p>
+              <p className="text-sm text-white/40 mb-3">Related topics</p>
               <div className="flex flex-wrap justify-center gap-2">
                 {helpCategories
                   .filter((c) => c.filter !== activeCategory)
@@ -419,12 +455,6 @@ export default function HelpCenter() {
                       {cat.label}
                     </button>
                   ))}
-                <button
-                  onClick={handleClearAll}
-                  className="px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-xs text-primary hover:bg-primary/20 transition-all"
-                >
-                  View all topics
-                </button>
               </div>
             </div>
           </motion.section>
