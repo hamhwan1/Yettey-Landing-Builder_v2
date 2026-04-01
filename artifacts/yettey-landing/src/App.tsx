@@ -31,6 +31,7 @@ import VideoProcessingStuckHelp from "@/pages/resources/help/VideoProcessingStuc
 import CantFindFileHelp from "@/pages/resources/help/CantFindFile";
 import OutOfCreditsHelp from "@/pages/resources/help/OutOfCredits";
 import BillingIssueHelp from "@/pages/resources/help/BillingIssue";
+import InviteTeamHelp from "@/pages/resources/help/InviteTeam";
 import GuideOrganize from "@/pages/resources/GuideOrganize";
 import GuideFind from "@/pages/resources/GuideFind";
 import GuideShare from "@/pages/resources/GuideShare";
@@ -94,6 +95,7 @@ function Router() {
           <Route path="/help/cant-find-file" component={CantFindFileHelp} />
           <Route path="/help/out-of-credits" component={OutOfCreditsHelp} />
           <Route path="/help/billing-issue" component={BillingIssueHelp} />
+          <Route path="/help/invite-team" component={InviteTeamHelp} />
           <Route path="/help/:slug" component={HelpDetailPage} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />

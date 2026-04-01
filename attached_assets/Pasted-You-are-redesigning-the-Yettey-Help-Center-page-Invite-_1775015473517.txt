@@ -1,0 +1,184 @@
+You are redesigning the Yettey Help Center page: "Invite team members".
+
+This page must guide users to quickly invite team members and start collaboration.
+
+---
+
+[GOAL]
+
+- Help users invite team members in under 1 minute
+- Make collaboration setup easy
+- Guide users directly into the product action
+- Keep everything simple and actionable
+
+---
+
+[STEP 1: PAGE TYPE]
+
+This is NOT a troubleshooting page.
+
+This is a "feature onboarding" page.
+
+User intent:
+→ "How do I invite someone?"
+→ "Where do I do this?"
+
+---
+
+[STEP 2: PAGE STRUCTURE]
+
+---
+
+## H1 Title
+
+Invite your team in seconds
+
+---
+
+## Quick Answer (CRITICAL) 🔥
+
+You can invite team members by:
+
+- Going to your workspace settings
+- Adding their email
+- Assigning a role
+
+👉 Open team settings →
+
+---
+
+## Step-by-step Guide
+
+---
+
+### Step 1: Open team settings
+
+Go to your workspace settings
+
+→ Open team settings →
+
+---
+
+### Step 2: Click “Invite members”
+
+Enter the email address
+
+---
+
+### Step 3: Choose a role
+
+Select permission level:
+- Admin
+- Editor
+- Viewer
+
+---
+
+### Step 4: Send invitation
+
+The user will receive an invite link
+
+---
+
+## If it doesn’t work
+
+Try:
+
+- Check if the email is correct
+- Ask the user to check spam folder
+- Resend the invitation
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+- Invitation is sent
+- Team member appears in workspace
+- They can access your content
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥
+
+- Billing issue?
+- Can't find your file?
+- Invite not working?
+- Team member can't access?
+
+---
+
+## CTA
+
+Need help setting up your team?
+
+Talk to our team — we’ll help you.
+
+[Contact Support]
+
+---
+
+[STEP 3: ACTION BUTTON LOGIC]
+
+---
+
+IF logged in:
+→ open team settings directly
+
+Example:
+→ /app/settings/team
+
+---
+
+IF not logged in:
+→ redirect to login with intent
+
+Example:
+→ /login?redirect=/settings/team
+
+---
+
+[STEP 4: REMOVE STATIC DATA]
+
+- No detailed permission descriptions
+- No long explanations
+
+Keep it simple
+
+---
+
+[STEP 5: UX RULES]
+
+- This page must feel fast and simple
+- Focus on “do this now” flow
+- Avoid long text
+
+---
+
+[STEP 6: SEO]
+
+Primary keywords:
+- invite team members
+- add team members
+- team collaboration
+
+Include in:
+- title
+- first paragraph
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+Users:
+- want to collaborate
+- share content
+- manage workspace
+
+Tone:
+→ simple, clear, quick
+
+---
+
+[FINAL GOAL]
+
+User lands → invites team → starts collaboration
