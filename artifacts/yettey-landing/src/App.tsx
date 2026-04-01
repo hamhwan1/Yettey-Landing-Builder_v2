@@ -24,6 +24,7 @@ import AiToolsContentCreators from "@/pages/blog/AiToolsContentCreators";
 import ShortFormVideoFramework from "@/pages/blog/ShortFormVideoFramework";
 import ContentMarketingAi from "@/pages/blog/ContentMarketingAi";
 import VideoEditingAutomation from "@/pages/blog/VideoEditingAutomation";
+import GuideDetail from "@/pages/resources/GuideDetail";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -62,6 +63,7 @@ function Router() {
           <Route path="/blog/content-marketing-ai" component={ContentMarketingAi} />
           <Route path="/blog/video-editing-automation" component={VideoEditingAutomation} />
           <Route path="/guides" component={Guides} />
+          <Route path="/guides/:slug" component={GuideDetail} />
           <Route path="/help" component={HelpCenter} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />

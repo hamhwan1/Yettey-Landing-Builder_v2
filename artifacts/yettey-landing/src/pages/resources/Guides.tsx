@@ -10,7 +10,6 @@ import {
   Sparkles,
   Zap,
   X,
-  Check,
   Upload,
   UserPlus,
   Link2,
@@ -28,78 +27,86 @@ const fade = {
   show: (i = 0) => ({ opacity: 1, y: 0, transition: { duration: 0.5, delay: i * 0.07 } }),
 };
 
-const guides = [
+export const guides = [
   {
+    slug: "organize",
     icon: FolderOpen,
     accent: "#8B5CF6",
     tag: "Organize",
-    title: "Can’t find your files?",
+    title: "Can't find your files?",
     seo: "AI digital asset management system for file organization",
-    desc: "Upload once. Everything organizes itself — no folders needed.",
+    desc: "Upload once. Everything organizes itself \u2014 no folders needed.",
     sub: "No more messy folders. Everything is structured automatically.",
     cta: "Organize your files now",
   },
   {
+    slug: "find",
     icon: Search,
     accent: "#0EA5E9",
     tag: "Find",
     title: "Still digging through folders?",
     seo: "Search files instantly with AI asset search",
-    desc: "Search across images, videos, and files instantly — like Google for your content.",
+    desc: "Search across images, videos, and files instantly \u2014 like Google for your content.",
     sub: "Find anything in seconds, no matter where it lives.",
     cta: "Find any file now",
   },
   {
+    slug: "share",
     icon: Share2,
     accent: "#F97316",
     tag: "Share",
     title: "Sharing links everywhere?",
     seo: "Secure file sharing and content distribution system",
-    desc: "Share content with control — not just links.",
+    desc: "Share content with control \u2014 not just links.",
     sub: "Manage access, permissions, and visibility in one place.",
     cta: "Share with control",
   },
   {
+    slug: "collaborate",
     icon: Users,
     accent: "#10B981",
     tag: "Collaboration",
     title: "Feedback scattered across tools?",
     seo: "Collaborative digital asset management for teams",
     desc: "Stop switching tools. Collaborate directly on your content.",
-    sub: "Comment, review, and align — all on the asset itself.",
+    sub: "Comment, review, and align \u2014 all on the asset itself.",
     cta: "Collaborate on assets now",
   },
   {
+    slug: "activate",
     icon: RefreshCw,
     accent: "#EC4899",
     tag: "Activate",
     title: "Content exists, but never reused?",
     seo: "Content reuse and asset activation platform",
-    desc: "Turn unused content into reusable assets — instantly.",
+    desc: "Turn unused content into reusable assets \u2014 instantly.",
     sub: "Reuse what you already have instead of creating from scratch.",
     cta: "Reuse content instantly",
   },
   {
+    slug: "ai-editing",
     icon: Sparkles,
     accent: "#F59E0B",
     tag: "AI",
     title: "Need design skills to edit content?",
     seo: "AI image editing and automation tools",
-    desc: "Edit like a pro — without design skills.",
+    desc: "Edit like a pro \u2014 without design skills.",
     sub: "Remove backgrounds, enhance quality, and fix images in one click.",
     cta: "Edit content instantly",
   },
   {
+    slug: "speed",
     icon: Zap,
     accent: "#6366F1",
     tag: "Speed",
     title: "Is your website slow because of media?",
     seo: "Media CDN and image optimization platform",
-    desc: "Make your content load instantly — no more slow pages.",
+    desc: "Make your content load instantly \u2014 no more slow pages.",
     sub: "Built-in CDN ensures fast delivery everywhere.",
     cta: "Speed up your content now",
   },
   {
+    slug: "control",
     icon: Shield,
     accent: "#EF4444",
     tag: "Control",
@@ -110,6 +117,7 @@ const guides = [
     cta: "Control your content now",
   },
   {
+    slug: "versions",
     icon: GitBranch,
     accent: "#14B8A6",
     tag: "Versions",
@@ -126,9 +134,6 @@ export default function Guides() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      {/* ═══════════════════════════════════════════════════════════
-          HERO — SEO + Conversion
-      ═══════════════════════════════════════════════════════════ */}
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full blur-[140px] opacity-15 pointer-events-none"
@@ -154,7 +159,7 @@ export default function Guides() {
             variants={fade} initial="hidden" animate="show" custom={2}
             className="text-xl text-foreground/70 mb-3 max-w-xl mx-auto font-medium"
           >
-            Find any file instantly — even across thousands of assets.
+            Find any file instantly {"\u2014"} even across thousands of assets.
           </motion.p>
 
           <motion.p
@@ -193,9 +198,6 @@ export default function Guides() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          PROBLEM — Emotional hook
-      ═══════════════════════════════════════════════════════════ */}
       <section className="max-w-3xl mx-auto px-4 mb-16">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-8 text-center">
@@ -204,10 +206,10 @@ export default function Guides() {
           <div className="rounded-2xl border border-border bg-card p-6 sm:p-8 mb-8">
             <div className="flex flex-col gap-3">
               {[
-                "Files are uploaded — but hard to find",
-                "Links are shared — but hard to control",
-                "Teams collaborate — but everything is fragmented",
-                "Content exists — but rarely reused",
+                "Files are uploaded \u2014 but hard to find",
+                "Links are shared \u2014 but hard to control",
+                "Teams collaborate \u2014 but everything is fragmented",
+                "Content exists \u2014 but rarely reused",
               ].map((point) => (
                 <div key={point} className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5 bg-red-500/20">
@@ -235,19 +237,16 @@ export default function Guides() {
         </motion.div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          GUIDE CARDS — Problem-driven
-      ═══════════════════════════════════════════════════════════ */}
       <section className="max-w-4xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
             Find the guide for your problem
           </h2>
           <p className="text-muted-foreground text-center mb-3 max-w-lg mx-auto">
-            Each guide solves a specific content management challenge — pick yours.
+            Each guide solves a specific content management challenge {"\u2014"} pick yours.
           </p>
           <p className="text-center text-sm font-medium mb-10" style={{ color: ACCENT }}>
-            Choose your biggest challenge — and fix it in minutes
+            Choose your biggest challenge {"\u2014"} and fix it in minutes
           </p>
         </motion.div>
 
@@ -256,41 +255,44 @@ export default function Guides() {
             const Icon = guide.icon;
             return (
               <motion.div
-                key={guide.tag}
+                key={guide.slug}
                 variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }} custom={i}
-                className="rounded-xl border border-border bg-card p-6 hover:border-primary/30 hover:-translate-y-1 transition-all duration-200 group flex flex-col"
               >
-                <div className="flex items-center gap-3 mb-4">
+                <Link href={`/guides/${guide.slug}`}>
                   <div
-                    className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                    style={{ backgroundColor: `${guide.accent}15` }}
+                    className="rounded-xl border border-border bg-card p-6 hover:border-primary/40 hover:-translate-y-1.5 hover:shadow-lg hover:shadow-primary/5 transition-all duration-200 group flex flex-col h-full cursor-pointer"
                   >
-                    <Icon className="w-5 h-5" style={{ color: guide.accent }} />
+                    <div className="flex items-center gap-3 mb-4">
+                      <div
+                        className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
+                        style={{ backgroundColor: `${guide.accent}15` }}
+                      >
+                        <Icon className="w-5 h-5" style={{ color: guide.accent }} />
+                      </div>
+                      <span
+                        className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
+                        style={{ backgroundColor: `${guide.accent}15`, color: guide.accent }}
+                      >
+                        {guide.tag}
+                      </span>
+                    </div>
+
+                    <h3 className="font-display font-bold text-foreground text-lg mb-1 group-hover:text-primary transition-colors">
+                      {guide.title}
+                    </h3>
+
+                    <p className="text-[11px] text-muted-foreground mb-2 italic">{guide.seo}</p>
+
+                    <p className="text-sm text-foreground/70 leading-relaxed mb-5 flex-1">{guide.desc}</p>
+
+                    <span
+                      className="self-start inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-white transition-all duration-200 group-hover:-translate-y-0.5"
+                      style={{ background: guide.accent, boxShadow: `0 4px 12px ${guide.accent}30` }}
+                    >
+                      {guide.cta}
+                      <ArrowRight className="w-3 h-3" />
+                    </span>
                   </div>
-                  <span
-                    className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
-                    style={{ backgroundColor: `${guide.accent}15`, color: guide.accent }}
-                  >
-                    {guide.tag}
-                  </span>
-                </div>
-
-                <h3 className="font-display font-bold text-foreground text-lg mb-1 group-hover:text-primary transition-colors">
-                  {guide.title}
-                </h3>
-
-                <p className="text-[11px] text-muted-foreground mb-2 italic">{guide.seo}</p>
-
-                <p className="text-sm text-foreground/70 leading-relaxed mb-5 flex-1">{guide.desc}</p>
-
-                <Link href="/pricing">
-                  <button
-                    className="self-start inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
-                    style={{ background: guide.accent, boxShadow: `0 4px 12px ${guide.accent}30` }}
-                  >
-                    {guide.cta}
-                    <ArrowRight className="w-3 h-3" />
-                  </button>
                 </Link>
               </motion.div>
             );
@@ -298,13 +300,10 @@ export default function Guides() {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          QUICK START — 5 minutes
-      ═══════════════════════════════════════════════════════════ */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
-            From messy files → structured system in 5 minutes
+            From messy files {"\u2192"} structured system in 5 minutes
           </h2>
           <p className="text-muted-foreground text-center mb-10">
             No setup required. Just start.
@@ -314,7 +313,7 @@ export default function Guides() {
         <div className="flex flex-col gap-3">
           {[
             { step: "01", icon: Zap, title: "Create your workspace", desc: "Set up your Yettey workspace in seconds." },
-            { step: "02", icon: Upload, title: "Upload your files", desc: "Drag and drop any media — Yettey handles the rest." },
+            { step: "02", icon: Upload, title: "Upload your files", desc: "Drag and drop any media \u2014 Yettey handles the rest." },
             { step: "03", icon: FolderOpen, title: "Everything organizes automatically", desc: "AI auto-tags, categorizes, and structures your content." },
             { step: "04", icon: UserPlus, title: "Invite your team", desc: "Add team members and assign permissions." },
             { step: "05", icon: Link2, title: "Share instantly", desc: "Send a secure, branded link to anyone." },
@@ -357,9 +356,6 @@ export default function Guides() {
         </motion.div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          CORE VALUES — 3 pillars
-      ═══════════════════════════════════════════════════════════ */}
       <section className="max-w-4xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -405,9 +401,6 @@ export default function Guides() {
         </motion.div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          FINAL CTA
-      ═══════════════════════════════════════════════════════════ */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
           variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
