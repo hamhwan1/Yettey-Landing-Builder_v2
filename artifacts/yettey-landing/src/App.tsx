@@ -28,6 +28,7 @@ import GuideDetail from "@/pages/resources/GuideDetail";
 import HelpDetailPage from "@/pages/resources/HelpDetail";
 import UploadFailedHelp from "@/pages/resources/help/UploadFailed";
 import VideoProcessingStuckHelp from "@/pages/resources/help/VideoProcessingStuck";
+import CantFindFileHelp from "@/pages/resources/help/CantFindFile";
 import GuideOrganize from "@/pages/resources/GuideOrganize";
 import GuideFind from "@/pages/resources/GuideFind";
 import GuideShare from "@/pages/resources/GuideShare";
@@ -88,6 +89,7 @@ function Router() {
           <Route path="/help" component={HelpCenter} />
           <Route path="/help/upload-failed" component={UploadFailedHelp} />
           <Route path="/help/video-processing-stuck" component={VideoProcessingStuckHelp} />
+          <Route path="/help/cant-find-file" component={CantFindFileHelp} />
           <Route path="/help/:slug" component={HelpDetailPage} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />

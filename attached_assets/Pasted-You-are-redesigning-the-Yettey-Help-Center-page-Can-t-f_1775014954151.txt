@@ -1,0 +1,195 @@
+You are redesigning the Yettey Help Center page: "Can't find your file".
+
+This page must focus on helping users quickly locate their files using search and navigation tools.
+
+---
+
+[GOAL]
+
+- Help users find their file within seconds
+- Reduce frustration (lost content = high stress)
+- Guide users back into workflow
+- Optimize for SEO
+- Keep everything action-oriented
+
+---
+
+[STEP 1: PAGE TYPE]
+
+This is NOT a troubleshooting page.
+
+This is a "find + recover" page.
+
+User intent:
+→ “Where is my file?”
+→ “How do I find it fast?”
+
+---
+
+[STEP 2: PAGE STRUCTURE]
+
+---
+
+## H1 Title
+
+Can't find your file? Here's how to find it fast
+
+---
+
+## Quick Answer (CRITICAL) 🔥
+
+You can usually find your file by:
+
+- Searching by name or keyword
+- Using filters (type, date, project)
+- Checking recent uploads
+
+👉 Open search →
+
+---
+
+## Step-by-step Solution
+
+---
+
+### Step 1: Use the search bar
+
+Type file name, keyword, or description
+
+→ Open search →
+
+---
+
+### Step 2: Try AI search
+
+Describe what your file looks like
+
+→ Try AI search →
+
+---
+
+### Step 3: Apply filters
+
+Filter by:
+- file type
+- upload date
+- project or team
+
+→ Open filters →
+
+---
+
+### Step 4: Check recent uploads
+
+Your file may be in your latest uploads
+
+→ View recent files →
+
+---
+
+## If still not found
+
+Try:
+
+- Check if the file is in another project
+- Ask your team if it was moved or renamed
+- Clear filters and search again
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+- File appears in search results
+- File is visible in your workspace
+- You can open or use the file
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥
+
+- Upload not working?
+- Video processing stuck?
+- Upload too slow?
+- Credits not working?
+
+---
+
+## CTA
+
+Still not working?
+
+Talk to our team — we’ll help you fast.
+
+[Contact Support]
+
+---
+
+[STEP 3: ACTION BUTTON LOGIC]
+
+All buttons must trigger real actions:
+
+---
+
+IF logged in:
+→ open search / dashboard / filters
+
+IF not logged in:
+→ redirect to login with intent
+
+Example:
+→ /login?redirect=/search
+
+---
+
+[STEP 4: REMOVE STATIC DATA]
+
+- No technical specs
+- No unnecessary explanations
+
+Focus only on:
+→ how to find the file
+
+---
+
+[STEP 5: UX RULES]
+
+- This page must feel fast
+- Every step must lead to action
+- Avoid passive instructions
+
+---
+
+[STEP 6: SEO]
+
+Primary keywords:
+- can't find file
+- file missing
+- file not found
+
+Include in:
+- title
+- first paragraph
+- one subheading
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+Users:
+- uploaded files
+- want to reuse or process content
+
+Problem:
+→ file seems missing
+
+Reality:
+→ file exists but hard to locate
+
+Tone:
+→ clear, fast, reassuring
+
+---
+
+[FINAL GOAL]
+
+User lands → searches → finds file → continues workflow
