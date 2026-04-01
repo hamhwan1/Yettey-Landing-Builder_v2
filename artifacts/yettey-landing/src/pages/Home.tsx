@@ -45,14 +45,14 @@ function Hero() {
         
         <FadeIn delay={0.1}>
           <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight mb-6">
-            Turn your media into content.<br />
+            Turn anything into content.<br />
             <span className="text-gradient-primary">All in one AI platform.</span>
           </h1>
         </FadeIn>
         
         <FadeIn delay={0.2}>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-            From raw media to ready-to-publish content — faster than ever.<br />
+            From raw files to ready-to-publish content.<br />
             </p>
         </FadeIn>
         
@@ -83,18 +83,18 @@ function Problems() {
   const problems = [
     {
       icon: Search,
-      title: "Files are everywhere",
+      title: "Files are a mess.",
       desc: "Hard to find. Hard to reuse."
     },
     {
       icon: Video,
-      title: "Editing takes too long",
-      desc: "Manual work slows everything down."
+      title: "Editing is slow.",
+      desc: "Too much manual work."
     },
     {
       icon: Users,
-      title: "Too many versions",
-      desc: "Confusion, duplicates, and lost files."
+      title: "Versions are out of control.",
+      desc: "Duplicates everywhere."
     }
   ];
 
@@ -103,7 +103,7 @@ function Problems() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Content creation is broken.
+            Too many tools.
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
             Too many tools. Too much time.<br />
@@ -134,27 +134,27 @@ function Features() {
     {
       title: "Find anything instantly.",
       tag: "Manage your media",
-      description: "No more folders, chaos, or lost files.",
+      description: "No more lost files. No more chaos.",
       icon: FolderTree,
-      bullets: ["AI-powered search", "Smart organization", "Works with any media"],
+      bullets: ["Find anything in seconds ", "Everything auto-organized", "Works with any file"],
       align: "left",
       image: "feature-dam.png"
     },
     {
-      title: "Create content from your media.",
+      title: "Create content. Instantly.",
       tag: "AI Content",
-      description: "No prompts, no extra tools — just use what you already have.",
+      description: "No prompts. No extra tools. Just use what you already have.",
       icon: Sparkles,
-      bullets: ["Generate from your assets", "Smart content suggestions", "Enhance in seconds"],
+      bullets: ["Create content from what you already have ", "Get smart suggestions instantly", "Enhance in seconds"],
       align: "right",
       image: "feature-ai.png"
     },
     {
-      title: "Turn videos into viral short-form content.",
-      tag: "Video to Shorts",
-      description: "Find key moments, add captions, and publish — automatically.",
+      title: "Turn moments into content.",
+      tag: "Video to Short-form",
+      description: "Find moments. Add captions. Publish.",
       icon: Scissors,
-      bullets: ["Find the best moments", "Auto captions & edits", "Ready for TikTok, Reels, Shorts"],
+      bullets: ["Find the best moments instantly", "Auto edits", "Ready for TikTok, Reels, Shorts"],
       align: "left",
       image: "feature-video.png"
     },
@@ -249,8 +249,8 @@ function ProductUI() {
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-medium mb-2">
                   <FolderTree className="w-3 h-3" /> Digital Asset Management
                 </span>
-                <h3 className="text-lg font-bold text-white">Find anything instantly</h3>
-                <p className="text-sm text-white/60">No more lost files or messy folders.</p>
+                <h3 className="text-lg font-bold text-white">Find anything. Instantly.</h3>
+                <p className="text-sm text-white/60">No more chaos. No more lost files.</p>
               </div>
             </div>
           </FadeIn>
@@ -267,8 +267,8 @@ function ProductUI() {
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-medium mb-2">
                   <Sparkles className="w-3 h-3" /> AI Tools
                 </span>
-                <h3 className="text-lg font-bold text-white">Create content from your media</h3>
-                <p className="text-sm text-white/60">No prompts, no extra tools — just use what you already have.</p>
+                <h3 className="text-lg font-bold text-white">Create content. Instantly.</h3>
+                <p className="text-sm text-white/60">No prompts. No extra tools.</p>
               </div>
             </div>
           </FadeIn>
@@ -348,15 +348,15 @@ const row2 = testimonials.slice(12, 24);
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
     <div className="flex-shrink-0 w-[280px] md:w-[310px] p-4 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:border-white/[0.14] transition-colors duration-300">
-      <p className="text-[13px] text-white/[0.92] leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
+      <p className="text-[13px] text-foreground/100 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
           <div className="w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/20">
             {t.name.charAt(0)}
           </div>
           <div className="min-w-0">
-            <p className="text-[12px] font-medium text-white/70 truncate">{t.name}</p>
-            <p className="text-[10px] text-white/40 truncate">{t.role}</p>
+            <p className="text-[12px] font-medium text-foreground/100 truncate">{t.name}</p>
+            <p className="text-[10px] text-muted-foreground truncate">{t.role}</p>
           </div>
         </div>
         {t.tag && (
