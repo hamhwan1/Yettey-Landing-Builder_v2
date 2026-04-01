@@ -170,7 +170,7 @@ export default function Guides() {
             variants={fade} initial="hidden" animate="show" custom={4}
             className="text-sm text-foreground/50 mb-8 max-w-lg mx-auto"
           >
-            Organize, search, share, and reuse content faster with Yettey.
+            Built for teams, marketers, and creators managing content at scale.
           </motion.p>
 
           <motion.div

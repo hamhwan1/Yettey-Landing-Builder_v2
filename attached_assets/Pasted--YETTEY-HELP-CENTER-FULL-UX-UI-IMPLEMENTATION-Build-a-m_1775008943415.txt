@@ -1,0 +1,234 @@
+# YETTEY HELP CENTER – FULL UX/UI IMPLEMENTATION
+
+Build a modern, problem-solving Help Center page (NOT just informational).
+
+The goal is:
+→ Help users solve issues within 10 seconds
+→ Reduce support requests
+→ Improve product understanding
+
+---
+
+# 1. HERO SECTION (Search-first UX)
+
+Title:
+How can we help you today?
+
+Search bar placeholder:
+Search for answers, features, or issues...
+
+---
+
+## 🔥 Add below search bar (MANDATORY)
+
+Popular searches:
+
+* Upload failed
+* Can't find my file
+* Credits not working
+* Video processing stuck
+
+---
+
+# 2. QUICK ACTIONS (CRITICAL SECTION)
+
+Display clickable cards for immediate problem solving:
+
+Section title:
+⚡ Quick help
+
+Items:
+
+* I can't find my file
+* Upload failed
+* Video processing stuck
+* I ran out of credits
+* Invite team members
+* Billing issue
+
+Each item must:
+→ Navigate to a dedicated help detail page
+→ Be visually prominent (card UI)
+
+---
+
+# 3. CATEGORY SECTION
+
+Section title:
+📚 Browse by category
+
+Categories:
+
+* Getting Started
+* Pricing & Billing
+* Credits
+* Create & Edit Videos
+* AI Features
+* Team & Sharing
+
+IMPORTANT:
+Use action-oriented naming (not generic nouns)
+
+---
+
+# 4. SMART FAQ (Problem-based)
+
+Section title:
+❓ Frequently asked
+
+Questions:
+
+* What happens if I run out of credits?
+* Why is my video not processing?
+* How do I find a file quickly?
+* Why can't I upload a file?
+* How do I invite team members?
+
+IMPORTANT:
+All questions must be written as real user problems
+
+---
+
+# 5. TROUBLESHOOTING SECTION (CRITICAL)
+
+Section title:
+🚨 Having issues?
+
+Subtitle:
+Fix common problems fast:
+
+Items:
+
+* Upload errors
+* Video processing failed
+* Missing files
+* Slow performance
+* Login issues
+
+Each item → leads to step-by-step guide
+
+---
+
+# 6. SUPPORT CTA
+
+Section:
+
+Still need help?
+
+Description:
+Our team typically responds within a few hours.
+
+Button:
+Contact Support
+
+---
+
+# 7. OPTIONAL CTA (FOR CONVERSION)
+
+Section:
+
+New to Yettey?
+
+Start organizing your content in minutes.
+
+Button:
+Get started for free
+
+---
+
+# 🔥 DETAIL PAGE STRUCTURE (VERY IMPORTANT)
+
+Each Quick Action / FAQ item must open a structured help page:
+
+---
+
+## Page Layout
+
+1. Title (problem-based)
+   Example:
+   Upload failed
+
+---
+
+2. Short explanation
+   Explain what the issue means in 1–2 lines
+
+---
+
+3. Step-by-step solution
+
+Example:
+
+Step 1
+Check your file format (MP4, MOV supported)
+
+Step 2
+Ensure file size is under limit
+
+Step 3
+Retry upload
+
+---
+
+4. Visual support (if possible)
+
+* Screenshot
+* UI highlight
+
+---
+
+5. Alternative solution
+
+Example:
+If the issue continues:
+
+* Refresh the page
+* Try another browser
+
+---
+
+6. Related articles
+
+Example:
+
+* Video processing stuck
+* Supported file formats
+* Upload limits
+
+---
+
+7. CTA
+
+Still not working?
+
+[ Contact Support ]
+
+---
+
+# UX PRINCIPLES (MANDATORY)
+
+* Focus on problem-solving, not explanation
+* Reduce reading → increase clarity
+* Make navigation extremely fast
+* Use clear, simple language
+* Every page must lead to resolution
+
+---
+
+# DESIGN NOTES
+
+* Use card-based UI for quick actions
+* Keep spacing clean and minimal
+* Highlight search as primary action
+* Ensure mobile-friendly layout
+
+---
+
+# FINAL GOAL
+
+Users should:
+→ Find answers instantly
+→ Solve issues without contacting support
+→ Understand the product naturally
+
+---
