@@ -33,6 +33,7 @@ import GuideActivate from "@/pages/resources/GuideActivate";
 import GuideAiEditing from "@/pages/resources/GuideAiEditing";
 import GuideSpeed from "@/pages/resources/GuideSpeed";
 import GuideControl from "@/pages/resources/GuideControl";
+import GuideVersions from "@/pages/resources/GuideVersions";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -79,6 +80,7 @@ function Router() {
           <Route path="/guides/ai-editing" component={GuideAiEditing} />
           <Route path="/guides/speed" component={GuideSpeed} />
           <Route path="/guides/control" component={GuideControl} />
+          <Route path="/guides/versions" component={GuideVersions} />
           <Route path="/guides/:slug" component={GuideDetail} />
           <Route path="/help" component={HelpCenter} />
           <Route path="/privacy" component={PrivacyPolicy} />
