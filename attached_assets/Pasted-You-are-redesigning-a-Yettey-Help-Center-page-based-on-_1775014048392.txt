@@ -1,0 +1,210 @@
+You are redesigning a Yettey Help Center page based on a provided UI image.
+
+This is NOT a simple rewrite task.
+You must transform the page into a high-quality, action-driven, SEO-optimized help article.
+
+---
+
+[GOAL]
+
+- Help users fix their problem in under 2 minutes
+- Improve readability (Notion-level clarity)
+- Optimize for SEO (Google indexing)
+- Reduce support requests
+- Drive users back into the product flow
+
+---
+
+[STEP 1: ANALYZE IMAGE]
+
+From the provided UI image, identify:
+
+- What problem this page is solving (upload, processing, billing, etc.)
+- What the user is trying to do
+- What actions are required to solve it
+- Whether actions require login
+
+---
+
+[STEP 2: REWRITE PAGE USING THIS STRUCTURE]
+
+---
+
+## H1 Title
+
+Format:
+[Problem] + [Outcome]
+
+Example:
+Upload not working? Fix it in minutes
+
+---
+
+## Quick Answer (ABOVE THE FOLD) 🔥
+
+- Summarize the main causes in 3 bullets
+- Add:
+"Most issues can be fixed in under 2 minutes."
+
+---
+
+## Step-by-step Solution (CORE)
+
+Rules:
+- Each step must be short (1–2 lines)
+- Must be action-oriented
+- Must be scannable
+
+IMPORTANT:
+- DO NOT include hardcoded values (file sizes, formats, etc.)
+- Replace all static info with action links
+
+---
+
+Step format:
+
+### Step X: [Action title]
+
+Short explanation
+
+→ Action link or button
+
+---
+
+## If still not working
+
+- Provide fallback solutions
+- Keep it simple and practical
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+Clearly define when the problem is solved
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥🔥🔥
+
+- Add 3–5 related problem links
+- Use question format
+- Must be logically connected
+
+---
+
+## CTA (FINAL)
+
+Still not working?
+
+Talk to our team — we’ll help you fast.
+
+[Contact Support]
+
+---
+
+[STEP 3: ACTION BUTTON LOGIC (CRITICAL)]
+
+For every action link:
+
+1. Decide if it's:
+   - Action (service-related)
+   - Info (help content)
+
+---
+
+[Action buttons behavior]
+
+IF action requires login:
+
+- Logged in:
+  → trigger real action (e.g. open upload UI)
+
+- Not logged in:
+  → redirect to login with intent
+
+Example:
+→ /login?redirect=/upload
+
+After login:
+→ automatically continue the intended action
+
+---
+
+[Info buttons behavior]
+
+- Must link to help pages
+Example:
+→ /help/supported-formats
+→ /help/upload-limits
+
+---
+
+[STEP 4: REMOVE STATIC DATA]
+
+DO NOT include:
+- File size numbers
+- Format lists
+
+Instead:
+→ link to dedicated pages
+
+---
+
+[STEP 5: SEO OPTIMIZATION]
+
+- Include primary keyword in:
+  → H1
+  → first paragraph
+  → at least one section
+
+- Add natural secondary keywords
+
+- Keep sentences natural
+
+---
+
+[STEP 6: UX RULES]
+
+- Help Center is NOT documentation
+→ It is a problem-solving tool
+
+- Users must understand within 5 seconds
+
+- Use:
+  → short sentences
+  → no jargon
+  → clear spacing
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+Users:
+- Upload content
+- Use AI processing
+- Create outputs
+
+Problem = workflow blocked
+
+Tone:
+→ fast, direct, helpful
+
+---
+
+[FINAL OUTPUT]
+
+Generate a fully rewritten Help Center page that:
+
+- Matches the structure above
+- Is easy to read
+- Guides action clearly
+- Connects to product flow
+- Includes internal linking
+- Includes proper button logic
+
+---
+
+IMPORTANT:
+
+Do NOT just rephrase the content.
+You must redesign the experience.
