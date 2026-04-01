@@ -1,0 +1,216 @@
+We are redesigning the Help Center article page: "Upload failed" in Yettey.
+
+This page must be transformed from a static guide into a fast problem-solving experience.
+
+---
+
+[1. Page Goal]
+
+Users should:
+- Instantly understand why upload failed
+- Fix the issue within 1–2 minutes
+- Continue using Yettey without friction
+
+---
+
+[2. SEO Optimization (MANDATORY)]
+
+Primary keywords:
+- upload not working
+- upload failed
+- file upload error
+- video upload failed
+
+Secondary keywords:
+- file format not supported
+- upload size limit
+- slow upload
+- upload stuck
+
+Rules:
+- Include primary keyword in:
+  - H1 title
+  - first paragraph
+  - at least one H2
+- Keep content natural (no keyword stuffing)
+
+---
+
+[3. Page Structure (REQUIRED)]
+
+---
+
+## 🔷 H1 Title
+
+Upload not working? Fix it in minutes
+
+---
+
+## 🔷 Quick Answer (NEW - ABOVE THE FOLD) 🔥
+
+Upload usually fails because of:
+
+- Unsupported file format
+- File size exceeds limit
+- Unstable internet connection
+
+Most upload issues can be fixed in under 2 minutes.
+
+---
+
+## 🔷 Step-by-step Fix (CORE SECTION)
+
+Each step must be:
+- Action-based
+- Short (1–2 lines)
+- Scannable
+- Include a micro-action hint
+
+---
+
+### Step 1: Check your file format
+
+Supported formats:
+MP4, MOV, JPG, PNG, GIF, PDF
+
+If your file is not supported:
+→ Convert it before uploading
+
+(UI hint: add "See supported formats →")
+
+---
+
+### Step 2: Check file size limit
+
+- Free plan: up to 500MB
+- Pro plan: up to 2GB
+
+If your file is too large:
+→ Compress it or upgrade your plan
+
+(UI hint: "View plan limits →")
+
+---
+
+### Step 3: Check your connection
+
+- Use stable Wi-Fi or wired connection
+- Avoid switching networks during upload
+
+If upload fails:
+→ Try again on a stable connection
+
+(UI hint: "Retry upload →")
+
+---
+
+### Step 4: Retry upload
+
+- Refresh the page
+- Re-upload the file
+
+---
+
+## 🔷 If still not working
+
+Try these:
+
+- Compress the file before uploading
+- Use Chrome browser (recommended)
+- Disable VPN or firewall that may block uploads
+
+---
+
+## 🔷 You're good if (NEW - SUCCESS STATE) 🔥
+
+- File uploads successfully
+- No error message appears
+- Processing starts normally
+
+---
+
+## 🔷 Related Problems (INTERNAL LINKING - CRITICAL) 🔥🔥🔥
+
+Convert existing "Related articles" into problem-based links:
+
+- Can't find your file?
+- Video processing stuck?
+- Upload is too slow?
+- Credits not working?
+
+Rules:
+- Must be clickable
+- Must connect logically
+- Use question format
+
+---
+
+## 🔷 CTA (CONVERSION)
+
+Still not working?
+
+Talk to our team — we’ll help you fast.
+
+[Contact Support]
+
+---
+
+[4. UX Improvements]
+
+- Add spacing between sections
+- Increase text contrast (white titles / light gray body)
+- Each step should be in a card layout
+- Improve hover interaction on links/buttons
+- Make entire layout scannable in 5 seconds
+
+---
+
+[5. Writing Style]
+
+- Short sentences
+- No technical jargon
+- Action-focused
+- No long paragraphs
+
+---
+
+[6. Yettey Context (IMPORTANT)]
+
+Users upload files to:
+→ process content with AI
+→ generate outputs (clips, assets, etc.)
+
+Upload failure = workflow blocked
+
+Tone should reflect urgency:
+→ "Fix this quickly and continue your work"
+
+---
+
+[7. Internal Linking Strategy]
+
+Every help page must:
+- Link to at least 3 related problems
+- Be linked from other pages
+
+Structure:
+Upload issue → Processing issue → File issue → Credits issue
+
+Goal:
+Keep users inside help ecosystem
+
+---
+
+[8. Final Goal]
+
+This page must:
+
+- Rank on Google
+- Solve the problem immediately
+- Reduce support requests
+- Improve user retention
+
+---
+
+Expected result:
+User lands → understands → fixes → continues using Yettey

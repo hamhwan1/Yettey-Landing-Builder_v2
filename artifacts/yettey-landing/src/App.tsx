@@ -26,6 +26,7 @@ import ContentMarketingAi from "@/pages/blog/ContentMarketingAi";
 import VideoEditingAutomation from "@/pages/blog/VideoEditingAutomation";
 import GuideDetail from "@/pages/resources/GuideDetail";
 import HelpDetailPage from "@/pages/resources/HelpDetail";
+import UploadFailedHelp from "@/pages/resources/help/UploadFailed";
 import GuideOrganize from "@/pages/resources/GuideOrganize";
 import GuideFind from "@/pages/resources/GuideFind";
 import GuideShare from "@/pages/resources/GuideShare";
@@ -84,6 +85,7 @@ function Router() {
           <Route path="/guides/versions" component={GuideVersions} />
           <Route path="/guides/:slug" component={GuideDetail} />
           <Route path="/help" component={HelpCenter} />
+          <Route path="/help/upload-failed" component={UploadFailedHelp} />
           <Route path="/help/:slug" component={HelpDetailPage} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />
