@@ -1,0 +1,211 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT documentation.
+This is NOT a feature explanation.
+
+This page must:
+👉 make users feel collaboration chaos immediately
+👉 show how Yettey simplifies teamwork
+👉 drive action toward using the product
+
+---
+
+# 1. CONTEXT
+
+Guide Topic:
+"Collaboration / Feedback scattered across tools?"
+
+Core Problem:
+Teams collaborate across Slack, email, and spreadsheets, causing confusion, delays, and lack of clarity.
+
+---
+
+# 2. HERO (VERY IMPORTANT)
+
+Headline:
+"Stop losing time switching between tools."
+
+Subheadline:
+"Collaborate directly on your content — faster and clearer."
+
+SEO line (MANDATORY):
+"Collaborative digital asset management system for teams working on content and media"
+
+CTA:
+"Start collaborating now"
+
+Optional trust line:
+"Built for teams that need faster feedback and approvals"
+
+---
+
+# 3. PROBLEM (BEFORE)
+
+Title:
+"Collaboration is broken across tools"
+
+Content:
+
+❌ Feedback scattered across email, Slack, and spreadsheets
+❌ Version confusion when multiple people edit
+❌ No single source of truth for approvals
+❌ Time wasted switching between tools
+
+---
+
+# 4. POSITIONING (IMPORTANT)
+
+Add strong contrast:
+
+"Messages are in one place. Content is in another.
+
+Yettey brings them together."
+
+OR
+
+"Traditional tools separate feedback and content.
+
+Yettey puts collaboration directly on your assets."
+
+---
+
+# 5. SOLUTION (YETTEY)
+
+Explain clearly:
+
+"Yettey lets your team comment, review, and approve directly on the content itself"
+
+---
+
+# 6. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite flow to highlight simplicity:
+
+1. Upload your assets for review
+2. Invite your team with permissions
+3. Comment directly on images, videos, or files
+4. Approve and move forward — no back-and-forth
+
+---
+
+# 7. VISUAL SECTION (BASED ON UI)
+
+Describe what users see:
+
+* Inline comments pinned to specific parts of content
+* Approval workflows with clear status indicators
+* Activity feed showing all team actions
+
+⚠️ Focus on clarity and ease
+
+---
+
+# 8. FEATURES → EXPERIENCE
+
+Title:
+"What you’ll experience"
+
+Convert features into outcomes:
+
+* Feedback directly on content
+* Clear version history — no confusion
+* Faster approvals with fewer steps
+* One place for all collaboration
+
+---
+
+# 9. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Feedback in emails and chat threads
+* Version confusion
+* No clear approval process
+* Endless back-and-forth
+
+After:
+
+* Comments directly on assets
+* Clear version history
+* One-click approvals
+* Up to 80% less back-and-forth
+
+---
+
+# 10. VALUE (WHY IT MATTERS)
+
+* Cut review cycles by up to 80%
+* Eliminate version confusion
+* Speed up team workflows
+* Ship content faster
+
+---
+
+# 11. SEO BLOCK (MANDATORY)
+
+Include paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system designed to improve collaboration for teams working with content.
+
+It allows teams to review, comment, and approve assets directly, reducing inefficiencies and making it a powerful alternative to traditional collaboration workflows."
+
+---
+
+# 12. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"Stop switching tools. Start collaborating."
+
+Subtext:
+"Work together directly on your content."
+
+CTA:
+"Start collaborating now"
+
+Optional:
+"No credit card required"
+
+---
+
+# 13. SEO REQUIREMENTS
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* team collaboration tools
+* content collaboration platform
+* media asset management
+
+⚠️ Do NOT keyword stuff
+⚠️ Keep natural
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Clear and direct
+* Problem → solution → result
+* No technical jargon
+* Outcome-focused
+
+---
+
+# 15. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users feel collaboration chaos
+2. Show clear difference vs Slack/email workflows
+3. Emphasize “on-content collaboration”
+4. Be understandable in 5 seconds
+5. Drive CTA clicks
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.

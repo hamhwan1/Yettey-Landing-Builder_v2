@@ -28,6 +28,7 @@ import GuideDetail from "@/pages/resources/GuideDetail";
 import GuideOrganize from "@/pages/resources/GuideOrganize";
 import GuideFind from "@/pages/resources/GuideFind";
 import GuideShare from "@/pages/resources/GuideShare";
+import GuideCollaborate from "@/pages/resources/GuideCollaborate";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -69,6 +70,7 @@ function Router() {
           <Route path="/guides/organize" component={GuideOrganize} />
           <Route path="/guides/find" component={GuideFind} />
           <Route path="/guides/share" component={GuideShare} />
+          <Route path="/guides/collaborate" component={GuideCollaborate} />
           <Route path="/guides/:slug" component={GuideDetail} />
           <Route path="/help" component={HelpCenter} />
           <Route path="/privacy" component={PrivacyPolicy} />
