@@ -27,38 +27,38 @@ const steps = [
   {
     icon: FileCheck,
     color: "#0EA5E9",
-    title: "Make sure your file format is supported",
-    body: "Yettey accepts common media and document formats. If your file isn't listed, convert it first.",
+    title: "Check your file format",
+    body: "Convert your file to a supported format, then try again.",
     cta: { label: "See supported formats", href: "/help/upload-errors", type: "info" as const },
   },
   {
     icon: HardDrive,
     color: "#8B5CF6",
-    title: "Confirm your file is within the size limit",
-    body: "Each plan has a per-file size cap. If your file exceeds it, compress it or switch to a higher plan.",
-    cta: { label: "Check your plan limits", href: "/pricing", type: "info" as const },
+    title: "Check your file size",
+    body: "If your file is too large, compress it or upgrade your plan.",
+    cta: { label: "Check plan limits", href: "/pricing", type: "info" as const },
   },
   {
     icon: Wifi,
     color: "#10B981",
-    title: "Use a stable internet connection",
-    body: "Uploads need a consistent connection. Switch to wired or strong Wi-Fi, and avoid changing networks mid-upload.",
-    cta: { label: "Retry upload now", href: "/login?redirect=/dashboard/upload", type: "action" as const },
+    title: "Switch to a stable connection",
+    body: "Use wired or strong Wi-Fi. Don't switch networks mid-upload.",
+    cta: { label: "Retry upload", href: "/login?redirect=/dashboard/upload", type: "action" as const },
   },
   {
     icon: RefreshCw,
     color: "#F97316",
-    title: "Refresh and try again",
-    body: "A fresh page load clears cached errors. Close the upload dialog, refresh, and re-upload your file.",
-    cta: { label: "Open dashboard", href: "/login?redirect=/dashboard", type: "action" as const },
+    title: "Refresh and re-upload",
+    body: "Close the upload dialog, refresh the page, and try again.",
+    cta: { label: "Go to upload", href: "/login?redirect=/dashboard/upload", type: "action" as const },
   },
 ];
 
 const fallbacks = [
-  { text: "Compress the file before uploading", cta: null },
-  { text: "Switch to Chrome (recommended browser)", cta: null },
-  { text: "Turn off VPN or firewall temporarily", cta: null },
-  { text: "Try uploading a different file to isolate the issue", cta: null },
+  "Compress your file and re-upload",
+  "Switch to Chrome and retry",
+  "Turn off VPN or firewall, then retry",
+  "Upload a different file to test your connection",
 ];
 
 const successChecks = [
@@ -116,18 +116,24 @@ export default function UploadFailedPage() {
             <p className="text-sm text-white/40 mb-4">Upload usually fails because of one of these:</p>
             <div className="flex flex-col gap-3">
               {[
-                { dot: "bg-red-400", text: "File format not supported" },
-                { dot: "bg-orange-400", text: "File size exceeds your plan limit" },
-                { dot: "bg-yellow-400", text: "Internet connection dropped during upload" },
+                { dot: "bg-red-400", text: "Wrong file format", action: "Check formats", href: "/help/upload-errors" },
+                { dot: "bg-orange-400", text: "File too large", action: "Check limits", href: "/pricing" },
+                { dot: "bg-yellow-400", text: "Connection dropped", action: "Retry upload", href: "/login?redirect=/dashboard/upload" },
               ].map((item) => (
                 <div key={item.text} className="flex items-center gap-3">
                   <div className={`w-2 h-2 rounded-full ${item.dot} shrink-0`} />
-                  <span className="text-[15px] text-white/75">{item.text}</span>
+                  <span className="text-[15px] text-white/75 flex-1">{item.text}</span>
+                  <Link href={item.href} className="text-xs font-semibold text-amber-400/80 hover:text-amber-300 transition-colors shrink-0 flex items-center gap-1">
+                    {item.action} <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
               ))}
             </div>
-            <div className="mt-5 pt-4 border-t border-white/[0.05]">
-              <p className="text-sm text-white/30">Most upload errors can be fixed in under 2 minutes. Follow the steps below.</p>
+            <div className="mt-5 pt-4 border-t border-white/[0.05] flex items-center justify-between">
+              <p className="text-sm text-white/30">Most issues resolve in under 2 minutes.</p>
+              <Link href="/login?redirect=/dashboard/upload" className="text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors flex items-center gap-1">
+                Start uploading <ArrowRight className="w-3 h-3" />
+              </Link>
             </div>
           </div>
         </motion.section>
@@ -188,14 +194,19 @@ export default function UploadFailedPage() {
           <h2 className="font-display font-bold text-[22px] text-white tracking-tight mb-2">If it's still not working</h2>
           <p className="text-sm text-white/35 mb-6">Try these before contacting support:</p>
           <div className="rounded-2xl border border-white/[0.06] bg-white/[0.02] divide-y divide-white/[0.04]">
-            {fallbacks.map((fb, i) => (
-              <div key={fb.text} className="flex items-center gap-3.5 px-6 py-4">
+            {fallbacks.map((text, i) => (
+              <div key={text} className="flex items-center gap-3.5 px-6 py-4">
                 <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0" style={{ backgroundColor: `${ACCENT}10` }}>
                   <span className="text-[11px] font-bold" style={{ color: ACCENT }}>{i + 1}</span>
                 </div>
-                <span className="text-[15px] text-white/65">{fb.text}</span>
+                <span className="text-[15px] text-white/65">{text}</span>
               </div>
             ))}
+          </div>
+          <div className="mt-4 text-center">
+            <Link href="/login?redirect=/dashboard/upload" className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-primary hover:text-primary/80 transition-colors">
+              Start uploading <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
           </div>
         </motion.section>
 
