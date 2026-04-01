@@ -34,12 +34,12 @@ const ACCENT = "#8B5CF6";
 const popularSearches = ["Upload failed", "Can't find my file", "Credits not working", "Video processing stuck"];
 
 const quickActions = [
-  { icon: FileSearch, label: "I can't find my file", color: "#0EA5E9", slug: "cant-find-file" },
-  { icon: Upload, label: "Upload failed", color: "#EF4444", slug: "upload-failed" },
-  { icon: Video, label: "Video processing stuck", color: "#F97316", slug: "video-processing-stuck" },
-  { icon: CreditCard, label: "I ran out of credits", color: "#8B5CF6", slug: "out-of-credits" },
-  { icon: Users, label: "Invite team members", color: "#10B981", slug: "invite-team" },
-  { icon: CreditCard, label: "Billing issue", color: "#EC4899", slug: "billing-issue" },
+  { icon: Upload, label: "Upload not working?", color: "#EF4444", slug: "upload-failed" },
+  { icon: Video, label: "Video stuck?", color: "#F97316", slug: "video-processing-stuck" },
+  { icon: FileSearch, label: "Can't find your file?", color: "#0EA5E9", slug: "cant-find-file" },
+  { icon: CreditCard, label: "Out of credits?", color: "#8B5CF6", slug: "out-of-credits" },
+  { icon: CreditCard, label: "Billing problem?", color: "#EC4899", slug: "billing-issue" },
+  { icon: Users, label: "Invite your team", color: "#10B981", slug: "invite-team" },
 ];
 
 const helpCategories = [
@@ -186,7 +186,7 @@ export default function HelpCenter() {
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
               <div className="flex items-center gap-2 mb-6">
                 <Zap className="w-4 h-4" style={{ color: ACCENT }} />
-                <h2 className="font-display font-bold text-xl text-foreground">Quick help</h2>
+                <h2 className="font-display font-bold text-xl text-foreground">Quick fixes</h2>
               </div>
             </motion.div>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -199,17 +199,18 @@ export default function HelpCenter() {
                   >
                     <Link
                       href={`/help/${action.slug}`}
-                      className="rounded-xl bg-card border border-border p-5 flex items-start gap-3 hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 text-left group block"
+                      className="rounded-xl bg-card border border-border p-5 flex items-center gap-4 hover:border-primary/40 hover:bg-primary/[0.04] hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-200 text-left group block cursor-pointer"
                     >
                       <div
-                        className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0"
+                        className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-110"
                         style={{ background: `${action.color}18` }}
                       >
-                        <Icon className="w-4 h-4" style={{ color: action.color }} />
+                        <Icon className="w-5 h-5" style={{ color: action.color }} />
                       </div>
-                      <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors leading-snug mt-1">
+                      <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
                         {action.label}
                       </p>
+                      <ArrowRight className="w-4 h-4 text-muted-foreground/0 group-hover:text-primary/70 ml-auto shrink-0 transition-all duration-200 -translate-x-1 group-hover:translate-x-0 group-hover:opacity-100" />
                     </Link>
                   </motion.div>
                 );

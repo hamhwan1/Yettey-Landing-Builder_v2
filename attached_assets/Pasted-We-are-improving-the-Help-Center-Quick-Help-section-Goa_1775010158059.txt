@@ -1,0 +1,103 @@
+We are improving the Help Center "Quick Help" section.
+
+Goal:
+Make it action-oriented, easy to click, and optimized for fast problem resolution.
+
+---
+
+[1. Overall Structure]
+
+- Keep the current card-based layout (6 cards)
+- This section is NOT informational, it must drive users to solutions
+- Each card must link to a detailed help page
+
+---
+
+[2. Card Interaction]
+
+- The entire card must be clickable (not just text or icon)
+- Add cursor: pointer
+- Add hover interaction:
+  - Slight background highlight
+  - Subtle border or shadow increase
+- Ensure clear visual feedback on hover
+
+---
+
+[3. Text Style (IMPORTANT)]
+
+Unify all card text into a question format.
+
+Replace existing text with:
+
+- Can't find your file?
+- Upload not working?
+- Video stuck?
+- Out of credits?
+- Billing problem?
+- Invite your team
+
+Tone:
+- Short
+- Clear
+- Conversational
+- Problem-focused
+
+---
+
+[4. Card Order (Priority-based)]
+
+Reorder cards based on most common user issues:
+
+1. Upload not working?
+2. Video stuck?
+3. Can't find your file?
+4. Out of credits?
+5. Billing problem?
+6. Invite your team
+
+---
+
+[5. Icon Usage]
+
+- Icons must represent meaning, not decoration
+- Use intuitive icons:
+  - File / search → file issues
+  - Upload → upload issues
+  - Video → processing issues
+  - Credit card → billing
+  - Users → team
+
+- Ensure icon + text together clearly communicate the problem
+
+---
+
+[6. Section Title]
+
+Change:
+"Quick help"
+
+To one of:
+- "Quick fixes" (preferred)
+- "Get help fast"
+
+---
+
+[7. UX Principles]
+
+- This is NOT a documentation list
+- This is a problem-solving entry point
+- Users should feel:
+  → "I click this and solve my problem immediately"
+
+---
+
+[8. Future Consideration (Do not implement yet, but keep in mind)]
+
+- Cards should later be dynamically sorted based on real usage data
+- (Most clicked / most searched issues first)
+
+---
+
+Final Goal:
+Transform this section from a simple list of issues into a high-conversion problem-solving gateway.
