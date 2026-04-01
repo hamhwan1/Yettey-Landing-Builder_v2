@@ -1,0 +1,200 @@
+You are redesigning the Yettey Help Center page: "Billing issue".
+
+This page must help users quickly resolve payment-related issues and continue using the product.
+
+---
+
+[GOAL]
+
+- Help users fix billing issues quickly
+- Reduce trust anxiety (money-related issues are sensitive)
+- Guide users back into product flow
+- Optimize for SEO
+- Keep everything action-driven
+
+---
+
+[STEP 1: PAGE TYPE]
+
+This is NOT just a troubleshooting page.
+
+This is:
+→ "fix payment + restore trust + continue usage"
+
+User intent:
+→ "Why did payment fail?"
+→ "Was I charged correctly?"
+→ "How do I fix this?"
+
+---
+
+[STEP 2: PAGE STRUCTURE]
+
+---
+
+## H1 Title
+
+Billing issue? Here's how to fix it
+
+---
+
+## Quick Answer (CRITICAL) 🔥
+
+Billing issues usually happen when:
+
+- Payment method fails
+- There is a temporary charge issue
+- Your plan or billing settings changed
+
+Most billing issues can be resolved in a few steps.
+
+👉 Go to billing settings →
+
+---
+
+## Step-by-step Solution
+
+---
+
+### Step 1: Check your payment method
+
+Make sure your payment method is valid
+
+→ Open billing settings →
+
+---
+
+### Step 2: Review your charges
+
+Check your recent invoices
+
+→ View invoices →
+
+---
+
+### Step 3: Update your plan if needed
+
+If your plan changed or expired
+
+→ Manage subscription →
+
+---
+
+### Step 4: Retry your payment
+
+If a payment failed, try again
+
+→ Retry payment →
+
+---
+
+## If still not working
+
+Try:
+
+- Use a different payment method
+- Check if your bank blocked the transaction
+- Clear browser cache and retry
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+- Payment goes through successfully
+- Your plan is active
+- Features are working again
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥
+
+- Out of credits?
+- Upload not working?
+- Video processing stuck?
+- Can't find your file?
+
+---
+
+## CTA (IMPORTANT)
+
+Still having issues?
+
+Talk to our team — we’ll help you quickly.
+
+[Contact Support]
+
+---
+
+[STEP 3: ACTION BUTTON LOGIC]
+
+All buttons must trigger real product actions:
+
+---
+
+IF logged in:
+- Open billing settings
+- Open invoices
+- Manage subscription
+- Retry payment
+
+---
+
+IF not logged in:
+→ redirect to login with intent
+
+Example:
+→ /login?redirect=/billing
+
+---
+
+[STEP 4: REMOVE STATIC DATA]
+
+DO NOT include:
+- pricing details
+- plan amounts
+- credit numbers
+
+Keep content dynamic
+
+---
+
+[STEP 5: UX RULES]
+
+- Keep it simple and reassuring
+- Avoid overwhelming users
+- Focus on clear next actions
+
+---
+
+[STEP 6: SEO]
+
+Primary keywords:
+- billing issue
+- payment failed
+- billing problem
+
+Include naturally in:
+- title
+- first paragraph
+- one section
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+Billing controls:
+→ access to features
+→ credits usage
+→ subscription status
+
+User frustration:
+→ high (money-related issue)
+
+Tone:
+→ calm, trustworthy, solution-focused
+
+---
+
+[FINAL GOAL]
+
+User lands → understands → fixes payment → continues using Yettey
