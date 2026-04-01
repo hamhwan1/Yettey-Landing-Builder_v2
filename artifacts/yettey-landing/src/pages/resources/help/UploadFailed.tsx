@@ -29,7 +29,7 @@ const steps = [
     title: "Check your file format",
     body: "Supported formats: MP4, MOV, JPG, PNG, GIF, PDF.",
     hint: "If your file is not in a supported format, convert it before uploading.",
-    cta: "See supported formats",
+    cta: { label: "See supported formats", href: "/help/upload-errors", type: "info" as const },
   },
   {
     icon: HardDrive,
@@ -37,7 +37,7 @@ const steps = [
     title: "Check file size limit",
     body: "Free plan: up to 500 MB per file. Pro plan: up to 2 GB per file.",
     hint: "If your file is too large, compress it or upgrade your plan.",
-    cta: "View plan limits",
+    cta: { label: "View plan limits", href: "/pricing", type: "info" as const },
   },
   {
     icon: Wifi,
@@ -45,7 +45,7 @@ const steps = [
     title: "Check your connection",
     body: "Use stable Wi-Fi or a wired connection. Avoid switching networks during upload.",
     hint: "If upload fails, try again on a more stable connection.",
-    cta: "Retry upload",
+    cta: { label: "Retry upload", href: "/login?redirect=/dashboard/upload", type: "action" as const },
   },
   {
     icon: RefreshCw,
@@ -53,7 +53,7 @@ const steps = [
     title: "Retry the upload",
     body: "Refresh the page and re-upload the file.",
     hint: "A fresh page load clears cached errors that can block uploads.",
-    cta: null,
+    cta: { label: "Go to dashboard", href: "/login?redirect=/dashboard", type: "action" as const },
   },
 ];
 
@@ -153,9 +153,16 @@ export default function UploadFailedPage() {
                       <p className="text-sm text-white/50 leading-relaxed mb-2">{step.body}</p>
                       <p className="text-sm text-white/35 leading-relaxed">{step.hint}</p>
                       {step.cta && (
-                        <span className="inline-flex items-center gap-1 text-xs font-medium mt-3 cursor-pointer transition-colors" style={{ color: step.color }}>
-                          {step.cta} <ArrowRight className="w-3 h-3" />
-                        </span>
+                        <Link
+                          href={step.cta.href}
+                          className={`inline-flex items-center gap-1.5 text-xs font-medium mt-3 transition-colors ${step.cta.type === "action" ? "px-3 py-1.5 rounded-lg border" : ""}`}
+                          style={{
+                            color: step.cta.type === "action" ? "#fff" : step.color,
+                            ...(step.cta.type === "action" ? { backgroundColor: `${step.color}20`, borderColor: `${step.color}30` } : {}),
+                          }}
+                        >
+                          {step.cta.label} <ArrowRight className="w-3 h-3" />
+                        </Link>
                       )}
                     </div>
                   </div>
