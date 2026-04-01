@@ -341,8 +341,8 @@ export default function HelpCenter() {
               <MessageCircle className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h3 className="font-display font-bold text-foreground text-lg">Still need help?</h3>
-              <p className="text-sm text-muted-foreground">Our team typically responds within a few hours.</p>
+              <h3 className="font-display font-bold text-foreground text-lg">Can't solve it?</h3>
+              <p className="text-sm text-muted-foreground">Talk to our team — we’ll help you fast.</p>
             </div>
           </div>
           <button className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-sm shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap">
