@@ -1,0 +1,144 @@
+Redesign the pricing page to improve clarity, conversion, and global usability.
+
+[1. Currency & Pricing]
+- Change pricing to USD:
+  Starter → $49
+  Growth → $99
+  Pro → $249
+- Remove KRW entirely from UI
+
+[2. Remove Credit Explanation Section]
+- Completely remove:
+  "What are credits?"
+  and all examples like "1 short-form video = 100 credits"
+- Credits are still shown in plans, but NOT explained separately
+
+[3. Plan Structure Optimization]
+Each pricing card must follow this structure:
+
+1. Plan Name
+2. Price (large, clear)
+3. Target user (1 short line)
+4. Key value highlights (3 bullets only)
+5. CTA button
+6. Full feature list (collapsed or lighter style)
+
+---
+
+[4. Rewrite Plans (IMPORTANT)]
+
+Starter ($49)
+→ "Best for individuals starting content creation"
+
+Highlight (TOP 3):
+- Up to 1,800 credits
+- 4 projects
+- 2 users
+
+Then features (clean & simple wording):
+- AI image generation: Unlimited
+- Upload size: Up to 5GB
+- Download size: Up to 1.5GB
+- Storage: 8GB
+- Short-form generation
+- Video analysis (scene + person detection)
+
+---
+
+Growth ($99) → MOST POPULAR
+→ "For creators scaling content production"
+
+Highlight:
+- Up to 4,000 credits
+- 10 projects
+- 3 users
+
+Features:
+- AI image generation: Unlimited
+- Upload size: Up to 5GB
+- Download size: Up to 3GB
+- Storage: 20GB
+- Short-form generation
+- Video analysis (scene + person detection)
+
+---
+
+Pro ($249)
+→ "For teams and high-volume production"
+
+Highlight:
+- Up to 11,000 credits
+- Unlimited projects
+- 10 users
+
+Features:
+- AI image generation: Unlimited
+- Upload size: Up to 5GB
+- Download size: Up to 5GB
+- Storage: 80GB
+- Short-form generation
+- Video analysis (scene + person detection)
+
+---
+
+[5. Remove Technical Language]
+- Replace:
+  "Items" → remove
+  "per credit" → remove
+  "Transformation: 100 Items per credit" → REMOVE completely
+  "AI Assistant: 600 Items per credit" → REMOVE completely
+- Keep only user-understandable value
+
+---
+
+[6. Add Comparison Clarity]
+- Align all cards visually
+- Make differences obvious (users, credits, storage)
+- Highlight Growth as "Most Popular"
+
+---
+
+[7. Improve CTA]
+- Starter → "Start Free"
+- Growth → "Start Creating"
+- Pro → "Scale Your Content"
+
+---
+
+[8. Credit Packs Section 개선]
+Change copy to:
+
+"Need more credits? Scale anytime."
+
+Remove:
+- "valid for X months" (optional if confusing)
+
+---
+
+[9. FAQ 개선]
+- Reduce to 5–6 questions max
+- Focus only on:
+  - billing
+  - upgrade/downgrade
+  - usage
+  - team limits
+
+---
+
+[10. UX Detail]
+- When entering page → auto scroll to top
+- Pricing toggle (Monthly/Yearly):
+  → selected must be clearly highlighted (strong contrast)
+
+---
+
+[11. Tone & Messaging]
+- Avoid technical explanation
+- Focus on outcome:
+  speed / scale / simplicity
+
+---
+
+Goal:
+Make pricing instantly understandable in 5 seconds
+and remove all friction before purchase decision
