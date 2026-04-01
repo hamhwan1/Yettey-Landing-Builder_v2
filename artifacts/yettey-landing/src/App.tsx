@@ -27,6 +27,7 @@ import VideoEditingAutomation from "@/pages/blog/VideoEditingAutomation";
 import GuideDetail from "@/pages/resources/GuideDetail";
 import GuideOrganize from "@/pages/resources/GuideOrganize";
 import GuideFind from "@/pages/resources/GuideFind";
+import GuideShare from "@/pages/resources/GuideShare";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -67,6 +68,7 @@ function Router() {
           <Route path="/guides" component={Guides} />
           <Route path="/guides/organize" component={GuideOrganize} />
           <Route path="/guides/find" component={GuideFind} />
+          <Route path="/guides/share" component={GuideShare} />
           <Route path="/guides/:slug" component={GuideDetail} />
           <Route path="/help" component={HelpCenter} />
           <Route path="/privacy" component={PrivacyPolicy} />

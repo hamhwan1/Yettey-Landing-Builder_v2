@@ -1,0 +1,212 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT documentation.
+This is NOT feature explanation.
+
+This page must:
+👉 make users feel loss of control when sharing content
+👉 show how Yettey solves it clearly
+👉 drive them to take action immediately
+
+---
+
+# 1. CONTEXT
+
+Guide Topic:
+"Share / Sharing links everywhere?"
+
+Core Problem:
+Users share content via links (Slack, email, Drive), but have no control over access, tracking, or permissions.
+
+---
+
+# 2. HERO (VERY IMPORTANT)
+
+Headline:
+"Stop losing control over your shared content."
+
+Subheadline:
+"Share files with full control — not just links."
+
+SEO line (MANDATORY):
+"Secure file sharing and digital asset management system with permissions and tracking"
+
+CTA:
+"Share with control now"
+
+Optional trust line:
+"Built for teams that need secure and controlled content sharing"
+
+---
+
+# 3. PROBLEM (BEFORE)
+
+Title:
+"Content sharing is broken in traditional tools"
+
+Content:
+
+❌ Sharing files through email, Slack, and Drive links
+❌ No control over who downloads or forwards content
+❌ Broken links when files are moved or renamed
+❌ No visibility into who accessed your content
+
+---
+
+# 4. POSITIONING (IMPORTANT)
+
+Add strong contrast:
+
+"Links let you share files.
+
+Yettey lets you control them."
+
+OR
+
+"Traditional tools let you send content.
+
+Yettey lets you manage access, control usage, and track engagement."
+
+---
+
+# 5. SOLUTION (YETTEY)
+
+Explain clearly:
+
+"Yettey gives you branded, secure, and controlled content sharing"
+
+---
+
+# 6. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite flow to highlight control:
+
+1. Select any file or asset to share
+2. Set permissions (view, download, edit)
+3. Share via branded, secure link
+4. Track who viewed, downloaded, or interacted
+
+---
+
+# 7. VISUAL SECTION (BASED ON UI)
+
+Describe what user sees:
+
+* Branded share pages with company identity
+* Permission controls (view / download / edit)
+* Analytics showing views and engagement
+
+⚠️ Focus on outcome and clarity
+
+---
+
+# 8. FEATURES → EXPERIENCE
+
+Title:
+"What you’ll experience"
+
+Convert features into outcomes:
+
+* Secure sharing with full control
+* Always-working links (no broken links)
+* Clear visibility into access and usage
+* Professional branded sharing experience
+
+---
+
+# 9. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Scattered links across tools
+* No control over access
+* Broken links when files move
+* No visibility into usage
+
+After:
+
+* One secure, branded link
+* Full control over permissions
+* Links that always work
+* Complete access and usage insights
+
+---
+
+# 10. VALUE (WHY IT MATTERS)
+
+* Share with confidence and control
+* Maintain a professional brand experience
+* Know exactly who accessed your content
+* Prevent unauthorized distribution
+
+---
+
+# 11. SEO BLOCK (MANDATORY)
+
+Include paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system designed for secure file sharing and content control.
+
+It allows teams to manage permissions, track engagement, and distribute content efficiently, making it a powerful alternative to traditional file sharing tools like Drive or Dropbox."
+
+---
+
+# 12. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"Stop sharing links. Start controlling your content."
+
+Subtext:
+"Share with full control — not just access."
+
+CTA:
+"Share content with control"
+
+Optional:
+"No credit card required"
+
+---
+
+# 13. SEO REQUIREMENTS
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* secure file sharing
+* content sharing platform
+* file access control
+* media asset management
+
+⚠️ Do NOT keyword stuff
+⚠️ Keep natural
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Clear and direct
+* Problem → solution → result
+* No technical jargon
+* Outcome-focused
+
+---
+
+# 15. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users feel lack of control over sharing
+2. Clearly differentiate Yettey vs link-based sharing
+3. Show value in permissions + tracking
+4. Be understandable in 5 seconds
+5. Drive CTA clicks
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.
