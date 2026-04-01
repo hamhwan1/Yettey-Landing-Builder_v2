@@ -1,0 +1,150 @@
+We are improving the Help Center page to enhance readability, clarity, and user flow.
+
+Reference:
+Notion Help Center (clean structure, strong hierarchy, high readability)
+
+Goal:
+Transform the current UI from a visually nice layout into a highly readable, action-driven experience.
+
+---
+
+[1. Visual Hierarchy (MOST IMPORTANT)]
+
+- Establish clear importance levels across sections
+
+Priority order:
+1. Search (primary action)
+2. Quick fixes (immediate problem solving)
+3. Browse by category (exploration)
+4. FAQ (quick answers)
+5. Issues (detailed troubleshooting)
+6. CTA (support / conversion)
+
+- The higher the section, the more visual emphasis it should have
+
+---
+
+[2. Improve Readability (Core Fix)]
+
+- Increase contrast between text and background
+
+Text rules:
+- Titles: near white (#FFFFFF)
+- Body text: softer gray (#A0A0A0–#B0B0B0)
+- Avoid low-contrast purple-on-dark combinations
+
+- Improve line-height for better readability
+- Ensure text is not visually blending into the UI
+
+---
+
+[3. Card System Refinement]
+
+Current issue:
+All cards look visually similar → hard to scan
+
+Fix:
+- Differentiate card styles by section
+
+Quick fixes:
+→ More prominent (slightly brighter background or border emphasis)
+
+Category cards:
+→ Medium emphasis
+
+FAQ:
+→ Minimal / clean
+
+- Add stronger hover interaction:
+  - Slight lift (translateY)
+  - Border highlight or glow
+  - Background brightness increase
+
+---
+
+[4. Spacing & Layout (Notion-style)]
+
+- Increase vertical spacing between sections
+- Increase spacing between cards
+- Add breathing room around text
+
+Goal:
+Each section should feel clearly separated and digestible
+
+---
+
+[5. Section Flow (VERY IMPORTANT)]
+
+Current issue:
+Sections feel disconnected
+
+Fix:
+Create a logical user journey:
+
+Search → Fix problem → Explore → Learn → Get help
+
+Add subtle supporting text per section:
+
+Examples:
+- Quick fixes:
+  "Solve common problems instantly"
+
+- Browse by category:
+  "Explore features and workflows"
+
+- FAQ:
+  "Quick answers to common questions"
+
+- Issues:
+  "Fix common problems step by step"
+
+---
+
+[6. Action-Oriented UX]
+
+- Each section must guide users toward an action
+
+Examples:
+- Cards → clickable (full card)
+- Add arrow or subtle CTA hint (→)
+- Make it clear: “Click = solve problem”
+
+---
+
+[7. Emphasis Strategy]
+
+- Highlight ONE primary focus area at a time
+
+Recommended:
+- Search bar: strongest visual emphasis
+  (larger size, glow, or contrast)
+
+- Quick fixes: secondary emphasis
+
+Everything else should not compete visually
+
+---
+
+[8. Keep Dark Theme, Improve Clarity]
+
+- Maintain dark UI (brand consistency)
+- BUT apply Notion-style clarity principles:
+  - Strong contrast
+  - Clear spacing
+  - Minimal visual noise
+
+---
+
+Final Goal:
+Make the Help Center feel:
+- Easy to scan
+- Easy to understand
+- Easy to act
+
+Users should instantly know:
+“What should I do next?”
+
+---
+
+Result expectation:
+Upgrade from “good-looking UI” → “high-conversion, readable UX”

@@ -88,7 +88,7 @@ function FaqItem({ item, index }: { item: typeof faqs[0]; index: number }) {
   return (
     <motion.div
       variants={fadeUp} initial="hidden" whileInView="show" custom={index * 0.4} viewport={{ once: true }}
-      className="border-b border-border last:border-0"
+      className="border-b border-white/[0.06] last:border-0"
     >
       <button
         onClick={() => setOpen((v) => !v)}
@@ -96,11 +96,11 @@ function FaqItem({ item, index }: { item: typeof faqs[0]; index: number }) {
         aria-controls={contentId}
         className="w-full py-5 flex items-start justify-between gap-4 text-left group"
       >
-        <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+        <span className="text-[15px] font-medium text-white/90 group-hover:text-primary transition-colors leading-relaxed">
           {item.q}
         </span>
-        <span className="mt-0.5 shrink-0 w-5 h-5 rounded-full border border-border flex items-center justify-center text-muted-foreground">
-          {open ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+        <span className="mt-0.5 shrink-0 w-6 h-6 rounded-full border border-white/10 flex items-center justify-center text-white/40 group-hover:border-primary/40 group-hover:text-primary transition-colors">
+          {open ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
         </span>
       </button>
       <motion.div
@@ -111,7 +111,7 @@ function FaqItem({ item, index }: { item: typeof faqs[0]; index: number }) {
         transition={{ duration: 0.25 }}
         style={{ overflow: "hidden" }}
       >
-        <p className="pb-5 text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+        <p className="pb-6 text-sm text-white/50 leading-[1.7]">{item.a}</p>
       </motion.div>
     </motion.div>
   );
@@ -132,9 +132,9 @@ export default function HelpCenter() {
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
-      <section className="relative pt-40 pb-16 overflow-hidden">
+      <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-primary/8 rounded-full blur-[130px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-primary/10 rounded-full blur-[150px]" />
         </div>
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
@@ -145,24 +145,30 @@ export default function HelpCenter() {
           </motion.div>
           <motion.h1
             variants={fadeUp} initial="hidden" animate="show" custom={1}
-            className="text-4xl md:text-5xl font-display font-bold text-foreground mb-5 leading-tight"
+            className="text-4xl md:text-[52px] font-display font-bold text-white mb-4 leading-[1.15] tracking-tight"
           >
             How can we help you today?
           </motion.h1>
+          <motion.p
+            variants={fadeUp} initial="hidden" animate="show" custom={1.5}
+            className="text-base text-white/40 mb-8"
+          >
+            Search or browse below to find answers fast.
+          </motion.p>
 
           <motion.div
             variants={fadeUp} initial="hidden" animate="show" custom={2}
             className="relative max-w-xl mx-auto mb-5"
           >
             <label htmlFor="help-search" className="sr-only">Search help articles</label>
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+            <Search className="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-white/30" />
             <input
               id="help-search"
               type="text"
               placeholder="Search for answers, features, or issues..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-full pl-11 pr-4 py-4 rounded-2xl bg-card border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/20 transition-all"
+              className="w-full pl-13 pr-5 py-4.5 rounded-2xl bg-white/[0.06] border border-white/[0.08] text-[15px] text-white placeholder:text-white/30 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 focus:bg-white/[0.08] transition-all shadow-lg shadow-black/10"
             />
           </motion.div>
 
@@ -171,7 +177,7 @@ export default function HelpCenter() {
               <button
                 key={ps}
                 onClick={() => setQuery(ps)}
-                className="px-3 py-1.5 rounded-lg border border-border bg-card text-xs text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors"
+                className="px-3.5 py-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] text-xs text-white/40 hover:text-white/80 hover:bg-white/[0.08] hover:border-white/[0.15] transition-all duration-200"
               >
                 {ps}
               </button>
@@ -182,14 +188,15 @@ export default function HelpCenter() {
 
       {!query && (
         <>
-          <section className="max-w-4xl mx-auto px-4 mb-16">
+          <section className="max-w-4xl mx-auto px-4 mb-20">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2.5 mb-2">
                 <Zap className="w-4 h-4" style={{ color: ACCENT }} />
-                <h2 className="font-display font-bold text-xl text-foreground">Quick fixes</h2>
+                <h2 className="font-display font-bold text-[22px] text-white tracking-tight">Quick fixes</h2>
               </div>
+              <p className="text-sm text-white/35 mb-7">Solve common problems instantly</p>
             </motion.div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {quickActions.map((action, i) => {
                 const Icon = action.icon;
                 return (
@@ -199,18 +206,18 @@ export default function HelpCenter() {
                   >
                     <Link
                       href={`/help/${action.slug}`}
-                      className="rounded-xl bg-card border border-border p-5 flex items-center gap-4 hover:border-primary/40 hover:bg-primary/[0.04] hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-200 text-left group block cursor-pointer"
+                      className="rounded-2xl bg-white/[0.04] border border-white/[0.08] p-5 flex items-center gap-4 hover:border-primary/40 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-primary/[0.06] hover:-translate-y-1 transition-all duration-250 text-left group block cursor-pointer"
                     >
                       <div
-                        className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-110"
-                        style={{ background: `${action.color}18` }}
+                        className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-200 group-hover:scale-110"
+                        style={{ background: `${action.color}15` }}
                       >
                         <Icon className="w-5 h-5" style={{ color: action.color }} />
                       </div>
-                      <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-snug">
+                      <p className="text-[15px] font-semibold text-white/90 group-hover:text-white transition-colors leading-snug">
                         {action.label}
                       </p>
-                      <ArrowRight className="w-4 h-4 text-muted-foreground/0 group-hover:text-primary/70 ml-auto shrink-0 transition-all duration-200 -translate-x-1 group-hover:translate-x-0 group-hover:opacity-100" />
+                      <ArrowRight className="w-4 h-4 text-white/0 group-hover:text-white/50 ml-auto shrink-0 transition-all duration-200 -translate-x-1 group-hover:translate-x-0" />
                     </Link>
                   </motion.div>
                 );
@@ -218,34 +225,35 @@ export default function HelpCenter() {
             </div>
           </section>
 
-          <section className="max-w-4xl mx-auto px-4 mb-16">
+          <section className="max-w-4xl mx-auto px-4 mb-20">
             <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-              <div className="flex items-center gap-2 mb-6">
+              <div className="flex items-center gap-2.5 mb-2">
                 <FolderOpen className="w-4 h-4" style={{ color: ACCENT }} />
-                <h2 className="font-display font-bold text-xl text-foreground">Browse by category</h2>
+                <h2 className="font-display font-bold text-[22px] text-white tracking-tight">Browse by category</h2>
               </div>
+              <p className="text-sm text-white/35 mb-7">Explore features and workflows</p>
             </motion.div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {helpCategories.map((cat, i) => {
                 const Icon = cat.icon;
                 return (
                   <motion.button
                     key={cat.label}
                     variants={fadeUp} initial="hidden" whileInView="show" custom={i} viewport={{ once: true }}
-                    className="rounded-xl bg-card border border-border p-5 flex flex-col items-start gap-3 hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 text-left group"
+                    className="rounded-2xl bg-white/[0.025] border border-white/[0.06] p-5 flex flex-col items-start gap-3.5 hover:border-white/[0.12] hover:bg-white/[0.04] hover:-translate-y-0.5 transition-all duration-200 text-left group cursor-pointer"
                     onClick={() => setQuery(cat.label)}
                   >
                     <div
-                      className="w-9 h-9 rounded-lg flex items-center justify-center"
-                      style={{ background: `${cat.color}18` }}
+                      className="w-10 h-10 rounded-xl flex items-center justify-center"
+                      style={{ background: `${cat.color}12` }}
                     >
-                      <Icon className="w-4 h-4" style={{ color: cat.color }} />
+                      <Icon className="w-[18px] h-[18px]" style={{ color: cat.color }} />
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
+                      <p className="text-[15px] font-semibold text-white/85 group-hover:text-white transition-colors">
                         {cat.label}
                       </p>
-                      <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">{cat.desc}</p>
+                      <p className="text-[13px] text-white/35 mt-1 leading-relaxed">{cat.desc}</p>
                     </div>
                   </motion.button>
                 );
@@ -255,27 +263,29 @@ export default function HelpCenter() {
         </>
       )}
 
-      <section className="max-w-3xl mx-auto px-4 mb-16">
-        <div className="flex items-center justify-between mb-6">
-          <div className="flex items-center gap-2">
+      <section className="max-w-3xl mx-auto px-4 mb-20">
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2.5">
             <HelpCircle className="w-4 h-4" style={{ color: ACCENT }} />
-            <h2 className="font-display font-bold text-xl text-foreground">
+            <h2 className="font-display font-bold text-[22px] text-white tracking-tight">
               {query ? `Results for "${query}"` : "Frequently asked"}
             </h2>
           </div>
           {query && (
             <button
               onClick={() => setQuery("")}
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+              className="text-xs text-white/40 hover:text-white/70 transition-colors"
             >
               Clear search
             </button>
           )}
         </div>
+        {!query && <p className="text-sm text-white/35 mb-7">Quick answers to common questions</p>}
+        {query && <div className="mb-7" />}
 
         {filtered.length === 0 ? (
-          <div className="rounded-2xl bg-card border border-border p-12 text-center">
-            <p className="text-muted-foreground text-sm mb-4">No results found for "{query}"</p>
+          <div className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-12 text-center">
+            <p className="text-white/40 text-sm mb-4">No results found for "{query}"</p>
             <button
               onClick={() => setQuery("")}
               className="text-sm font-medium text-primary hover:underline"
@@ -284,7 +294,7 @@ export default function HelpCenter() {
             </button>
           </div>
         ) : (
-          <div className="bg-card border border-border rounded-2xl px-6">
+          <div className="bg-white/[0.025] border border-white/[0.06] rounded-2xl px-6">
             {filtered.map((faq, i) => (
               <FaqItem key={faq.q} item={faq} index={i} />
             ))}
@@ -293,13 +303,13 @@ export default function HelpCenter() {
       </section>
 
       {!query && (
-        <section className="max-w-4xl mx-auto px-4 mb-16">
+        <section className="max-w-4xl mx-auto px-4 mb-20">
           <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2.5 mb-2">
               <AlertTriangle className="w-4 h-4 text-red-400" />
-              <h2 className="font-display font-bold text-xl text-foreground">Having issues?</h2>
+              <h2 className="font-display font-bold text-[22px] text-white tracking-tight">Having issues?</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-6">Fix common problems fast:</p>
+            <p className="text-sm text-white/35 mb-7">Fix common problems step by step</p>
           </motion.div>
           <div className="flex flex-col gap-3">
             {troubleshootingItems.map((item, i) => {
@@ -311,19 +321,19 @@ export default function HelpCenter() {
                 >
                   <Link
                     href={`/help/${item.slug}`}
-                    className="flex items-center gap-4 p-5 rounded-xl border border-border bg-card hover:border-primary/30 hover:-translate-y-0.5 transition-all duration-200 text-left group block"
+                    className="flex items-center gap-4 p-5 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] hover:bg-white/[0.04] hover:-translate-y-0.5 transition-all duration-200 text-left group block"
                   >
                     <div
-                      className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                      style={{ background: `${item.color}18` }}
+                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0"
+                      style={{ background: `${item.color}12` }}
                     >
                       <Icon className="w-5 h-5" style={{ color: item.color }} />
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">{item.label}</p>
-                      <p className="text-xs text-muted-foreground">{item.desc}</p>
+                      <p className="text-[15px] font-semibold text-white/85 group-hover:text-white transition-colors">{item.label}</p>
+                      <p className="text-[13px] text-white/35 mt-0.5">{item.desc}</p>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                    <ArrowRight className="w-4 h-4 text-white/20 group-hover:text-white/50 transition-colors shrink-0" />
                   </Link>
                 </motion.div>
               );
@@ -332,18 +342,18 @@ export default function HelpCenter() {
         </section>
       )}
 
-      <section className="max-w-4xl mx-auto px-4 mb-10">
+      <section className="max-w-4xl mx-auto px-4 mb-12">
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
-          className="rounded-2xl bg-card border border-border p-10 flex flex-col md:flex-row items-center justify-between gap-6"
+          className="rounded-2xl bg-white/[0.03] border border-white/[0.08] p-10 flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
               <MessageCircle className="w-6 h-6 text-primary" />
             </div>
             <div>
-              <h3 className="font-display font-bold text-foreground text-lg">Can't solve it?</h3>
-              <p className="text-sm text-muted-foreground">Talk to our team — we’ll help you fast.</p>
+              <h3 className="font-display font-bold text-white text-lg">Still need help?</h3>
+              <p className="text-sm text-white/40">Our team typically responds within a few hours.</p>
             </div>
           </div>
           <button className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold text-sm shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-0.5 transition-all duration-200 whitespace-nowrap">
@@ -353,19 +363,19 @@ export default function HelpCenter() {
         </motion.div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-4 mb-20">
+      <section className="max-w-4xl mx-auto px-4 mb-24">
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
           className="rounded-2xl p-10 text-center relative overflow-hidden"
-          style={{ background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}06)`, border: `1px solid ${ACCENT}30` }}
+          style={{ background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}05)`, border: `1px solid ${ACCENT}25` }}
         >
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] rounded-full blur-[100px] opacity-20 pointer-events-none"
+            className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] rounded-full blur-[100px] opacity-15 pointer-events-none"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
-            <h3 className="font-display font-bold text-foreground text-xl mb-2">New to Yettey?</h3>
-            <p className="text-sm text-foreground/60 mb-6">Start organizing your content in minutes.</p>
+            <h3 className="font-display font-bold text-white text-xl mb-2">New to Yettey?</h3>
+            <p className="text-sm text-white/40 mb-6">Start organizing your content in minutes.</p>
             <Link
               href="/pricing"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-sm text-white hover:-translate-y-0.5 transition-all duration-200"
