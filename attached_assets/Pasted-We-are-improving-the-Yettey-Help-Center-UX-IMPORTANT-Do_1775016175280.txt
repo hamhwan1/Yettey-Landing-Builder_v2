@@ -1,0 +1,134 @@
+We are improving the Yettey Help Center UX.
+
+IMPORTANT:
+Do NOT redesign the visual style.
+Keep the current dark theme, spacing, card UI, and overall layout.
+This task is about STRUCTURE and UX, not visual redesign.
+
+--------------------------------------------------
+🎯 GOAL
+--------------------------------------------------
+
+Transform the Help Center into a scalable, fast, SaaS-grade support experience.
+
+- No deep folder navigation
+- No complex hierarchy
+- Everything should feel fast, flat, and searchable
+- Users must find answers within 3 seconds
+
+--------------------------------------------------
+🧠 CORE UX PRINCIPLES
+--------------------------------------------------
+
+1. The Help Center is SEARCH-FIRST
+2. Categories are for exploration, not navigation depth
+3. No “folder drilling” UX (avoid multi-level nesting)
+4. Every page must feel connected and reversible
+5. Always show next possible actions
+
+--------------------------------------------------
+🏠 HOME (KEEP MOSTLY AS IS)
+--------------------------------------------------
+
+Keep existing structure:
+
+- Search bar (top priority)
+- Suggested tags (Upload failed, Video stuck, etc.)
+- Quick fixes section
+- Browse by category
+- FAQ
+- Having issues
+- Contact support CTA
+
+BUT:
+
+1. Suggested tags must open a LIST view (not a single article)
+2. Quick fixes can open either:
+   - a direct solution page OR
+   - a grouped troubleshooting page
+
+--------------------------------------------------
+📂 CATEGORY PAGE (CRITICAL CHANGE)
+--------------------------------------------------
+
+When a user clicks a category (e.g. "Video Editing"):
+
+DO NOT create deep navigation.
+
+Instead, create an “expanded category view” that feels like the same system.
+
+--------------------------------------------------
+CATEGORY PAGE STRUCTURE
+--------------------------------------------------
+
+1. HERO (reuse existing layout)
+   - Replace title with category name
+   - Keep search bar visible and active
+
+2. BREADCRUMB (required)
+   Help Center > Video Editing
+
+3. FILTER TABS (use existing chip UI)
+   Example:
+   [All] [Upload] [AI Editing] [Export] [Errors]
+
+4. POPULAR SECTION (NEW)
+   Title: “Popular in Video Editing”
+   Show 3–5 most common articles
+
+5. ARTICLE LIST (CORE)
+   - Card-based layout (match existing design)
+   - Title + short description
+   - Grid or list (consistent with UI)
+   - Fast scanning is critical
+
+6. RELATED TOPICS (optional)
+   Example:
+   - AI Features
+   - Credits
+
+--------------------------------------------------
+📄 ARTICLE PAGE (MUST IMPROVE)
+--------------------------------------------------
+
+Each article page must include:
+
+1. MAIN CONTENT
+
+2. RELATED ARTICLES (required)
+   Show 3–5 similar/helpful articles
+
+3. NEXT STEP ACTION (required)
+   Examples:
+   - Try uploading again
+   - Check supported formats
+   - Contact support
+
+--------------------------------------------------
+🚫 WHAT TO AVOID
+--------------------------------------------------
+
+- No multi-level folder navigation
+- No “click → deeper → deeper” structure
+- No isolated pages without context
+- No dead ends
+
+--------------------------------------------------
+⚡ UX SUCCESS CRITERIA
+--------------------------------------------------
+
+- Users can solve issues within 3 seconds
+- Users never feel lost
+- Navigation always feels shallow and fast
+- Every page suggests what to do next
+
+--------------------------------------------------
+🎯 FINAL RESULT
+--------------------------------------------------
+
+The Help Center should feel like:
+
+- Intercom / Notion-style support UX
+- Fast, searchable, and structured
+- Minimal depth, maximum clarity
+- Built for SaaS, not documentation
