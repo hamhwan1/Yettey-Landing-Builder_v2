@@ -1,0 +1,212 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT documentation.
+This is NOT a technical explanation.
+
+This page must:
+👉 make users feel slow performance is hurting their business
+👉 show how Yettey improves speed instantly
+👉 drive action
+
+---
+
+# 1. CONTEXT
+
+Guide Topic:
+"Speed / Is your website slow because of media?"
+
+Core Problem:
+Websites load slowly due to unoptimized media, hurting user experience, SEO rankings, and conversions.
+
+---
+
+# 2. HERO (VERY IMPORTANT)
+
+Headline:
+"Stop losing users because your site is slow."
+
+Subheadline:
+"Make your content load instantly — no more slow pages."
+
+SEO line (MANDATORY):
+"Media CDN and AI-powered digital asset management system for fast content delivery and optimization"
+
+CTA:
+"Speed up your content now"
+
+Optional trust line:
+"Built for teams that care about performance and SEO"
+
+---
+
+# 3. PROBLEM (BEFORE)
+
+Title:
+"Slow media is killing your performance"
+
+Content:
+
+❌ Websites loading slowly due to unoptimized images
+❌ Users leaving because pages take too long
+❌ Manual image compression workflows
+❌ No CDN for global delivery
+
+---
+
+# 4. POSITIONING (VERY IMPORTANT)
+
+Add strong contrast:
+
+"Slow media hurts your users and SEO.
+
+Yettey makes everything load instantly."
+
+OR
+
+"Traditional tools store files.
+
+Yettey optimizes and delivers them at speed."
+
+---
+
+# 5. SOLUTION (YETTEY)
+
+Explain clearly:
+
+"Yettey automatically optimizes and delivers your media using built-in CDN"
+
+---
+
+# 6. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite flow to emphasize automation:
+
+1. Upload your media (images, videos, files)
+2. Yettey automatically optimizes formats and sizes
+3. Content is delivered via global CDN
+4. Users get instant load times everywhere
+
+---
+
+# 7. VISUAL SECTION (BASED ON UI)
+
+Describe what users see:
+
+* Performance dashboard showing load time improvements
+* Automatic format conversion (WebP, AVIF)
+* Global CDN delivery and coverage
+
+⚠️ Focus on results, not technical complexity
+
+---
+
+# 8. FEATURES → EXPERIENCE
+
+Title:
+"What you’ll experience"
+
+Convert features into outcomes:
+
+* Faster page load times instantly
+* No manual optimization required
+* Global delivery with consistent speed
+* Better performance across all devices
+
+---
+
+# 9. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Slow page load times
+* Manual compression workflows
+* No CDN
+* Poor SEO performance
+
+After:
+
+* Lightning-fast media delivery
+* Automatic optimization
+* Global CDN coverage
+* Improved SEO rankings
+
+---
+
+# 10. VALUE (WHY IT MATTERS)
+
+* Improve page load speed by up to 70%
+* Increase user retention
+* Boost SEO rankings
+* Remove manual optimization work
+
+---
+
+# 11. SEO BLOCK (MANDATORY)
+
+Include paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system with built-in CDN and automatic media optimization.
+
+It helps teams deliver images, videos, and files faster, improving website performance, SEO rankings, and user experience."
+
+---
+
+# 12. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"Stop losing users to slow pages."
+
+Subtext:
+"Make your content load instantly."
+
+CTA:
+"Speed up your content now"
+
+Optional:
+"No credit card required"
+
+---
+
+# 13. SEO REQUIREMENTS
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* media CDN
+* image optimization
+* content delivery network
+* media asset management
+
+⚠️ Do NOT keyword stuff
+⚠️ Keep natural
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Strong emotional triggers (slow, lost users, frustration)
+* Problem → solution → performance gain
+* No technical jargon
+* Outcome-focused
+
+---
+
+# 15. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users feel speed is a critical problem
+2. Connect performance to SEO and conversion
+3. Show clear differentiation vs storage tools
+4. Be understandable in 5 seconds
+5. Drive CTA clicks
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.
