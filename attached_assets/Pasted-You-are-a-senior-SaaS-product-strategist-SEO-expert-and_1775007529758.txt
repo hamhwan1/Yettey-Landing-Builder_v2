@@ -1,0 +1,211 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT documentation.
+This is NOT a feature explanation.
+
+This page must:
+👉 make users feel version confusion and mistakes
+👉 show how Yettey eliminates that risk
+👉 drive action
+
+---
+
+# 1. CONTEXT
+
+Guide Topic:
+"Versions / Not sure which file is the latest version?"
+
+Core Problem:
+Teams struggle with version confusion, outdated files, and lack of clear history.
+
+---
+
+# 2. HERO (VERY IMPORTANT)
+
+Headline:
+"Stop guessing which file is the latest."
+
+Subheadline:
+"Always know which version is the right one."
+
+SEO line (MANDATORY):
+"Version control and digital asset management system for tracking file history and updates"
+
+CTA:
+"Track your assets now"
+
+Optional trust line:
+"Built for teams managing multiple versions of content"
+
+---
+
+# 3. PROBLEM (BEFORE)
+
+Title:
+"Version confusion slows everything down"
+
+Content:
+
+❌ Files named final_v2_FINAL_revised.psd
+❌ No idea which version was approved
+❌ Accidentally using outdated content
+❌ No way to roll back to previous versions
+
+---
+
+# 4. POSITIONING (VERY IMPORTANT)
+
+Add strong contrast:
+
+"File names don’t scale.
+
+Version control does."
+
+OR
+
+"Without version tracking, mistakes are inevitable.
+
+Yettey removes the guesswork."
+
+---
+
+# 5. SOLUTION (YETTEY)
+
+Explain clearly:
+
+"Yettey tracks every version of every asset automatically"
+
+---
+
+# 6. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite flow to emphasize clarity:
+
+1. Upload your content
+2. Make updates anytime — versions are saved automatically
+3. Compare versions visually
+4. Roll back instantly when needed
+
+---
+
+# 7. VISUAL SECTION (BASED ON UI)
+
+Describe what users see:
+
+* Version timeline for each asset
+* Side-by-side version comparison
+* One-click restore to previous version
+
+⚠️ Focus on clarity and confidence
+
+---
+
+# 8. FEATURES → EXPERIENCE
+
+Title:
+"What you’ll experience"
+
+Convert features into outcomes:
+
+* Clear version history for every file
+* Always know which version is current
+* Compare changes easily
+* Restore previous versions instantly
+
+---
+
+# 9. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Confusing file names
+* No clarity on latest version
+* Using outdated content
+* No rollback options
+
+After:
+
+* Structured version history
+* Always know the correct version
+* Visual comparison tools
+* One-click rollback
+
+---
+
+# 10. VALUE (WHY IT MATTERS)
+
+* Eliminate version confusion
+* Prevent costly mistakes
+* Ensure correct content is used
+* Maintain full history for compliance
+
+---
+
+# 11. SEO BLOCK (MANDATORY)
+
+Include paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system with built-in version control.
+
+It helps teams track file history, compare versions, and manage updates efficiently, making it a powerful alternative to traditional file storage systems."
+
+---
+
+# 12. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"Stop guessing. Start knowing."
+
+Subtext:
+"Always use the right version — every time."
+
+CTA:
+"Track your assets now"
+
+Optional:
+"No credit card required"
+
+---
+
+# 13. SEO REQUIREMENTS
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* version control system
+* file version tracking
+* media asset management
+
+⚠️ Do NOT keyword stuff
+⚠️ Keep natural
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Strong emotional triggers (confusion, mistakes, risk)
+* Problem → solution → certainty
+* No technical jargon
+* Outcome-focused
+
+---
+
+# 15. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users feel version confusion pain
+2. Emphasize mistake prevention
+3. Show clear difference vs manual file naming
+4. Be understandable in 5 seconds
+5. Drive CTA clicks
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.
