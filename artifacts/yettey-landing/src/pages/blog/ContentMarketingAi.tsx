@@ -471,6 +471,14 @@ export default function ContentMarketingAi() {
             <p className="text-foreground/80 leading-relaxed font-medium mt-4">That's where Yettey comes in.</p>
           </div>
 
+          <div
+            className="rounded-xl p-5 mb-8 text-center"
+            style={{ background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}06)`, border: `1px solid ${ACCENT}25` }}
+          >
+            <p className="font-display font-bold text-foreground text-base mb-1">Yettey is not another AI tool.</p>
+            <p className="font-display font-bold text-base" style={{ color: ACCENT }}>It's the system that connects everything.</p>
+          </div>
+
           <p className="text-foreground/80 font-medium mb-5">It solves the real bottleneck:</p>
 
           <div className="flex flex-col gap-3 mb-8">
@@ -586,11 +594,23 @@ export default function ContentMarketingAi() {
         line2="Start building a system."
       />
 
+      {/* ── DECISION PRESSURE BLOCK ────────────────────────────── */}
+      <section className="max-w-3xl mx-auto px-4 mb-16">
+        <motion.div
+          variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
+          className="rounded-2xl border border-border bg-card p-8 sm:p-10 text-center"
+        >
+          <p className="text-foreground/70 text-lg leading-relaxed mb-2">If nothing changes,</p>
+          <p className="text-foreground/70 text-lg leading-relaxed mb-2">you will keep doing the same work.</p>
+          <p className="font-display font-bold text-lg text-foreground">And getting the same results.</p>
+        </motion.div>
+      </section>
+
       {/* ── FINAL CTA ──────────────────────────────────────────── */}
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
           variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
-          className="rounded-2xl p-10 text-center relative overflow-hidden"
+          className="rounded-2xl p-10 sm:p-12 text-center relative overflow-hidden"
           style={{ background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}06)`, border: `1px solid ${ACCENT}30` }}
         >
           <div
@@ -598,23 +618,26 @@ export default function ContentMarketingAi() {
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
-            <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3">
-              Stop producing more content.
+            <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-2">
+              You don't need more content.
             </h2>
+            <p className="font-display font-bold text-xl text-foreground mb-1">
+              You need a system.
+            </p>
             <p className="font-display font-bold text-xl mb-8" style={{ color: ACCENT }}>
-              Start building a system.
+              And you need it now.
             </p>
             <Link href="/pricing">
               <button
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-semibold text-base text-white hover:-translate-y-1 transition-all duration-200 shadow-xl"
                 style={{ backgroundColor: ACCENT, boxShadow: `0 8px 24px ${ACCENT}40` }}
               >
-                Build your system
+                Start building your system
                 <ArrowRight className="w-4 h-4" />
               </button>
             </Link>
             <p className="text-sm text-foreground/40 mt-6 max-w-sm mx-auto leading-relaxed">
-              If your workflow doesn't change, your results won't either.
+              Every day without a system is wasted effort.
             </p>
           </div>
         </motion.div>
@@ -649,13 +672,13 @@ export default function ContentMarketingAi() {
 
       {/* ── STICKY CTA ─────────────────────────────────────────── */}
       <div
-        className={`fixed bottom-6 right-6 z-50 transition-all duration-300 ${
+        className={`fixed z-50 transition-all duration-300 bottom-6 right-6 sm:right-6 sm:left-auto left-1/2 sm:translate-x-0 -translate-x-1/2 ${
           showSticky ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
         }`}
       >
         <Link href="/pricing">
           <button
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm text-white hover:scale-105 transition-transform duration-200 shadow-2xl"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm text-white hover:scale-105 transition-transform duration-200 shadow-2xl whitespace-nowrap"
             style={{ backgroundColor: ACCENT, boxShadow: `0 4px 20px ${ACCENT}50` }}
           >
             Build your system
