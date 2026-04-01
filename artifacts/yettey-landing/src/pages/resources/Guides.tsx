@@ -133,7 +133,6 @@ export default function Guides() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div
           className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full blur-[140px] opacity-15 pointer-events-none"
@@ -159,15 +158,13 @@ export default function Guides() {
             variants={fade} initial="hidden" animate="show" custom={2}
             className="text-xl text-foreground/70 mb-3 max-w-xl mx-auto font-medium"
           >
-            Find any file instantly {"\u2014"} even across thousands of assets.
+            Find anything in seconds.
           </motion.p>
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={3}
             className="text-base text-muted-foreground mb-2 max-w-xl mx-auto"
-          >
-            AI-powered digital asset management for teams, marketers, and creators.
-          </motion.p>
+          >Reuse it instantly.</motion.p>
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={4}
@@ -197,7 +194,6 @@ export default function Guides() {
           </motion.div>
         </div>
       </section>
-
       <section className="max-w-3xl mx-auto px-4 mb-16">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-8 text-center">
@@ -236,7 +232,6 @@ export default function Guides() {
           </p>
         </motion.div>
       </section>
-
       <section className="max-w-4xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
@@ -299,7 +294,6 @@ export default function Guides() {
           })}
         </div>
       </section>
-
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <h2 className="font-display font-bold text-2xl sm:text-3xl text-foreground mb-3 text-center">
@@ -355,7 +349,6 @@ export default function Guides() {
           </Link>
         </motion.div>
       </section>
-
       <section className="max-w-4xl mx-auto px-4 mb-20">
         <motion.div variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <div className="grid sm:grid-cols-3 gap-4">
@@ -400,7 +393,6 @@ export default function Guides() {
           </div>
         </motion.div>
       </section>
-
       <section className="max-w-3xl mx-auto px-4 mb-20">
         <motion.div
           variants={fade} initial="hidden" whileInView="show" viewport={{ once: true }}
@@ -431,7 +423,6 @@ export default function Guides() {
           </div>
         </motion.div>
       </section>
-
       <Footer />
     </div>
   );
