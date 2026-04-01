@@ -288,7 +288,7 @@ function Workflow() {
   ];
 
   return (
-    <section className="py-24 bg-card/30 border-y border-white/5">
+    <section className="py-24 bg-card/100 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
@@ -348,15 +348,15 @@ const row2 = testimonials.slice(12, 24);
 function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
     <div className="flex-shrink-0 w-[280px] md:w-[310px] p-4 rounded-xl bg-white/[0.04] border border-white/[0.08] hover:border-white/[0.14] transition-colors duration-300">
-      <p className="text-[13px] text-foreground/90 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
+      <p className="text-[13px] text-white/[0.92] leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
           <div className="w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/20">
             {t.name.charAt(0)}
           </div>
           <div className="min-w-0">
-            <p className="text-[12px] font-medium text-foreground/85 truncate">{t.name}</p>
-            <p className="text-[10px] text-muted-foreground truncate">{t.role}</p>
+            <p className="text-[12px] font-medium text-white/70 truncate">{t.name}</p>
+            <p className="text-[10px] text-white/40 truncate">{t.role}</p>
           </div>
         </div>
         {t.tag && (
@@ -376,7 +376,7 @@ function Testimonials() {
         <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground/70 mb-2">
           Loved by modern content teams
         </h2>
-        <p className="text-muted-foreground/50 text-sm">Creators, marketers, and teams trust Yettey every day.</p>
+        <p className="text-muted-foreground/100 text-sm">Creators, marketers, and teams trust Yettey every day.</p>
       </FadeIn>
 
       <div className="relative">
