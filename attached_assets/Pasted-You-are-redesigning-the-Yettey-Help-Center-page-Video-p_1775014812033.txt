@@ -1,0 +1,187 @@
+You are redesigning the Yettey Help Center page: "Video processing stuck".
+
+This page must be transformed into a fast, reassuring, action-driven experience.
+
+---
+
+[GOAL]
+
+- Reduce user anxiety (processing delay = frustration)
+- Help user decide: wait vs fix
+- Guide user back into workflow quickly
+- Optimize for SEO
+- Remove hardcoded technical values
+
+---
+
+[STEP 1: CORE UX CHANGE (IMPORTANT)]
+
+This is NOT just an error page.
+
+This is a "waiting + troubleshooting" hybrid page.
+
+Users need to know:
+→ Is this normal?
+→ Or is something broken?
+
+---
+
+[STEP 2: PAGE STRUCTURE]
+
+---
+
+## H1 Title
+
+Video processing stuck? Here's what to do
+
+---
+
+## Quick Answer (CRITICAL) 🔥
+
+Video processing may take longer when:
+
+- Files are large or complex
+- Server load is high
+- Processing is still in progress
+
+Most videos process automatically — this usually resolves within a few minutes.
+
+👉 Check your processing status →
+
+---
+
+## Step-by-step Fix
+
+---
+
+### Step 1: Wait a moment
+
+Processing may still be ongoing.
+
+→ Check processing status →
+
+---
+
+### Step 2: Check your video format
+
+If your video is not supported:
+→ Check supported formats →
+
+---
+
+### Step 3: Check video length
+
+Long videos take more time.
+
+→ Optimize your video →
+
+---
+
+### Step 4: Retry if processing hasn't started
+
+If nothing happens after waiting:
+
+→ Retry upload →
+
+---
+
+## If still not working
+
+Try:
+
+- Convert your video before uploading
+- Reduce video size or resolution
+- Upload again later
+
+---
+
+## You're good if (SUCCESS STATE) 🔥
+
+- Processing starts automatically
+- Progress indicator updates
+- Output (clips or results) appears
+
+---
+
+## Related Problems (INTERNAL LINKING) 🔥
+
+- Upload not working?
+- Upload too slow?
+- Can't find your file?
+- Credits not working?
+
+---
+
+## CTA
+
+Still not working?
+
+Talk to our team — we’ll help you fast.
+
+[Contact Support]
+
+---
+
+[STEP 3: REMOVE STATIC DATA]
+
+DO NOT include:
+- Processing time (e.g. 5 min, 10 min)
+- File size numbers
+- Format lists
+
+---
+
+[STEP 4: ACTION BUTTON LOGIC]
+
+---
+
+For action buttons:
+
+IF logged in:
+→ open relevant screen (dashboard / upload)
+
+IF not logged in:
+→ redirect to login with intent
+
+Example:
+→ /login?redirect=/dashboard
+
+---
+
+[STEP 5: UX RULES]
+
+- Focus on reassurance + clarity
+- Reduce anxiety
+- Keep sentences short
+- Make actions obvious
+
+---
+
+[STEP 6: SEO]
+
+Primary keywords:
+- video processing stuck
+- video not processing
+- video processing slow
+
+Include naturally in:
+- title
+- first paragraph
+- subheading
+
+---
+
+[STEP 7: YETTEY CONTEXT]
+
+User uploaded content to generate results.
+
+Processing delay = workflow blocked
+
+Tone:
+→ calm, clear, helpful
+
+---
+
+[FINAL GOAL]
+
+User lands → understands → decides (wait or act) → continues using Yettey
