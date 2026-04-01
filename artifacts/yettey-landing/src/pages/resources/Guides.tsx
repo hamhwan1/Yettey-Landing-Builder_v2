@@ -14,6 +14,8 @@ import {
   Upload,
   UserPlus,
   Link2,
+  Shield,
+  GitBranch,
 } from "lucide-react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -34,7 +36,7 @@ const guides = [
     title: "Can't find your files?",
     seo: "AI digital asset management system for file organization",
     desc: "Upload once. Everything organizes itself automatically.",
-    cta: "View guide",
+    cta: "Fix file organization",
   },
   {
     icon: Search,
@@ -43,7 +45,7 @@ const guides = [
     title: "Still digging through folders?",
     seo: "Search files instantly with AI asset search",
     desc: "Find images, videos, and content in seconds.",
-    cta: "Search your content",
+    cta: "Find files instantly",
   },
   {
     icon: Share2,
@@ -61,7 +63,7 @@ const guides = [
     title: "Feedback scattered across tools?",
     seo: "Collaborative digital asset management for teams",
     desc: "Comment and collaborate directly on your assets.",
-    cta: "Work with your team",
+    cta: "Start collaborating",
   },
   {
     icon: RefreshCw,
@@ -89,6 +91,24 @@ const guides = [
     seo: "Media CDN and image optimization platform",
     desc: "Deliver assets instantly with built-in CDN.",
     cta: "Improve loading speed",
+  },
+  {
+    icon: Shield,
+    accent: "#EF4444",
+    tag: "Control",
+    title: "Losing control over your content?",
+    seo: "Content permissions and access control system",
+    desc: "Set who can view, edit, and share your assets.",
+    cta: "Control your content",
+  },
+  {
+    icon: GitBranch,
+    accent: "#14B8A6",
+    tag: "Versions",
+    title: "Not sure which file is the latest version?",
+    seo: "Version control and asset tracking system",
+    desc: "Track changes and always access the latest version.",
+    cta: "Track your assets",
   },
 ];
 
@@ -118,21 +138,21 @@ export default function Guides() {
             variants={fade} initial="hidden" animate="show" custom={1}
             className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 leading-tight"
           >
-            Stop wasting time managing content.
+            Find any file instantly — even across thousands of assets.
           </motion.h1>
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={2}
             className="text-lg text-muted-foreground mb-3 max-w-xl mx-auto"
           >
-            AI digital asset management guides for teams, marketers, and creators.
+            AI-powered digital asset management for teams, marketers, and creators.
           </motion.p>
 
           <motion.p
             variants={fade} initial="hidden" animate="show" custom={3}
             className="text-base text-foreground/60 mb-8 max-w-lg mx-auto"
           >
-            Organize, search, and reuse your content faster with Yettey.
+            Organize, search, share, and reuse your content faster with Yettey.
           </motion.p>
 
           <motion.div
@@ -187,9 +207,9 @@ export default function Guides() {
             className="rounded-2xl p-6 sm:p-8 text-center"
             style={{ background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}04)`, border: `1px solid ${ACCENT}18` }}
           >
-            <p className="font-display font-bold text-lg text-foreground mb-1">Yettey is not just storage.</p>
+            <p className="font-display font-bold text-lg text-foreground mb-1">Yettey replaces Drive, Dropbox, and scattered tools</p>
             <p className="font-display font-bold text-lg" style={{ color: ACCENT }}>
-              It's an AI-powered digital asset management system built for content teams.
+              with one system built for content teams.
             </p>
           </div>
         </motion.div>
@@ -325,13 +345,13 @@ export default function Guides() {
                 icon: FolderOpen,
                 accent: "#8B5CF6",
                 title: "Organize",
-                desc: "Find everything instantly. AI-powered media asset management that organizes itself.",
+                desc: "Find everything instantly. AI-powered file organization tools that categorize and tag your media asset management automatically.",
               },
               {
                 icon: Share2,
                 accent: "#F97316",
                 title: "Share",
-                desc: "Control and distribute content. Secure file sharing with branded links and permissions.",
+                desc: "Control your content. Secure file sharing and image management software with branded links and permissions.",
               },
               {
                 icon: RefreshCw,
