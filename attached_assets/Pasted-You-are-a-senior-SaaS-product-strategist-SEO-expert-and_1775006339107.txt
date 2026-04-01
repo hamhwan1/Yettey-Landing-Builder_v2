@@ -1,0 +1,210 @@
+You are a senior SaaS product strategist, SEO expert, and conversion-focused UX writer.
+
+Your task is to create a high-converting, SEO-optimized guide detail page for Yettey.
+
+⚠️ CRITICAL:
+This is NOT a documentation page.
+This is NOT a feature explanation.
+
+This is a conversion-driven guide that:
+👉 makes users feel their problem
+👉 shows how Yettey solves it
+👉 drives them to take action
+
+---
+
+# 1. INPUT CONTEXT
+
+Guide topic:
+[INSERT GUIDE TOPIC HERE]
+
+Example:
+"Organize / Can’t find your files?"
+
+---
+
+# 2. PAGE STRUCTURE (MANDATORY)
+
+---
+
+## 1. HERO (VERY IMPORTANT)
+
+Structure:
+
+Headline (problem + emotion):
+Example:
+"Stop losing your files."
+
+Subheadline (result):
+"Find any file instantly — even across thousands of assets."
+
+SEO line (MANDATORY):
+"AI digital asset management system for organizing and finding files instantly"
+
+CTA:
+Primary → "Find your files instantly — start now"
+
+---
+
+## 2. PROBLEM (BEFORE)
+
+Title:
+"File organization problems in traditional tools"
+
+Content:
+
+❌ Searching through folders
+❌ Losing files and duplicates
+❌ Manual organization
+❌ No visibility across teams
+
+---
+
+## 3. POSITIONING (VERY IMPORTANT)
+
+Add strong contrast:
+
+"Drive stores files.
+Yettey makes them instantly usable."
+
+OR
+
+"Folders store files.
+Yettey helps you find, use, and reuse them instantly."
+
+---
+
+## 4. SOLUTION (YETTEY)
+
+Explain simply:
+
+"Yettey automatically organizes your content using AI"
+
+---
+
+## 5. HOW IT WORKS (DIFFERENTIATION REQUIRED)
+
+Rewrite generic steps into differentiated flow:
+
+1. Upload everything — no structure needed
+2. Yettey organizes automatically (no folders, no tagging)
+3. Search instantly — like Google
+4. Access anywhere
+
+---
+
+## 6. VISUAL SECTION (BASED ON USER IMAGE INPUT)
+
+Use provided UI images to describe:
+
+* What users see
+* How UI looks
+* What happens on screen
+
+⚠️ Keep it simple and outcome-driven
+
+---
+
+## 7. FEATURES → RESULT (IMPORTANT)
+
+Title:
+"What you’ll experience"
+
+Convert features into outcomes:
+
+* Auto-organized content
+* Instant search results
+* No manual sorting
+* Everything structured automatically
+
+---
+
+## 8. TRANSFORMATION (BEFORE → AFTER)
+
+Before:
+
+* Folder chaos
+* Manual work
+* Lost files
+
+After:
+
+* Instant access
+* Automated organization
+* Zero confusion
+
+---
+
+## 9. VALUE (WHY IT MATTERS)
+
+* Save hours every week
+* Eliminate chaos
+* Faster team onboarding
+
+---
+
+## 10. SEO BLOCK (MANDATORY)
+
+Include paragraph:
+
+"Yettey is an AI-powered digital asset management (DAM) system designed for teams that need to organize, search, and reuse content efficiently.
+
+It helps manage images, videos, and files with instant search and automated organization, making it a powerful alternative to traditional file storage systems."
+
+---
+
+## 11. FINAL CTA (VERY IMPORTANT)
+
+Headline:
+"You don’t need more tools."
+
+Subtext:
+"You need one system that actually works."
+
+CTA:
+"Start organizing your content now"
+
+Optional:
+"No credit card required"
+
+---
+
+# 3. SEO REQUIREMENTS (MANDATORY)
+
+Naturally include:
+
+* digital asset management
+* DAM system
+* file organization software
+* media asset management
+* AI asset management
+
+⚠️ DO NOT keyword stuff
+⚠️ Must feel natural
+
+---
+
+# 4. WRITING STYLE
+
+* Short sentences
+* No technical jargon
+* Problem → solution flow
+* Outcome-focused
+* Clear and confident tone
+
+---
+
+# 5. SUCCESS CRITERIA
+
+The page must:
+
+1. Make users say “this is my problem”
+2. Clearly show Yettey as the solution
+3. Be understandable in 5 seconds
+4. Include SEO keywords naturally
+5. Drive users to click CTA
+
+---
+
+Do NOT summarize.
+Write the full guide page with strong conversion and SEO focus.
