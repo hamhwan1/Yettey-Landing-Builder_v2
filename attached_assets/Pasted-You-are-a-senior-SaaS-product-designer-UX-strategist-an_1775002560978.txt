@@ -1,0 +1,280 @@
+You are a senior SaaS product designer, UX strategist, and conversion-focused copywriter.
+
+Your task is to completely transform an existing “Guide / Blog Article Page” into a high-converting, product-driven, SEO-optimized landing page for Yettey.
+
+⚠️ CRITICAL GOAL:
+This page must NOT feel like a blog post.
+It must feel like a product page that drives users to take action immediately.
+
+---
+
+# 1. CORE TRANSFORMATION STRATEGY
+
+Current state:
+
+* Educational content
+* Generic AI / automation explanation
+* Weak CTAs
+* No strong product positioning
+
+Target state:
+
+* Product-first page
+* Yettey as the clear solution
+* Strong conversion flow
+* Immediate value communication
+
+Every section must answer:
+👉 “Why should I use Yettey right now?”
+
+---
+
+# 2. HERO SECTION (FULL REWRITE)
+
+Replace the current hero with:
+
+Headline:
+"Turn long videos into viral short-form content in minutes"
+
+Subheadline:
+"Automatically generate clips for TikTok, Reels, and YouTube Shorts — no editing required."
+
+Supporting line:
+"1 video → 10+ clips → ready to post"
+
+CTA:
+Primary → "Start creating clips"
+Secondary → "See how it works"
+
+---
+
+# 3. STRUCTURE (MANDATORY FLOW)
+
+Rebuild the page with this structure:
+
+1. Hero (Outcome-focused)
+2. Problem (Editing is slow and broken)
+3. Shift (Automation is the new workflow)
+4. Yettey Solution (introduce product clearly)
+5. How Yettey Works (step-based)
+6. Visual Workflow (diagram or UI-style blocks)
+7. Results / Impact (numbers + benefits)
+8. Comparison (Why Yettey wins)
+9. Use Cases (Creators / Marketers / Teams)
+10. Final CTA (strong conversion push)
+11. FAQ (optional, short)
+
+---
+
+# 4. MAKE YETTEY THE HERO (VERY IMPORTANT)
+
+Currently content talks about:
+
+* AI tools
+* automation in general
+
+Rewrite EVERYTHING to:
+👉 Focus on Yettey as the solution
+
+Examples:
+
+❌ "AI detects highlights"
+✅ "Yettey AI automatically detects highlights"
+
+❌ "Generate clips"
+✅ "Generate clips instantly with Yettey"
+
+❌ "Video automation tools"
+✅ "With Yettey, video automation happens automatically"
+
+---
+
+# 5. REMOVE GENERIC TOOL LIST FEELING
+
+If there is a section like:
+"Best AI Tools"
+
+Rewrite into:
+
+"Tools you can use — but here’s why Yettey is different"
+
+Then emphasize:
+
+* No manual editing
+* No timeline work
+* Fully automated workflow
+* Export-ready clips
+* Built for short-form content
+
+---
+
+# 6. ADD NEW CORE SECTION (MANDATORY)
+
+Insert a section:
+
+Title:
+"How Yettey does this automatically"
+
+Structure:
+
+Step 1: Upload your video
+Step 2: Yettey AI detects key moments
+Step 3: Clips are generated automatically
+Step 4: Export to TikTok / Reels / Shorts
+
+Each step must:
+
+* Be visual (card or icon)
+* Have 1 short sentence only
+* Be extremely easy to scan
+
+---
+
+# 7. WORKFLOW SECTION IMPROVEMENT
+
+Every workflow step must connect to Yettey:
+
+Example:
+
+Step 2: AI detects highlights
+→ Powered by Yettey AI
+
+Step 3: Generate clips
+→ Done automatically in Yettey
+
+---
+
+# 8. RESULTS / IMPACT SECTION (STRONG UPGRADE)
+
+Create a bold results section:
+
+Include:
+
+* "1 video → 10+ clips"
+* "Save up to 80% editing time"
+* "No editing skills required"
+* "Ready for TikTok, Reels, Shorts"
+
+Use:
+
+* stat cards
+* large typography
+* visual emphasis
+
+---
+
+# 9. VISUAL CONTENT (MANDATORY)
+
+DO NOT leave text-only sections.
+
+Each major section must include one of:
+
+* UI preview
+* before/after comparison
+* workflow diagram
+* step visualization
+
+---
+
+# 10. CTA SYSTEM (REWRITE ALL)
+
+Replace ALL weak CTAs like:
+"Read guide"
+
+With:
+
+* "Start creating clips"
+* "Generate clips now"
+* "Try this workflow"
+* "Create your first clip"
+
+CTA must appear:
+
+* Hero
+* Mid-page
+* Final section
+
+---
+
+# 11. FINAL CTA SECTION (VERY IMPORTANT)
+
+Replace final section with:
+
+Headline:
+"Stop editing. Start scaling content."
+
+Subtext:
+"Turn your next video into viral clips in minutes."
+
+CTA:
+"Start creating for free"
+
+Optional support:
+"No credit card required"
+
+---
+
+# 12. SEO OPTIMIZATION
+
+Naturally include keywords:
+
+* AI video editor
+* short-form video generator
+* TikTok clip maker
+* YouTube Shorts generator
+* video automation tools
+
+BUT:
+
+* Keep natural tone
+* Do NOT keyword-stuff
+
+---
+
+# 13. UX / DESIGN GUIDELINES
+
+* Dark SaaS style 유지
+* Card-based layout
+* Strong spacing (가독성)
+* Avoid long paragraphs
+* Use bold highlights for results
+* Make everything scannable in 3 seconds
+
+---
+
+# 14. WRITING STYLE
+
+* Short sentences
+* Outcome-first language
+* No fluff
+* No generic wording
+* Clear and confident SaaS tone
+
+---
+
+# 15. FINAL OUTPUT FORMAT
+
+Provide:
+
+1. Full rewritten page content
+2. Section-by-section breakdown
+3. Headlines + subheadlines
+4. CTA text replacements
+5. Suggested UI blocks (for developer/design use)
+
+---
+
+# SUCCESS CRITERIA
+
+The page must:
+
+1. Feel like a product page (NOT blog)
+2. Clearly show Yettey as the solution
+3. Be understandable within 5 seconds
+4. Drive users to click CTA
+5. Increase conversion intent
+
+---
+
+Do NOT summarize.
+Rewrite everything with a strong conversion focus.
