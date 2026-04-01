@@ -1,0 +1,144 @@
+We are improving the Yettey Help Center UX.
+
+IMPORTANT:
+- Do NOT redesign the visual UI (keep dark theme, layout, spacing, cards)
+- Focus ONLY on UX behavior, navigation flow, and structure improvements
+
+--------------------------------------------------
+🎯 GOAL
+--------------------------------------------------
+
+Create a fast, intuitive Help Center where:
+- Users find answers within 3 seconds
+- Navigation feels shallow and seamless
+- No user relies on browser back button
+- Every interaction feels responsive and clear
+
+--------------------------------------------------
+🧠 CORE UX PRINCIPLES
+--------------------------------------------------
+
+1. Search-first experience (search always visible)
+2. Shallow navigation (no deep folder drilling)
+3. Category = expanded view, not a new system
+4. Always provide exit and next actions
+5. Every click must feel responsive and intentional
+
+--------------------------------------------------
+📂 CATEGORY NAVIGATION IMPROVEMENTS
+--------------------------------------------------
+
+When a user clicks a category (e.g. "Getting Started"):
+
+1. DO NOT create a deep navigation experience
+2. Keep the same visual layout and structure
+3. Update content within the same layout (expanded view feeling)
+
+--------------------------------------------------
+🔝 SCROLL BEHAVIOR (CRITICAL FIX)
+--------------------------------------------------
+
+When category changes:
+
+- Automatically scroll to the TOP of the page
+- DO NOT require manual scrolling
+
+Implementation requirement:
+
+- Trigger scroll on category change
+- Use immediate scroll behavior (NOT smooth)
+
+Example:
+
+window.scrollTo({
+  top: 0,
+  behavior: "auto"
+});
+
+OR (React):
+
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, [category]);
+
+Reason:
+- Prevent confusion
+- Ensure user perceives content change immediately
+- Improve responsiveness
+
+--------------------------------------------------
+🔙 NAVIGATION IMPROVEMENTS
+--------------------------------------------------
+
+1. Replace current breadcrumb + back button combination with:
+
+   A PRIMARY BACK ACTION:
+   "← Back to Help Center"
+
+   This should be clearly visible and clickable
+
+2. Keep breadcrumb as secondary (low emphasis):
+
+   Help Center / Getting Started
+
+3. Remove duplicated navigation (no separate "Back to all topics")
+
+--------------------------------------------------
+📌 CATEGORY PAGE STRUCTURE
+--------------------------------------------------
+
+Top to bottom:
+
+1. Back button (primary action)
+2. Breadcrumb (secondary, low opacity)
+3. Category title
+4. Short description
+5. Search bar (always visible)
+6. Suggested tags (max 3–4)
+7. Category tabs (important navigation)
+8. Popular section
+9. All articles (full list, required)
+10. Optional: related topics
+
+--------------------------------------------------
+🧭 CATEGORY SWITCHING UX
+--------------------------------------------------
+
+- Category tabs must allow switching WITHOUT going back
+- Tabs should be visually emphasized (active state clear)
+- Switching category must:
+  - Update content
+  - Scroll to top
+  - Maintain layout consistency
+
+--------------------------------------------------
+📄 ARTICLE PAGE IMPROVEMENTS
+--------------------------------------------------
+
+Each article page must include:
+
+1. Back navigation (same pattern)
+2. Main content
+3. Related articles (required)
+4. Next step actions (required)
+
+--------------------------------------------------
+⚡ UX SUCCESS CRITERIA
+--------------------------------------------------
+
+- User always knows where they are
+- User never needs browser back button
+- Every click gives immediate feedback
+- Category change feels like a new view (via scroll reset)
+- Navigation is fast, shallow, and predictable
+
+--------------------------------------------------
+🎯 FINAL RESULT
+--------------------------------------------------
+
+The Help Center should feel like:
+
+- Intercom / Notion-style support UX
+- Fast and responsive
+- Seamless navigation
+- No friction between sections

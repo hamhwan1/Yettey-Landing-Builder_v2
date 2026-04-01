@@ -1,0 +1,105 @@
+Fix the Help Center layout so that all sections follow a consistent structure, alignment, and visual hierarchy.
+
+[Core Goal]
+Ensure that "Frequently asked" looks like a proper section (not smaller or misaligned compared to other sections like "Popular articles" or "Browse by category").
+
+---
+
+[1. Section Layout Consistency]
+
+All sections must follow the SAME container rules:
+
+- Use a consistent max width (e.g. max-w-3xl or max-w-4xl)
+- Center align the section: mx-auto
+- Apply the same horizontal padding: px-4
+- Apply consistent vertical spacing between sections: mb-16
+
+NO section should have a different width or left alignment.
+
+---
+
+[2. Section Header Standard]
+
+Every section must follow this exact structure:
+
+- Title (h2)
+  - font-size: text-xl or text-2xl
+  - font-weight: semibold
+- Subtitle (optional)
+  - font-size: text-sm
+  - color: muted
+  - margin-top: mt-2
+
+Example:
+
+<div class="mb-6">
+  <h2 class="text-xl font-semibold">Section Title</h2>
+  <p class="text-sm text-muted mt-2">Supporting description</p>
+</div>
+
+---
+
+[3. Fix "Frequently asked" specifically]
+
+Current issue:
+- Looks smaller than other sections
+- Misaligned with cards below
+- Title feels like a label instead of a section header
+
+Fix it by:
+
+- Wrapping it in the SAME container as other sections
+- Converting title to proper h2
+- Adding spacing between title and subtitle
+- Aligning left edge EXACTLY with the FAQ card container
+
+---
+
+[4. FAQ Card Alignment]
+
+The FAQ list container must:
+
+- Match the exact same width as the section container
+- NOT have extra left padding that shifts alignment
+- Use rounded card style consistent with other blocks:
+  - rounded-2xl
+  - border border-white/10
+  - bg-white/5 (or equivalent)
+
+---
+
+[5. Visual Hierarchy Rules]
+
+Enforce this hierarchy across the entire page:
+
+1. Section Title (largest)
+2. Section Subtitle
+3. Card Container
+4. List Items
+
+DO NOT allow:
+- Titles smaller than card content
+- Subtitle visually merging with title
+- Misaligned left edges between sections
+
+---
+
+[6. Spacing System]
+
+- Section spacing: mb-16
+- Header spacing: mb-6
+- Subtitle spacing: mt-2
+- Card padding: p-6 or consistent value
+
+Spacing must be consistent across ALL sections.
+
+---
+
+[7. Final Check]
+
+After applying:
+
+- All section titles must align perfectly on the left
+- All content blocks must share the same width
+- "Frequently asked" must visually match "Popular articles"
+- No section should feel smaller, indented, or detached
