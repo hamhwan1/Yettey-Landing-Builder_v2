@@ -315,63 +315,90 @@ function Workflow() {
   );
 }
 
-function Testimonials() {
-  const reviews = [
-    {
-      quote: "Yettey cut our content production time in half. The AI clipping tools are genuinely incredible, finding moments I would have missed manually.",
-      name: "Sarah Jenkins",
-      role: "Head of Content at CreativeCo",
-      initials: "SJ"
-    },
-    {
-      quote: "Finally, a DAM that actually understands modern marketing workflows. Searching for assets used to take hours, now it takes seconds.",
-      name: "Marcus Thorne",
-      role: "Marketing Director",
-      initials: "MT"
-    },
-    {
-      quote: "From raw footage to 5 different social clips in under 10 minutes. This is the future of content creation for lean teams.",
-      name: "Lisa Wei",
-      role: "Founder at Studio44",
-      initials: "LW"
-    }
-  ];
+const testimonials = [
+  { quote: "Didn't expect this to be this useful. We use it every day now.", name: "Minsoo Choi", role: "Growth PM, N사", tag: "YouTube" },
+  { quote: "Search alone saves us hours every week.", name: "J. Kim", role: "Marketer, D2C brand", tag: "Ecommerce" },
+  { quote: "We replaced 2 tools after switching to Yettey.", name: "David", role: "Founder, SaaS startup" },
+  { quote: "Honestly way faster than our old workflow. Not even close.", name: "Yuna Park", role: "Content Lead, 글로벌 커머스", tag: "TikTok" },
+  { quote: "The AI tagging is scary accurate.", name: "S. Lee", role: "Creative Director, 에이전시" },
+  { quote: "Went from 3 hours of editing to 20 minutes.", name: "Alex Turner", role: "Video Editor, 미디어 스타트업", tag: "YouTube" },
+  { quote: "Our team actually uses this without complaining. That's rare.", name: "Jiwon Han", role: "PM, B2B SaaS", tag: "Ads" },
+  { quote: "Uploading, searching, clipping — all in one place. Finally.", name: "Rachel M.", role: "Marketing Manager, 패션 브랜드", tag: "Ecommerce" },
+  { quote: "Best DAM I've used, and I've tried a lot.", name: "Hyunwoo Kang", role: "CTO, 콘텐츠 플랫폼" },
+  { quote: "The short-form generator paid for itself in week one.", name: "Chris O.", role: "Growth, D2C brand", tag: "TikTok" },
+  { quote: "I can find any asset in under 5 seconds now.", name: "Soojin Yoo", role: "Designer, 광고 에이전시" },
+  { quote: "We produce 4x more content with the same team size.", name: "Mike Chen", role: "Head of Content, 미디어사", tag: "Ads" },
+  { quote: "Onboarding took 10 minutes. Everyone just got it.", name: "Eunji Lim", role: "Ops Manager, 이커머스" },
+  { quote: "Replaced our entire post-production pipeline.", name: "T. Nakamura", role: "Producer, 영상 프로덕션", tag: "YouTube" },
+  { quote: "Auto-subtitles are genuinely good. Like, actually usable.", name: "Haeun Cho", role: "Content Creator", tag: "TikTok" },
+  { quote: "The collaboration features are underrated. Sharing is seamless.", name: "Jordan B.", role: "Creative Lead, 스타트업" },
+  { quote: "We cut our content turnaround from 5 days to 1.", name: "Sunghoon Kim", role: "VP Marketing, 테크 기업", tag: "Ads" },
+  { quote: "Clean UI. No bloat. Does exactly what it says.", name: "Emma L.", role: "Freelance Editor" },
+  { quote: "Even our non-technical team members use it daily.", name: "Dongwook Seo", role: "CEO, 크리에이터 스튜디오" },
+  { quote: "Honestly the search is the killer feature.", name: "Sarah K.", role: "Marketer, 뷰티 브랜드", tag: "Ecommerce" },
+  { quote: "We tried 4 tools before this. Yettey stuck.", name: "Jihyuk Baek", role: "PM, 플랫폼 스타트업" },
+  { quote: "AI clipping saves our editors so much time.", name: "Nina R.", role: "Video Lead, 에이전시", tag: "YouTube" },
+  { quote: "Storage + editing + distribution. All handled.", name: "Taewon Jung", role: "Founder, 콘텐츠 커머스" },
+  { quote: "Switched from Dropbox + Premiere. No regrets.", name: "Amy W.", role: "Content Strategist, D2C brand", tag: "TikTok" },
+];
 
+const row1 = testimonials.slice(0, 12);
+const row2 = testimonials.slice(12, 24);
+
+function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
   return (
-    <section className="py-24 bg-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <FadeIn className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
-            Loved by modern content teams
-          </h2>
-        </FadeIn>
+    <div className="flex-shrink-0 w-[300px] md:w-[340px] p-5 rounded-xl bg-card border border-border/60 shadow-sm hover:border-white/[0.12] transition-colors">
+      <p className="text-[14px] text-foreground/90 leading-[1.65] mb-4">"{t.quote}"</p>
+      <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-7 h-7 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[11px] font-bold shrink-0 border border-primary/20">
+            {t.name.charAt(0)}
+          </div>
+          <div className="min-w-0">
+            <p className="text-[13px] font-semibold text-foreground truncate">{t.name}</p>
+            <p className="text-[11px] text-muted-foreground truncate">{t.role}</p>
+          </div>
+        </div>
+        {t.tag && (
+          <span className="text-[10px] font-medium text-muted-foreground/70 bg-white/[0.04] border border-white/[0.06] px-2 py-0.5 rounded-full shrink-0">
+            {t.tag}
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {reviews.map((review, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
-              <div className="p-8 rounded-2xl bg-card border border-border h-full flex flex-col">
-                <div className="flex gap-1 mb-6">
-                  {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="text-lg text-foreground mb-8 flex-grow leading-relaxed">
-                  "{review.quote}"
-                </p>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-lg border border-primary/30">
-                    {review.initials}
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-foreground">{review.name}</h5>
-                    <p className="text-sm text-muted-foreground">{review.role}</p>
-                  </div>
-                </div>
-              </div>
-            </FadeIn>
-          ))}
+function Testimonials() {
+  return (
+    <section className="py-24 bg-background overflow-hidden">
+      <FadeIn className="text-center mb-14 px-4">
+        <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
+          Loved by modern content teams
+        </h2>
+        <p className="text-muted-foreground text-lg">Creators, marketers, and teams trust Yettey every day.</p>
+      </FadeIn>
+
+      <div className="relative">
+        <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+        <div className="flex flex-col gap-4">
+          <div className="group">
+            <div className="flex gap-4 animate-scroll-left group-hover:[animation-play-state:paused]">
+              {[...row1, ...row1].map((t, i) => (
+                <TestimonialCard key={`r1-${i}`} t={t} />
+              ))}
+            </div>
+          </div>
+
+          <div className="group">
+            <div className="flex gap-4 animate-scroll-right group-hover:[animation-play-state:paused]">
+              {[...row2, ...row2].map((t, i) => (
+                <TestimonialCard key={`r2-${i}`} t={t} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

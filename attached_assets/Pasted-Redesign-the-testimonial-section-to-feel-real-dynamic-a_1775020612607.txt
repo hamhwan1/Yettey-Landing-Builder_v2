@@ -1,0 +1,69 @@
+Redesign the testimonial section to feel real, dynamic, and high-trust (modern SaaS style).
+
+1. Layout (CRITICAL)
+- Replace static grid with a continuously flowing layout
+- Create 2 horizontal rows of testimonial cards
+  - Row 1 scrolls left
+  - Row 2 scrolls right
+- Infinite seamless loop (duplicate items for continuity)
+- Slow scrolling speed (must be readable)
+- Pause on hover
+
+2. Number of testimonials
+- Minimum 20 items (prefer 20–24)
+- Vary content length (1 line, 2 lines, 3 lines mixed)
+- Avoid identical card sizes (slight variation allowed)
+
+3. Content tone (VERY IMPORTANT)
+- Make testimonials feel natural and human
+- Avoid polished marketing language
+- Slightly imperfect, conversational tone
+
+Examples:
+- "Didn’t expect this to be this useful."
+- "Search alone saves us hours every week."
+- "We replaced 2 tools after switching."
+- "Honestly way faster than our old workflow."
+
+4. Name style (TRUST CORE)
+- Use realistic human names (IMPORTANT)
+- Mix formats:
+  - Full name: Minsoo Choi
+  - Initial: J. Kim
+  - First name only: David
+- Mix global names (Korean + English)
+
+5. Company / role style (ANTI-FAKE)
+- DO NOT use fake company names (e.g. CreativeCo ❌)
+- Use anonymized format:
+  - "N사", "D2C brand", "글로벌 커머스", "SaaS startup"
+- Focus on role context instead of company identity
+
+Examples:
+- Growth PM, N사
+- Marketer, D2C brand
+- Founder, SaaS startup
+- Creative Director, 글로벌 커머스
+
+6. Visual design
+- Keep cards clean and minimal
+- Slight variation in card width
+- Reduce overly large padding
+- Use soft shadow + subtle border
+- Add gradient fade on left/right edges of container (important for flow effect)
+
+7. Extra trust signals (OPTIONAL but recommended)
+- Add small tags inside cards:
+  - "YouTube"
+  - "Ads"
+  - "TikTok"
+  - "Ecommerce"
+- OR subtle category labels
+
+8. Goal (IMPORTANT)
+- Must feel alive and continuously updating
+- Must NOT feel like “3 fake testimonials placed in a row”
+- Should resemble modern SaaS landing pages (Stripe / Notion style)
+
+Final Result:
+A dynamic, infinite testimonial flow that feels real, diverse, and trustworthy.

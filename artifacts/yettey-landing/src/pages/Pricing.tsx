@@ -26,7 +26,7 @@ const plans: Plan[] = [
   {
     name: "Starter",
     price: 49,
-    target: "Best for individuals starting content creation",
+    target: "Create your first viral content fast",
     highlights: [
       "Up to 1,800 credits",
       "4 projects",
@@ -47,7 +47,7 @@ const plans: Plan[] = [
     name: "Growth",
     badge: "Most Popular",
     price: 99,
-    target: "For creators scaling content production",
+    target: "Turn content into a scalable system",
     highlights: [
       "Up to 4,000 credits",
       "10 projects",
@@ -67,7 +67,7 @@ const plans: Plan[] = [
   {
     name: "Pro",
     price: 249,
-    target: "For teams and high-volume production",
+    target: "Run your entire content operation",
     highlights: [
       "Up to 11,000 credits",
       "Unlimited projects",
@@ -105,8 +105,12 @@ const faqs = [
     a: "You're billed monthly or yearly depending on your plan. Yearly billing saves you 20%. You can cancel anytime — no long-term contracts.",
   },
   {
+    q: "Do I need to understand credits to start?",
+    a: "You're billed monthly or yearly depending on your plan. Yearly billing saves you 20%. You can cancel anytime — no long-term contracts.",
+  },
+  {
     q: "Do unused credits roll over?",
-    a: "Monthly plan credits reset each billing cycle. Credit packs purchased separately remain available until used.",
+    a: "No. Just create content — credits are used automatically.",
   },
   {
     q: "How many team members can I add?",
