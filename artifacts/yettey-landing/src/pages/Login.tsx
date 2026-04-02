@@ -1,9 +1,14 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [, navigate] = useLocation();
+
+  const handleLogin = () => {
+    navigate("/projects");
+  };
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row bg-white">
@@ -30,21 +35,21 @@ export default function Login() {
 
           <div className="flex flex-col gap-[24px] w-full">
             <div className="flex flex-col gap-[16px] w-full">
-              <button className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[18px] gap-[12px] hover:bg-gray-50 transition-colors cursor-pointer">
+              <button onClick={handleLogin} className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[18px] gap-[12px] hover:bg-gray-50 transition-colors cursor-pointer">
                 <img src={`${import.meta.env.BASE_URL}assets/login/google-icon.svg`} alt="Google" className="w-[24px] h-[24px] shrink-0" />
                 <span className="flex-1 text-[16px] font-semibold text-[#5c5f6e] tracking-[-0.48px] leading-[1.5] text-center" style={{ fontFamily: "Lexend, sans-serif" }}>
                   Continue with Google
                 </span>
                 <div className="w-[24px]" />
               </button>
-              <button className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[14px] gap-[8px] hover:bg-gray-50 transition-colors cursor-pointer">
+              <button onClick={handleLogin} className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[14px] gap-[8px] hover:bg-gray-50 transition-colors cursor-pointer">
                 <img src={`${import.meta.env.BASE_URL}assets/login/naver-icon.svg`} alt="NAVER" className="w-[33px] h-[32px] shrink-0" />
                 <span className="flex-1 text-[16px] font-semibold text-[#5c5f6e] tracking-[-0.48px] leading-[1.5] text-center" style={{ fontFamily: "Lexend, sans-serif" }}>
                   Continue with NAVER
                 </span>
                 <div className="w-[33px]" />
               </button>
-              <button className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[17px] gap-[12px] hover:bg-gray-50 transition-colors cursor-pointer">
+              <button onClick={handleLogin} className="w-full h-[48px] rounded-[8px] border border-[#e5e5ea] bg-white flex items-center px-[17px] gap-[12px] hover:bg-gray-50 transition-colors cursor-pointer">
                 <img src={`${import.meta.env.BASE_URL}assets/login/kakao-icon.svg`} alt="Kakao" className="w-[24px] h-[24px] shrink-0" />
                 <span className="flex-1 text-[16px] font-bold text-[#5c5f6e] leading-normal text-center" style={{ fontFamily: "Lexend, sans-serif" }}>
                   Continue with Kakao
@@ -61,7 +66,7 @@ export default function Login() {
               <div className="flex-1 h-px bg-[#e5e5ea]" />
             </div>
 
-            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-[16px] w-full">
+            <form onSubmit={(e) => { e.preventDefault(); handleLogin(); }} className="flex flex-col gap-[16px] w-full">
               <div className="flex flex-col gap-[10px]">
                 <div className="flex flex-col gap-[4px] pt-[3px]">
                   <label className="text-[14px] font-medium text-[#171717] leading-[20px]" style={{ fontFamily: "Inter, sans-serif" }}>

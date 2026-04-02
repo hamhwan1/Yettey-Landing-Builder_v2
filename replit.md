@@ -64,6 +64,7 @@ The project uses **pnpm workspaces** with two top-level directories:
 | `/product/*` | Product feature pages (4 pages) |
 | `/use-cases/*` | Use case pages (3 pages) |
 | `/login` | Login page (split-screen, Figma-based) |
+| `/projects` | Preview mode dashboard (mock asset manager UI) |
 | `/privacy` | Privacy Policy |
 | `/terms` | Terms of Service |
 

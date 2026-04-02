@@ -42,6 +42,7 @@ import GuideSpeed from "@/pages/resources/GuideSpeed";
 import GuideControl from "@/pages/resources/GuideControl";
 import GuideVersions from "@/pages/resources/GuideVersions";
 import Login from "@/pages/Login";
+import Projects from "@/pages/Projects";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -99,6 +100,7 @@ function Router() {
           <Route path="/help/invite-team" component={InviteTeamHelp} />
           <Route path="/help/:slug" component={HelpDetailPage} />
           <Route path="/login" component={Login} />
+          <Route path="/projects" component={Projects} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />
           <Route component={NotFound} />
