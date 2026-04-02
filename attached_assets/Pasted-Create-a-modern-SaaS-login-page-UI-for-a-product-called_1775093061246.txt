@@ -1,0 +1,95 @@
+Create a modern SaaS login page UI for a product called "YETTEY".
+
+The layout must be a split-screen design:
+
+LEFT SIDE (Login Form)
+- Background: clean light gray (#F8F9FB)
+- Centered vertically and horizontally
+
+Top:
+- Small circular logo with "Y" inside (purple gradient)
+- Title: "Welcome back." (large, bold)
+- Subtext: "You're new here? Create an account." (with "Create an account" as a link)
+
+Social login buttons (stacked, full width):
+1. Continue with Google
+2. Continue with NAVER
+3. Continue with Kakao
+
+Style:
+- Rounded corners (8-10px)
+- Light border (#E5E7EB)
+- Hover effect (slightly darker background)
+
+Divider:
+- Horizontal line with text: "or continue with email"
+
+Form:
+- Email input
+- Password input
+- Placeholder text inside inputs
+
+Below password:
+- "Forgot your password? Reset it here." (link style)
+
+CTA Button:
+- Text: "Login"
+- Full width
+- Height: 56px
+- Purple gradient background (#7C3AED → #6D28D9)
+- White text
+- Rounded corners (10-12px)
+- Strong hover effect
+
+Footer:
+- Small text:
+"By logging in, I agree to the Terms of service and Privacy policy."
+
+---
+
+RIGHT SIDE (Brand Message Area)
+
+Background:
+- Purple gradient with soft abstract wave shapes
+- Add subtle dark overlay for readability
+
+Content (centered vertically):
+
+Headline (large, bold, white):
+Turn your content into reusable assets
+
+Below (bullet points):
+• Upload once.
+• Find anything instantly.
+• Reuse it everywhere.
+
+Typography:
+- Headline: 44–48px, bold
+- Bullet text: 20–22px
+
+Spacing:
+- Generous padding
+- Centered alignment
+
+IMPORTANT:
+- Do NOT use quotation marks
+- Do NOT include testimonials or user names
+- Keep it clean and minimal
+- Focus on clarity and SaaS feel
+
+---
+
+GENERAL STYLE
+
+- Modern SaaS UI (similar to Stripe / Notion / Linear)
+- Use soft shadows and smooth gradients
+- Consistent spacing and alignment
+- Responsive (mobile should stack vertically)
+
+---
+
+OUTPUT
+
+- Provide clean React + Tailwind code
+- Component-based structure
+- Ready to use in production

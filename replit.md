@@ -39,7 +39,7 @@ The project uses **pnpm workspaces** with two top-level directories:
 - **State/data fetching**: TanStack React Query
 - **UI components**: shadcn/ui (Radix UI primitives + Tailwind CSS)
 - **Animation**: Framer Motion
-- **Fonts**: Inter (body) + Outfit (display headings) from Google Fonts
+- **Fonts**: Inter (body) + Outfit (display headings) + Lexend + Manrope from Google Fonts
 - **Design system**: Dark-first SaaS aesthetic. Primary background is `hsl(230 25% 7%)` (near-black navy). Primary accent color is purple/violet. CSS variables drive all theme tokens.
 - **Component structure**:
   - `src/components/ui/` — shadcn/ui base components
@@ -63,6 +63,7 @@ The project uses **pnpm workspaces** with two top-level directories:
 | `/help/:slug` | Help detail pages |
 | `/product/*` | Product feature pages (4 pages) |
 | `/use-cases/*` | Use case pages (3 pages) |
+| `/login` | Login page (split-screen, Figma-based) |
 | `/privacy` | Privacy Policy |
 | `/terms` | Terms of Service |
 
