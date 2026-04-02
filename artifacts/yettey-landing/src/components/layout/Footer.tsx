@@ -39,7 +39,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1 flex flex-col gap-6">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 w-fit">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#6366F1] to-[#818CF8] flex items-center justify-center shrink-0">
                 <span className="text-white font-display font-bold text-lg">Y</span>
               </div>
               <span className="font-display font-bold text-xl text-foreground">Yettey</span>

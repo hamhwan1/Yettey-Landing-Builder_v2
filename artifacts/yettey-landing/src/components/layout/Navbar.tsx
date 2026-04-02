@@ -133,7 +133,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-primary to-purple-400 flex items-center justify-center shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all">
+            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#6366F1] to-[#818CF8] flex items-center justify-center shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all">
               <span className="text-white font-display font-bold text-lg">Y</span>
             </div>
             <span className="font-display font-bold text-xl tracking-wide text-foreground">
