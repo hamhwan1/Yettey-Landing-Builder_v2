@@ -2,7 +2,7 @@ import { ProductPageLayout, ProductPageData } from "@/components/product/Product
 
 const data: ProductPageData = {
   badge: "Asset Management",
-  badgeColor: "#7C3AED",
+  badgeColor: "#6366F1",
   heroTitle: "Work with all your media in one place.",
   heroHighlight: "in one place.",
   heroDesc: "Organize, find, and use your content — all in one system.",
@@ -15,7 +15,7 @@ const data: ProductPageData = {
       Find anything in seconds.
     </>
   ),
-  accentColor: "#7C3AED",
+  accentColor: "#6366F1",
   features: [
     {
       icon: "🔍",

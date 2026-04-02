@@ -21,7 +21,7 @@ const posts = [
     date: "March 20, 2026",
     readTime: "5 min read",
     emoji: "🎬",
-    accent: "#7C3AED",
+    accent: "#6366F1",
     slug: "viral-shorts-without-editing",
     tags: ["Video Editing Automation", "Short-form Video"],
     featured: true,

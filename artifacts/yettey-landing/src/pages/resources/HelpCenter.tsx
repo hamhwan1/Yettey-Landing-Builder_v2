@@ -66,7 +66,7 @@ const quickActions = [
 ];
 
 const helpCategories = [
-  { icon: Zap, label: "Getting Started", color: "#7C3AED", desc: "Set up your workspace and upload your first files", filter: "getting-started" },
+  { icon: Zap, label: "Getting Started", color: "#6366F1", desc: "Set up your workspace and upload your first files", filter: "getting-started" },
   { icon: CreditCard, label: "Pricing & Billing", color: "#0EA5E9", desc: "Plans, payments, invoices, and subscription management", filter: "billing" },
   { icon: Sparkles, label: "Credits", color: "#F97316", desc: "How credits work, usage tracking, and purchasing", filter: "credits" },
   { icon: Video, label: "Create & Edit Videos", color: "#EC4899", desc: "Video upload, AI editing, and export options", filter: "video" },

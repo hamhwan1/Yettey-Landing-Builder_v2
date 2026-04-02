@@ -37,7 +37,7 @@ const useCaseItems = [
     title: "For Creators",
     desc: "Keep your content organized and ready to use",
     href: "/use-cases/creators",
-    color: "#7C3AED",
+    color: "#6366F1",
   },
   {
     icon: TrendingUp,
@@ -61,7 +61,7 @@ const resourceItems = [
     title: "Blog",
     desc: "Read articles and updates",
     href: "/blog",
-    color: "#7C3AED",
+    color: "#6366F1",
   },
   {
     icon: BookOpen,

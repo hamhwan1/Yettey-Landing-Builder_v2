@@ -4,7 +4,7 @@ import { ArrowRight, ArrowLeft, Calendar, Clock, Tag, Check } from "lucide-react
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const ACCENT = "#7C3AED";
+const ACCENT = "#6366F1";
 
 const fade = {
   hidden: { opacity: 0, y: 20 },

@@ -70,7 +70,7 @@
   --popover-foreground: 210 40% 98%;
   --popover-border: 230 25% 15%;
 
-  --primary: 262 83% 58%; /* #7C3AED */
+  --primary: 239 84% 67%; /* #6366F1 */
   --primary-foreground: 210 40% 98%;
 
   --secondary: 230 25% 15%;
@@ -79,7 +79,7 @@
   --muted: 230 25% 15%;
   --muted-foreground: 215 16% 65%;
 
-  --accent: 262 83% 58%;
+  --accent: 239 84% 67%;
   --accent-foreground: 210 40% 98%;
 
   --destructive: 0 84% 60%;
@@ -87,7 +87,7 @@
 
   --border: 230 25% 15%;
   --input: 230 25% 15%;
-  --ring: 262 83% 58%;
+  --ring: 239 84% 67%;
 
   --radius: 0.75rem;
 }
@@ -104,7 +104,7 @@
   --popover-foreground: 222 47% 11%;
   --popover-border: 214 32% 91%;
 
-  --primary: 262 83% 58%;
+  --primary: 239 84% 67%;
   --primary-foreground: 210 40% 98%;
 
   --secondary: 210 40% 96%;
@@ -113,7 +113,7 @@
   --muted: 210 40% 96%;
   --muted-foreground: 215 16% 47%;
 
-  --accent: 262 83% 58%;
+  --accent: 239 84% 67%;
   --accent-foreground: 210 40% 98%;
 
   --destructive: 0 84% 60%;
@@ -121,7 +121,7 @@
 
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 262 83% 58%;
+  --ring: 239 84% 67%;
 }
 
 @layer base {
@@ -147,7 +147,7 @@
   }
   
   .text-gradient-primary {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-primary/80;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-indigo-400 to-primary/80;
   }
 
   .glass-panel {
