@@ -1,0 +1,160 @@
+🎯 목표
+
+로그인 이후 /projects/assets/collections 페이지를 구현하고,
+기존 /projects 메뉴를 /projects/assets/all-assets로 구조 변경한다.
+
+1. 📁 라우팅 구조 정의
+
+아래 구조로 전체 통일한다:
+
+/projects/assets/all-assets
+/projects/assets/collections
+/projects/assets/trash
+중요 변경사항
+기존 /projects → /projects/assets/all-assets로 변경
+모든 내부 링크 및 라우팅 경로도 함께 수정
+2. 📌 Sub Menu 구조 변경
+기존 문제
+/projects 메뉴명이 모호함
+변경 요구사항
+메뉴명: All Assets
+경로: /projects/assets/all-assets
+3. 📌 좌측 사이드바 구조
+
+아래 구조로 정확히 구현:
+
+Project
+  └ Assets
+      ├ All Assets
+      ├ Collections
+      └ Trash
+
+Yettey Studio
+
+Settings
+UI 요구사항
+현재 페이지: Collections active 상태
+active 메뉴:
+보라색 배경 또는 강조 스타일
+hover:
+subtle background 변화
+메뉴 클릭 시:
+해당 route 이동 + 스크롤 최상단 이동
+4. 📌 Collections 페이지 UI 구성
+4.1 Breadcrumb
+Assets / Collections
+4.2 설명 영역 (상단 텍스트)
+Organize your assets into collections for different use cases.
+Editing files in a collection won’t affect the original assets.
+
+👉 짧고 SaaS 스타일 유지 (불필요한 문장 금지)
+
+4.3 검색 & 필터 영역
+[ All ▼ ]   [ Search collections... ]   [ Filter ]
+기능 정의
+Dropdown
+All
+Created by me
+Shared
+Search
+collection 이름 검색
+debounce 300ms 적용
+Filter 버튼
+UI만 구현 (기능은 추후)
+4.4 View Toggle + Sort
+[ Grid ] [ List ]    [ Sort ]
+요구사항
+기본값: Grid
+List: placeholder 가능
+Sort 옵션:
+Name
+Date created
+Last updated
+4.5 콘텐츠 영역 (핵심)
+
+현재 상태: 데이터 없음 → Empty 상태 구현
+
+5. 📌 Empty State UI (매우 중요)
+No collections yet
+
+Create your first collection to organize assets
+
+버튼:
+
+[ Create Collection ]
+
+👉 이 버튼은 가장 강조되어야 함 (Primary CTA)
+
+6. 📌 Create Collection 기능
+
+버튼 클릭 시 Modal 생성
+
+Modal 구성
+Title: Create Collection
+
+Input:
+- Collection Name (required)
+
+Textarea:
+- Description (optional)
+
+Buttons:
+[Cancel] [Create]
+동작
+Create 클릭 → collection 생성 (mock 가능)
+생성 후 → 리스트 영역에 표시
+modal 닫힘
+7. 📌 좌측 하단 Upgrade 영역
+
+현재 구조 유지하되 문구만 개선
+
+Unlock more with Yettey
+Upgrade your plan to access advanced features
+8. 📌 사용자 프로필 영역
+Full Name
+email@gmail.com
+요구사항
+클릭 시 dropdown 가능하도록 구조만 잡기
+9. 📌 UX 동작 정의
+
+반드시 구현해야 하는 동작:
+
+페이지 진입 시 → scroll top
+메뉴 이동 시 → scroll reset
+검색 시 → debounce
+Empty 상태에서 CTA 강조
+버튼 클릭 영역 충분히 넓게
+10. 📌 UI 스타일 가이드
+전체 스타일: Notion / Linear 스타일
+border radius: 12~16px
+shadow: 최소화
+spacing: 넉넉하게
+컬러: 보라 계열 primary 유지
+hover: subtle
+11. 📌 컴포넌트 구조
+/components/assets/
+  Sidebar.tsx
+  CollectionHeader.tsx
+  CollectionToolbar.tsx
+  CollectionEmptyState.tsx
+  CreateCollectionModal.tsx
+12. 📌 기술 스택 기준
+React / Next.js 기준
+상태관리: 간단 state 또는 Zustand
+UI: shadcn 또는 유사 구조
+라우팅: Next App Router 구조 유지
+13. 📌 확장 고려 (지금 구현 X)
+
+추후 고려:
+
+Collection drag & drop
+Asset → Collection 추가
+팀 공유 컬렉션
+Collection 상세 페이지
+🔥 핵심 요약
+
+이 작업의 본질은 딱 3가지다:
+
+/projects → All Assets로 명확화
+Collections = Asset을 묶는 구조 (원본 영향 없음 강조)
+Empty 상태 UX = 사용자 첫 경험 핵심

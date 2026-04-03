@@ -1,4 +1,4 @@
-import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
+import { Switch, Route, Router as WouterRouter, useLocation, Redirect } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -42,7 +42,9 @@ import GuideSpeed from "@/pages/resources/GuideSpeed";
 import GuideControl from "@/pages/resources/GuideControl";
 import GuideVersions from "@/pages/resources/GuideVersions";
 import Login from "@/pages/Login";
-import Projects from "@/pages/Projects";
+import AllAssets from "@/pages/projects/AllAssets";
+import Collections from "@/pages/projects/Collections";
+import TrashPage from "@/pages/projects/Trash";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -100,7 +102,12 @@ function Router() {
           <Route path="/help/invite-team" component={InviteTeamHelp} />
           <Route path="/help/:slug" component={HelpDetailPage} />
           <Route path="/login" component={Login} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/projects">
+            {() => <Redirect to="/projects/assets/all-assets" replace />}
+          </Route>
+          <Route path="/projects/assets/all-assets" component={AllAssets} />
+          <Route path="/projects/assets/collections" component={Collections} />
+          <Route path="/projects/assets/trash" component={TrashPage} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />
           <Route component={NotFound} />

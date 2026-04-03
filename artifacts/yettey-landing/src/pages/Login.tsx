@@ -7,7 +7,7 @@ export default function Login() {
   const [, navigate] = useLocation();
 
   const handleLogin = () => {
-    navigate("/projects");
+    navigate("/projects/assets/all-assets");
   };
 
   return (
