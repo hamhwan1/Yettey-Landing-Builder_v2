@@ -7,6 +7,8 @@ import {
   Settings,
   Wand2,
   ExternalLink,
+  ArrowUpDown,
+  Copy,
 } from "lucide-react";
 
 type SidebarProps = {
@@ -37,25 +39,23 @@ export default function Sidebar({ onProtectedAction }: SidebarProps) {
             </div>
             <span className="text-[16px] font-bold text-[#101010]">Yettey</span>
           </Link>
+          <Copy className="w-4 h-4 text-[#b0b0b0] cursor-pointer hover:text-[#878787]" />
         </div>
       </div>
 
-      <div className="px-3 mt-4">
-        <button
-          onClick={onProtectedAction}
-          className="w-full h-9 rounded-lg bg-[#F5F4FF] border border-[#E5E7EB] flex items-center justify-center gap-2 text-[14px] font-medium text-[#6366F1] hover:bg-[#EEEDFF] transition-colors cursor-pointer"
-        >
-          <Plus className="w-4 h-4" />
-          New Project
-        </button>
+      <div className="px-3 mt-5">
+        <div className="flex items-center justify-between px-3 h-9">
+          <span className="text-[13px] font-medium text-[#878787]">Project</span>
+          <ArrowUpDown className="w-4 h-4 text-[#b0b0b0]" />
+        </div>
       </div>
 
-      <nav className="px-3 mt-8 flex-1">
+      <nav className="px-3 mt-2 flex-1">
         <div>
           <div className="flex items-center gap-1 px-3 h-12 rounded cursor-pointer hover:bg-gray-50">
             <FolderOpen className="w-6 h-6 text-[#1a1d1f] stroke-[1.5]" />
             <span className="flex-1 text-[15px] font-semibold text-[#1a1d1f] tracking-[-0.15px]">
-              Assets
+              Asset
             </span>
             <ChevronDown className="w-5 h-5 text-[#1a1d1f]" />
           </div>
