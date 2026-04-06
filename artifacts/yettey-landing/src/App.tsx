@@ -45,6 +45,7 @@ import Login from "@/pages/Login";
 import AllAssets from "@/pages/projects/AllAssets";
 import Collections from "@/pages/projects/Collections";
 import TrashPage from "@/pages/projects/Trash";
+import StudioImage from "@/pages/projects/StudioImage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -108,6 +109,7 @@ function Router() {
           <Route path="/projects/assets/all-assets" component={AllAssets} />
           <Route path="/projects/assets/collections" component={Collections} />
           <Route path="/projects/assets/trash" component={TrashPage} />
+          <Route path="/projects/yetteystudio/image" component={StudioImage} />
           <Route path="/privacy" component={PrivacyPolicy} />
           <Route path="/terms" component={TermsOfService} />
           <Route component={NotFound} />

@@ -1,0 +1,115 @@
+Build a front-end only UI prototype for a SaaS product called "Yettey".
+
+IMPORTANT:
+This is NOT a fully functional app.
+Do NOT implement real backend logic.
+Focus only on layout, navigation, and visual structure.
+
+---
+
+[ROUTING]
+
+Create the following route:
+
+/projects/yetteystudio/image
+
+Also add a menu item:
+"Shortform (Vpick)"
+
+When the user clicks "Shortform (Vpick)", redirect to:
+https://app.vpick.ai/project
+
+---
+
+[PAGE STRUCTURE: /projects/yetteystudio/image]
+
+1. Hero Section (Top Banner)
+- Gradient background (purple/blue)
+- Title: "Create your image"
+- Subtitle: "Start by creating your first image above"
+
+---
+
+2. Input Box (Main Interaction Area)
+- Large rounded input field
+- Placeholder:
+  "Type your idea or drop an image to start"
+
+- Below input:
+  - Model dropdown (Flash)
+  - Resolution dropdown (1K 1024x1024)
+  - Toggle: Web Search (UI only, no logic)
+  - Button: "Generate"
+
+(No real generation logic required)
+
+---
+
+3. Category Cards Section
+Display 4 cards in a row:
+
+- E-commerce
+- Marketing
+- Events
+- Other
+
+Each card:
+- Has a soft pastel illustration
+- Has a title + small description
+- Click interaction:
+  - Just highlight selection (no real filtering needed)
+
+---
+
+4. Recent Items Section
+- Title: "Recent items"
+- Empty state UI:
+  - Icon illustration
+  - Text:
+    "No files yet"
+    "Start by creating your first image above"
+
+(No data required)
+
+---
+
+5. Explore Prompts Section
+- Title: "Explore prompts"
+- Subtitle:
+  "Each generation may produce different results."
+
+- Display grid of sample images (static)
+- Clicking an image:
+  - Fill the input field with a sample prompt (UI only)
+
+---
+
+[LEFT SIDEBAR]
+
+Menu items:
+- Project
+- Asset
+- Yettey Studio
+  - Image (active)
+  - Shortform (Vpick) → external redirect
+- Settings
+
+---
+
+[STYLE]
+
+- Modern SaaS UI (like Notion / Linear)
+- Soft shadows
+- Rounded corners
+- Purple-based gradient branding
+- Clean spacing
+
+---
+
+[GOAL]
+
+The page should clearly show:
+- What the user can do
+- How the workflow works
+
+This is a visual prototype, not a working product.

@@ -6,6 +6,7 @@ import {
   ChevronRight,
   Settings,
   Wand2,
+  ExternalLink,
 } from "lucide-react";
 
 type SidebarProps = {
@@ -16,6 +17,11 @@ const ASSET_SUBITEMS = [
   { label: "All Assets", href: "/projects/assets/all-assets" },
   { label: "Collections", href: "/projects/assets/collections" },
   { label: "Trash", href: "/projects/assets/trash" },
+];
+
+const STUDIO_SUBITEMS = [
+  { label: "Image", href: "/projects/yetteystudio/image" },
+  { label: "Shortform (Vpick)", href: "https://app.vpick.ai/project", external: true },
 ];
 
 export default function Sidebar({ onProtectedAction }: SidebarProps) {
@@ -73,14 +79,49 @@ export default function Sidebar({ onProtectedAction }: SidebarProps) {
           </div>
         </div>
 
-        <div className="mt-4 space-y-0.5">
-          <div className="flex items-center gap-1 px-3 h-[45px] rounded cursor-pointer hover:bg-gray-50">
-            <Wand2 className="w-6 h-6 text-[#101010] stroke-[1.5]" />
-            <span className="flex-1 text-[14px] font-medium text-[#101010]">
+        <div className="mt-4">
+          <div className="flex items-center gap-1 px-3 h-12 rounded cursor-pointer hover:bg-gray-50">
+            <Wand2 className="w-6 h-6 text-[#1a1d1f] stroke-[1.5]" />
+            <span className="flex-1 text-[15px] font-semibold text-[#1a1d1f] tracking-[-0.15px]">
               Yettey Studio
             </span>
-            <ChevronRight className="w-5 h-5 text-[#101010] rotate-90" />
+            <ChevronDown className="w-5 h-5 text-[#1a1d1f]" />
           </div>
+          <div className="ml-10 mt-1 space-y-0.5">
+            {STUDIO_SUBITEMS.map((sub) => {
+              if (sub.external) {
+                return (
+                  <a
+                    key={sub.label}
+                    href={sub.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-[15px] font-semibold tracking-[-0.15px] cursor-pointer transition-colors text-[#1a1d1f] hover:bg-gray-50"
+                  >
+                    {sub.label}
+                    <ExternalLink className="w-3.5 h-3.5 text-[#b0b0b0]" />
+                  </a>
+                );
+              }
+              const isActive = location === sub.href;
+              return (
+                <Link
+                  key={sub.label}
+                  href={sub.href}
+                  className={`block px-3 py-2.5 rounded-xl text-[15px] font-semibold tracking-[-0.15px] cursor-pointer transition-colors ${
+                    isActive
+                      ? "bg-[#F5F4FF] text-[#6366F1] shadow-[inset_0px_-2px_1px_0px_rgba(99,102,241,0.08),inset_0px_1px_1px_0px_rgba(255,255,255,0.8)]"
+                      : "text-[#1a1d1f] hover:bg-gray-50"
+                  }`}
+                >
+                  {sub.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-2">
           <div className="flex items-center gap-1 px-3 h-[45px] rounded cursor-pointer hover:bg-gray-50">
             <Settings className="w-6 h-6 text-[#101010] stroke-[1.5]" />
             <span className="flex-1 text-[14px] font-medium text-[#101010]">

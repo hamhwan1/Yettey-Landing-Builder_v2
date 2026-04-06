@@ -67,6 +67,7 @@ The project uses **pnpm workspaces** with two top-level directories:
 | `/projects/assets/all-assets` | Preview mode - All Assets dashboard |
 | `/projects/assets/collections` | Preview mode - Collections (empty state + create modal) |
 | `/projects/assets/trash` | Preview mode - Trash (empty state) |
+| `/projects/yetteystudio/image` | Preview mode - Yettey Studio Image Generator |
 | `/privacy` | Privacy Policy |
 | `/terms` | Terms of Service |
 
