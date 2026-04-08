@@ -3,7 +3,7 @@ import { ProductPageLayout, ProductPageData } from "@/components/product/Product
 const data: ProductPageData = {
   badge: "Asset Management",
   badgeColor: "#6366F1",
-  heroTitle: "Work with all your media in one place.",
+  heroTitle: "Work with all your media",
   heroHighlight: "in one place.",
   heroDesc: "Organize, find, and use your content — all in one system.",
   ctaText: "Start managing your assets",
