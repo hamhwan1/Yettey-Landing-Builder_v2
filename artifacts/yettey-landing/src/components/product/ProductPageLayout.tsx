@@ -111,11 +111,6 @@ export function ProductPageLayout({ data }: { data: ProductPageData }) {
               variants={fadeUp} initial="hidden" whileInView="show" custom={i} viewport={{ once: true }}
               className="rounded-2xl bg-card border border-border hover:border-white/20 hover:-translate-y-0.5 transition-all duration-200 overflow-hidden"
             >
-              {feat.image && (
-                <div className="aspect-[4/3] overflow-hidden border-b border-border">
-                  <img src={feat.image} alt={feat.title} className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              )}
               <div className="p-7 flex items-start gap-4">
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 text-xl bg-white/5"
