@@ -144,21 +144,12 @@ export function ProductPageLayout({ data }: { data: ProductPageData }) {
               variants={fadeUp} initial="hidden" whileInView="show" custom={i} viewport={{ once: true }}
               className="flex flex-col items-center text-center gap-4 relative"
             >
-              {s.image ? (
-                <div className="w-full rounded-2xl overflow-hidden border border-border bg-card relative z-10">
-                  <img src={s.image} alt={s.label} className="w-full aspect-square object-cover" loading="lazy" />
-                  <div className="absolute top-2 left-2 bg-primary text-primary-foreground text-[10px] font-bold w-6 h-6 rounded-lg flex items-center justify-center">
-                    0{i + 1}
-                  </div>
-                </div>
-              ) : (
-                <div
-                  className="w-20 h-20 rounded-2xl flex flex-col items-center justify-center border border-border bg-card relative z-10"
-                >
-                  <span className="text-xs font-bold text-primary mb-0.5">0{i + 1}</span>
-                  <span className="text-xl">{s.step}</span>
-                </div>
-              )}
+              <div
+                className="w-20 h-20 rounded-2xl flex flex-col items-center justify-center border border-border bg-card relative z-10"
+              >
+                <span className="text-xs font-bold text-primary mb-0.5">0{i + 1}</span>
+                <span className="text-2xl text-primary">{s.step}</span>
+              </div>
               <div>
                 <p className="font-semibold text-foreground text-sm">{s.label}</p>
                 <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{s.desc}</p>
