@@ -43,7 +43,7 @@ export function BlogPostLayout({ data }: Props) {
       <section className="relative pt-32 pb-12 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-[130px] opacity-20"
+            className="hidden"
             style={{ backgroundColor: data.accent }}
           />
         </div>
@@ -152,7 +152,7 @@ export function BlogPostLayout({ data }: Props) {
           style={{ background: `linear-gradient(135deg, ${data.accent}18, ${data.accent}08)`, borderColor: `${data.accent}30`, border: "1px solid" }}
         >
           <div
-            className="absolute top-0 right-0 w-[300px] h-[200px] rounded-full blur-[100px] opacity-20 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: data.accent }}
           />
           <div className="relative">

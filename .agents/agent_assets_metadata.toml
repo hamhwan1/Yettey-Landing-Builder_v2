@@ -1,0 +1,50 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "0cMMuHP_i2cpXK2gi5RIZ"
+uri = "file://artifacts/yettey-landing/public/images/feature-smart-search.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "G4OmQTFoIM7NA54cw2mZQ"
+uri = "file://artifacts/yettey-landing/public/images/feature-organize.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "S6TG3DO2MKxKCINuE4xqo"
+uri = "file://artifacts/yettey-landing/public/images/feature-duplicate.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "_8KMXJATT6d3G_4m5l7FA"
+uri = "file://artifacts/yettey-landing/public/images/feature-preview.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "Ux7TFanF-3xHzU3xZ9uT6"
+uri = "file://artifacts/yettey-landing/public/images/step-upload.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "_L2ruDDgu9NtvnI_KeH5n"
+uri = "file://artifacts/yettey-landing/public/images/step-organize.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "7bJRkFxAH0RoHW_ug6Hmh"
+uri = "file://artifacts/yettey-landing/public/images/step-search.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "xSxZ5dwm1tcCocBbwD9kX"
+uri = "file://artifacts/yettey-landing/public/images/step-use.png"
+type = "image"
+title = "generated_image"

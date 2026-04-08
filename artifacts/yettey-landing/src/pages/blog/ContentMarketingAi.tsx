@@ -84,7 +84,7 @@ export default function ContentMarketingAi() {
       {/* ── 1. HERO ──────────────────────────────────────────── */}
       <section className="relative pt-32 pb-10 overflow-hidden">
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-[130px] opacity-20 pointer-events-none"
+          className="hidden"
           style={{ backgroundColor: ACCENT }}
         />
         <div className="relative max-w-3xl mx-auto px-4">
@@ -570,7 +570,7 @@ export default function ContentMarketingAi() {
           style={{ background: `linear-gradient(135deg, ${ACCENT}20, ${ACCENT}08)`, border: `1px solid ${ACCENT}35` }}
         >
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[250px] rounded-full blur-[120px] opacity-30 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
@@ -614,7 +614,7 @@ export default function ContentMarketingAi() {
           style={{ background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}06)`, border: `1px solid ${ACCENT}30` }}
         >
           <div
-            className="absolute top-0 right-0 w-[300px] h-[200px] rounded-full blur-[100px] opacity-25 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">

@@ -198,7 +198,7 @@ export default function ForTeams() {
       <section className="py-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] rounded-full blur-[120px]"
+            className="hidden"
             style={{ backgroundColor: `${ACCENT}18` }}
           />
         </div>

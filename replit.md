@@ -40,7 +40,7 @@ The project uses **pnpm workspaces** with two top-level directories:
 - **UI components**: shadcn/ui (Radix UI primitives + Tailwind CSS)
 - **Animation**: Framer Motion
 - **Fonts**: Inter (body) + Outfit (display headings) + Lexend + Manrope from Google Fonts
-- **Design system**: Dark-first SaaS aesthetic. Primary background is `hsl(230 25% 7%)` (near-black navy). Primary accent color is purple/violet. CSS variables drive all theme tokens.
+- **Design system**: Dark-first minimal SaaS aesthetic. Primary background is `hsl(230 25% 7%)` (near-black navy). Primary accent color is indigo `#6366F1`. No gradients, no glow effects, no 3D illustrations. Solid colors only. CSS variables drive all theme tokens. All decorative blur/glow elements have been removed site-wide. Text highlights use solid `text-primary` instead of gradient clip.
 - **Component structure**:
   - `src/components/ui/` — shadcn/ui base components
   - `src/components/layout/` — `Navbar` and `Footer` used across all pages

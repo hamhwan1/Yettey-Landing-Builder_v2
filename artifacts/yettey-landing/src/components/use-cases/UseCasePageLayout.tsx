@@ -42,7 +42,7 @@ export function UseCasePageLayout({ data }: { data: UseCasePageData }) {
       <section className="relative pt-40 pb-28 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full blur-[140px] opacity-30"
+            className="hidden"
             style={{ background: data.accentColor }}
           />
         </div>
@@ -65,7 +65,7 @@ export function UseCasePageLayout({ data }: { data: UseCasePageData }) {
             className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6"
           >
             {data.heroTitle}{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            <span className="text-primary">
               {data.heroHighlight}
             </span>
           </motion.h1>
@@ -123,7 +123,7 @@ export function UseCasePageLayout({ data }: { data: UseCasePageData }) {
             style={{ borderColor: `${data.accentColor}30`, background: `${data.accentColor}08` }}
           >
             <div
-              className="absolute top-0 right-0 w-40 h-40 rounded-full blur-3xl pointer-events-none opacity-20"
+              className="absolute top-0 right-0 w-40 h-40 rounded-full hidden pointer-events-none opacity-20"
               style={{ background: data.accentColor }}
             />
             <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: data.accentColor }}>
@@ -197,7 +197,7 @@ export function UseCasePageLayout({ data }: { data: UseCasePageData }) {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full blur-[120px] opacity-20"
+            className="hidden"
             style={{ background: data.accentColor }}
           />
         </div>

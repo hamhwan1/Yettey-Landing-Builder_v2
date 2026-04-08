@@ -143,14 +143,14 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+    @apply text-white/80;
   }
   
   .text-gradient-primary {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-indigo-400 to-primary/80;
+    @apply text-primary;
   }
 
   .glass-panel {
-    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-2xl;
+    @apply bg-card/80 border border-white/10;
   }
 }

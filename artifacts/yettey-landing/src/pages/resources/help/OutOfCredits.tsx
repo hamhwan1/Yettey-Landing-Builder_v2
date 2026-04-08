@@ -90,7 +90,7 @@ export default function OutOfCreditsPage() {
           </div>
           <h1 className="text-3xl md:text-[44px] font-display font-bold text-white leading-[1.12] tracking-tight mb-5">
             Out of credits?{" "}
-            <span className="bg-gradient-to-r from-white/50 to-white/30 bg-clip-text text-transparent">Here's what to do next.</span>
+            <span className="text-white/50">Here's what to do next.</span>
           </h1>
           <p className="text-[17px] text-white/45 leading-[1.75] max-w-2xl">
             When credits run out in Yettey, content generation pauses — but your files are safe.

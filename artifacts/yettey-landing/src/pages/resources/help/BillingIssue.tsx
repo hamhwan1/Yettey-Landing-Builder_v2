@@ -96,7 +96,7 @@ export default function BillingIssuePage() {
           </div>
           <h1 className="text-3xl md:text-[44px] font-display font-bold text-white leading-[1.12] tracking-tight mb-5">
             Billing issue?{" "}
-            <span className="bg-gradient-to-r from-white/50 to-white/30 bg-clip-text text-transparent">Here's how to fix it.</span>
+            <span className="text-white/50">Here's how to fix it.</span>
           </h1>
           <p className="text-[17px] text-white/45 leading-[1.75] max-w-2xl">
             When a payment fails or a billing problem occurs in Yettey, it's usually a quick fix.

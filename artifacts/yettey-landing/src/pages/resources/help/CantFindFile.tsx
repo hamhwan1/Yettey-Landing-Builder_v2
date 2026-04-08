@@ -97,7 +97,7 @@ export default function CantFindFilePage() {
           </div>
           <h1 className="text-3xl md:text-[44px] font-display font-bold text-white leading-[1.12] tracking-tight mb-5">
             Can't find your file?{" "}
-            <span className="bg-gradient-to-r from-white/50 to-white/30 bg-clip-text text-transparent">Find it fast.</span>
+            <span className="text-white/50">Find it fast.</span>
           </h1>
           <p className="text-[17px] text-white/45 leading-[1.75] max-w-2xl">
             When a file seems missing in Yettey, it's almost always still there.

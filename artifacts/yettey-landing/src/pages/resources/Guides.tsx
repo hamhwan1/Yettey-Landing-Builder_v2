@@ -135,7 +135,7 @@ export default function Guides() {
       <Navbar />
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div
-          className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] rounded-full blur-[140px] opacity-15 pointer-events-none"
+          className="hidden"
           style={{ backgroundColor: ACCENT }}
         />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
@@ -400,7 +400,7 @@ export default function Guides() {
           style={{ background: `linear-gradient(135deg, ${ACCENT}15, ${ACCENT}06)`, border: `1px solid ${ACCENT}30` }}
         >
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[250px] rounded-full blur-[120px] opacity-25 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">

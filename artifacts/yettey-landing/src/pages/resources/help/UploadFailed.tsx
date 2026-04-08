@@ -99,7 +99,7 @@ export default function UploadFailedPage() {
           </div>
           <h1 className="text-3xl md:text-[44px] font-display font-bold text-white leading-[1.12] tracking-tight mb-5">
             Upload not working?{" "}
-            <span className="bg-gradient-to-r from-white/50 to-white/30 bg-clip-text text-transparent">Fix it in minutes.</span>
+            <span className="text-white/50">Fix it in minutes.</span>
           </h1>
           <p className="text-[17px] text-white/45 leading-[1.75] max-w-2xl">
             When a file upload fails in Yettey, your workflow stops.

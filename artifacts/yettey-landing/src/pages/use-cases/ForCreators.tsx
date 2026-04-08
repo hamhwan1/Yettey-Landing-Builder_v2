@@ -271,7 +271,7 @@ export default function ForCreators() {
       {/* ── 9. FINAL CTA ─────────────────────────────────────── */}
       <section className="py-24 px-4 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-primary/10 rounded-full blur-[120px]" />
+          <div className="hidden" />
         </div>
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}

@@ -168,7 +168,7 @@ export default function AiToolsContentCreators() {
       <section className="relative pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
           <div
-            className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full blur-[160px] opacity-25"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
         </div>
@@ -239,7 +239,7 @@ export default function AiToolsContentCreators() {
           }}
         >
           <div
-            className="absolute -top-10 -right-10 w-[350px] h-[250px] rounded-full blur-[100px] opacity-20 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
@@ -607,7 +607,7 @@ export default function AiToolsContentCreators() {
           }}
         >
           <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] rounded-full blur-[150px] opacity-30 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">
@@ -653,7 +653,7 @@ export default function AiToolsContentCreators() {
           }}
         >
           <div
-            className="absolute top-0 right-0 w-[400px] h-[250px] rounded-full blur-[120px] opacity-20 pointer-events-none"
+            className="hidden"
             style={{ backgroundColor: ACCENT }}
           />
           <div className="relative">

@@ -32,12 +32,11 @@ const FadeIn = ({ children, delay = 0, className = "" }: { children: React.React
 function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top_center,_var(--tw-gradient-stops))] from-primary/15 via-background to-background"></div>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 blur-[120px] rounded-full pointer-events-none opacity-50"></div>
+      <div className="absolute inset-0 z-0 bg-background"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <FadeIn>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-white/80">AI Media Workflow Platform</span>
           </div>
@@ -46,7 +45,7 @@ function Hero() {
         <FadeIn delay={0.1}>
           <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.1] tracking-tight mb-6">
             Turn anything into content.<br />
-            <span className="text-gradient-primary">All in one AI platform.</span>
+            <span className="text-primary">All in one AI platform.</span>
           </h1>
         </FadeIn>
         
@@ -57,14 +56,13 @@ function Hero() {
         </FadeIn>
         
         <FadeIn delay={0.3} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button data-testid="button-hero-cta" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-lg shadow-[0_0_40px_rgba(124,58,237,0.3)] hover:shadow-[0_0_60px_rgba(124,58,237,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
+          <button data-testid="button-hero-cta" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-lg hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 group">
             Start for free
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </FadeIn>
 
         <FadeIn delay={0.5} className="mt-20 mx-auto max-w-5xl relative">
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 pointer-events-none"></div>
           <video
             src={`${import.meta.env.BASE_URL}hero-video.mp4`}
             autoPlay
@@ -114,8 +112,8 @@ function Problems() {
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, i) => (
             <FadeIn key={i} delay={i * 0.1}>
-              <div className="p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors duration-300 h-full flex flex-col">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 text-primary">
+              <div className="p-8 rounded-2xl bg-card border border-border hover:border-white/20 transition-colors duration-300 h-full flex flex-col">
+                <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-6 text-muted-foreground">
                   <problem.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">{problem.title}</h3>
@@ -177,7 +175,7 @@ function Features() {
             
             <div className="flex-1 lg:w-1/2">
               <FadeIn>
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-muted-foreground font-medium text-sm mb-6 border border-white/10">
                   <feature.icon className="w-4 h-4" />
                   {feature.tag}
                 </div>
@@ -188,7 +186,7 @@ function Features() {
                 <ul className="space-y-4 mb-8">
                   {feature.bullets.map((bullet, j) => (
                     <li key={j} className="flex items-start gap-3 text-muted-foreground">
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center shrink-0 mt-0.5">
                         <svg className="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                         </svg>
@@ -202,13 +200,12 @@ function Features() {
 
             <div className="flex-1 lg:w-1/2 w-full">
               <FadeIn delay={0.2}>
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group">
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 relative group">
                   <img
                     src={`${import.meta.env.BASE_URL}images/${feature.image}`}
                     alt={feature.tag}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent"></div>
                 </div>
               </FadeIn>
             </div>
@@ -224,7 +221,7 @@ function ProductUI() {
     <section className="py-24 bg-card/20 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-muted-foreground font-medium text-sm mb-6 border border-white/10">
             <FolderTree className="w-4 h-4" />
             All-in-one platform
           </div>
@@ -238,15 +235,14 @@ function ProductUI() {
 
         <div className="grid md:grid-cols-2 gap-6">
           <FadeIn delay={0.1}>
-            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group">
+            <div className="rounded-2xl overflow-hidden border border-white/10 relative group">
               <img
                 src={`${import.meta.env.BASE_URL}images/product-ui-2.png`}
                 alt="Yettey DAM - Asset Library"
-                className="w-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                className="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-6">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-medium mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-white/10 text-white/80 text-xs font-medium mb-2">
                   <FolderTree className="w-3 h-3" /> Digital Asset Management
                 </span>
                 <h3 className="text-lg font-bold text-white">Find anything. Instantly.</h3>
@@ -256,15 +252,14 @@ function ProductUI() {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group">
+            <div className="rounded-2xl overflow-hidden border border-white/10 relative group">
               <img
                 src={`${import.meta.env.BASE_URL}images/product-ui-1.png`}
                 alt="Yettey AI Tools"
-                className="w-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                className="w-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-6">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-medium mb-2">
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/70 to-transparent">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 border border-white/10 text-white/80 text-xs font-medium mb-2">
                   <Sparkles className="w-3 h-3" /> AI Tools
                 </span>
                 <h3 className="text-lg font-bold text-white">Create content. Instantly.</h3>
@@ -298,12 +293,12 @@ function Workflow() {
         </FadeIn>
 
         <div className="mt-16 flex flex-col md:flex-row items-center justify-between relative">
-          <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent z-0"></div>
+          <div className="hidden md:block absolute top-12 left-[10%] right-[10%] h-px bg-border/50 z-0"></div>
 
           {steps.map((step, i) => (
             <FadeIn key={i} delay={i * 0.1} className="relative z-10 flex flex-col items-center w-full md:w-1/5 mb-8 md:mb-0">
-              <div className="w-24 h-24 rounded-2xl bg-background border border-border flex items-center justify-center shadow-xl shadow-black/50 mb-6 group hover:-translate-y-2 transition-transform duration-300">
-                <step.icon className="w-8 h-8 text-primary group-hover:scale-110 transition-transform" />
+              <div className="w-24 h-24 rounded-2xl bg-card border border-border flex items-center justify-center mb-6 group hover:-translate-y-1 transition-transform duration-200">
+                <step.icon className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
               <h4 className="text-lg font-bold text-foreground mb-2">{step.title}</h4>
               <p className="text-sm text-muted-foreground text-center px-4">{step.desc}</p>
@@ -351,7 +346,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
       <p className="text-[13px] text-foreground/100 leading-[1.6] mb-3 line-clamp-2">"{t.quote}"</p>
       <div className="flex items-center justify-between gap-2">
         <div className="flex items-center gap-2 min-w-0">
-          <div className="w-6 h-6 rounded-full bg-primary/15 text-primary flex items-center justify-center text-[10px] font-bold shrink-0 border border-primary/20">
+          <div className="w-6 h-6 rounded-full bg-white/10 text-white/60 flex items-center justify-center text-[10px] font-bold shrink-0 border border-white/10">
             {t.name.charAt(0)}
           </div>
           <div className="min-w-0">
@@ -442,7 +437,7 @@ function Faq() {
               <div 
                 className={cn(
                   "border rounded-xl overflow-hidden transition-colors duration-300",
-                  openIndex === i ? "bg-card border-primary/30 shadow-lg shadow-primary/5" : "bg-transparent border-border hover:border-white/20"
+                  openIndex === i ? "bg-card border-white/20" : "bg-transparent border-border hover:border-white/20"
                 )}
               >
                 <button
@@ -487,7 +482,7 @@ function ChevronDown({ className }: { className?: string }) {
 function CTA() {
   return (
     <section className="py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-primary/10"></div>
+      <div className="absolute inset-0 bg-background"></div>
       <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
         <FadeIn>
           <h2 className="text-4xl md:text-6xl font-display font-bold text-foreground mb-6">
@@ -497,7 +492,7 @@ function CTA() {
             Join teams that are moving faster with smarter content workflows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button data-testid="button-cta-start" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-lg shadow-[0_0_40px_rgba(124,58,237,0.3)] hover:shadow-[0_0_60px_rgba(124,58,237,0.5)] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group">
+            <button data-testid="button-cta-start" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-lg hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 group">
               Start for free
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

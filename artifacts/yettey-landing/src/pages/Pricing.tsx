@@ -259,7 +259,7 @@ export default function Pricing() {
 
       <section className="relative pt-40 pb-20 text-center overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/10 rounded-full blur-[120px]" />
+          <div className="hidden" />
         </div>
         <div className="relative max-w-3xl mx-auto px-4">
           <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
@@ -273,7 +273,7 @@ export default function Pricing() {
             className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-5 leading-tight"
           >
             Simple pricing.{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            <span className="text-primary">
               Built for creators.
             </span>
           </motion.h1>
@@ -331,7 +331,7 @@ export default function Pricing() {
         <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-3">
             Need more credits?{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            <span className="text-primary">
               Scale anytime.
             </span>
           </h2>
@@ -372,7 +372,7 @@ export default function Pricing() {
 
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-primary/10 rounded-full blur-[130px]" />
+          <div className="hidden" />
         </div>
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}
@@ -380,13 +380,13 @@ export default function Pricing() {
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
             Start creating content{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            <span className="text-primary">
               in minutes
             </span>
           </h2>
           <p className="text-muted-foreground mb-10 text-lg">Speed. Scale. Simplicity.</p>
           <Link href="/">
-            <button className="px-10 py-4 rounded-2xl bg-primary text-primary-foreground font-semibold text-base shadow-xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all duration-200">
+            <button className="px-10 py-4 rounded-2xl bg-primary text-primary-foreground font-semibold text-base hover:-translate-y-0.5 transition-all duration-200">
               Start Free
             </button>
           </Link>

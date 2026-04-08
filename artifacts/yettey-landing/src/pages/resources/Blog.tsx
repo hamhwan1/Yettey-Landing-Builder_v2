@@ -91,7 +91,7 @@ export default function Blog() {
       {/* ── Hero ─────────────────────────────────────────────── */}
       <section className="relative pt-40 pb-16 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-primary/8 rounded-full blur-[130px]" />
+          <div className="hidden" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <motion.div variants={fadeUp} initial="hidden" animate="show" custom={0}>
@@ -104,7 +104,7 @@ export default function Blog() {
             className="text-4xl md:text-5xl font-display font-bold text-foreground mb-5 leading-tight"
           >
             Guides to create, scale, and{" "}
-            <span className="bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
+            <span className="text-primary">
               manage content with Yettey
             </span>
           </motion.h1>
@@ -267,7 +267,7 @@ export default function Blog() {
       {/* ── CTA ──────────────────────────────────────────────── */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-primary/10 rounded-full blur-[120px]" />
+          <div className="hidden" />
         </div>
         <motion.div
           variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}

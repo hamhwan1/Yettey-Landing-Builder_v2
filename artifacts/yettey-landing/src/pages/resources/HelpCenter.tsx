@@ -229,7 +229,7 @@ export default function HelpCenter() {
 
       <section className="relative pt-40 pb-20 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] bg-primary/10 rounded-full blur-[150px]" />
+          <div className="hidden" />
         </div>
         <div className="relative max-w-3xl mx-auto px-4 text-center">
           {isBrowsingCategory ? (
@@ -666,7 +666,7 @@ export default function HelpCenter() {
             style={{ background: `linear-gradient(135deg, ${ACCENT}12, ${ACCENT}05)`, border: `1px solid ${ACCENT}25` }}
           >
             <div
-              className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[200px] rounded-full blur-[100px] opacity-15 pointer-events-none"
+              className="hidden"
               style={{ backgroundColor: ACCENT }}
             />
             <div className="relative">

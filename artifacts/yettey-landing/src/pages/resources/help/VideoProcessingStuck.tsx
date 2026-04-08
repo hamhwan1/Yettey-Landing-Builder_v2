@@ -97,7 +97,7 @@ export default function VideoProcessingStuckPage() {
           </div>
           <h1 className="text-3xl md:text-[44px] font-display font-bold text-white leading-[1.12] tracking-tight mb-5">
             Video processing stuck?{" "}
-            <span className="bg-gradient-to-r from-white/50 to-white/30 bg-clip-text text-transparent">Here's what to do.</span>
+            <span className="text-white/50">Here's what to do.</span>
           </h1>
           <p className="text-[17px] text-white/45 leading-[1.75] max-w-2xl">
             When video processing is slow or not responding in Yettey, it's usually temporary.
